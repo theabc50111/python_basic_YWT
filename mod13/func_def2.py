@@ -8,7 +8,7 @@ def sum_nums(n1, n2):
     return n1+n2
     
 # Call function
-printme('Hello Python')
+printme('Hello Python') #'Hello Python' is an argument for printme()
 printme('Python Programming')
 
 total = sum_nums(35,20)
