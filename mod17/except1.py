@@ -10,6 +10,6 @@ except ZeroDivisionError:
 except:
     print('Error: Input error!')
 else:
-    print('kk')
+    print('no error')
 finally:
     print('finally')

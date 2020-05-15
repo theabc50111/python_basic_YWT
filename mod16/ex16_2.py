@@ -1,5 +1,6 @@
 from bmi import BMI
-#BMI.__init__
+
+
 # call defined function
 result = BMI(67,175)
 
