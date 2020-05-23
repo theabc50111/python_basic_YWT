@@ -9,6 +9,6 @@ print(__file__)
 
 if __name__=='__main__':
     height=float(input('Height(cm): '))
-    weight=float(inpu('Weight(kg): '))
+    weight=float(input('Weight(kg): '))
     print('BMI is ',BMI(weight,height))
 
