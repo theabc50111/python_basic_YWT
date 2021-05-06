@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>mod01</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>mod12</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -17530,371 +17530,14 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1><font color=red> Module_01_Python簡介</font></h1>
+<h1><font color=red> Module_12_Set</font></h1>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="P1-4,-Python-&#29305;&#33394;">P1-4, Python &#29305;&#33394;<a class="anchor-link" href="#P1-4,-Python-&#29305;&#33394;">&#182;</a></h1><blockquote><h3 id="&#31243;&#24335;&#23566;&#21521;(Process-Oriented-Program-Language)">&#31243;&#24335;&#23566;&#21521;(Process Oriented Program Language)<a class="anchor-link" href="#&#31243;&#24335;&#23566;&#21521;(Process-Oriented-Program-Language)">&#182;</a></h3><ul>
-<li>易於維護
-<img src=".\img\pop_hierarchy_2.png" style='height:400px; width:600px'><br>
-<img src=".\img\pop_hierarchy.png" style='height:300px; width:600px'><br></li>
-</ul>
-<h3 id="&#29289;&#20214;&#23566;&#21521;(Object-Oriented-Program-Language)">&#29289;&#20214;&#23566;&#21521;(Object-Oriented Program Language)<a class="anchor-link" href="#&#29289;&#20214;&#23566;&#21521;(Object-Oriented-Program-Language)">&#182;</a></h3><ul>
-<li>讓程式碼易於理解</li>
-<li>讓程式碼可以重複使用
-<img src=".\img\oop_example.png" style='height:300px; width:600px'><br></li>
-</ul>
-<h3 id="&#31243;&#24335;&#30332;&#23637;&#27511;&#21490;">&#31243;&#24335;&#30332;&#23637;&#27511;&#21490;<a class="anchor-link" href="#&#31243;&#24335;&#30332;&#23637;&#27511;&#21490;">&#182;</a></h3><p><img src=".\img\oop_history.png" style='height:300px; width:600px'><br></p>
-<h3>Python是<font color=red>直譯式語言</font>，不需要編譯</h3>
-<h3 id="&#33139;&#26412;&#35486;&#35328;&#30340;&#29305;&#40670;">&#33139;&#26412;&#35486;&#35328;&#30340;&#29305;&#40670;<a class="anchor-link" href="#&#33139;&#26412;&#35486;&#35328;&#30340;&#29305;&#40670;">&#182;</a></h3><ul>
-<li>#### 一個enter 執行一行敘述 </li>
-<li>#### 可以把一個程式中的多個區段分開執行，其效果等同於一起執行所有區段的程式。 </li>
-</ul>
-</blockquote>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="P1-5">P1-5<a class="anchor-link" href="#P1-5">&#182;</a></h1><h3 id="&#31243;&#24335;&#35486;&#35328;&#30340;&#25104;&#38263;&#36264;&#21218;">&#31243;&#24335;&#35486;&#35328;&#30340;&#25104;&#38263;&#36264;&#21218;<a class="anchor-link" href="#&#31243;&#24335;&#35486;&#35328;&#30340;&#25104;&#38263;&#36264;&#21218;">&#182;</a></h3><blockquote><p><img src=".\img\PythonTrend.png"  style='height:450px; width:900px'></p>
-</blockquote>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="P1-6">P1-6<a class="anchor-link" href="#P1-6">&#182;</a></h1><ol>
-<li>Python 不需要事先宣告變數</li>
-<li>Python 不需要指定變數的型態</li>
-<li>變數賦值(建立)<font color=red>後</font>即可直接使用</li>
-</ol>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="P1-10">P1-10<a class="anchor-link" href="#P1-10">&#182;</a></h1><h2 id="python-&#23433;&#35037;">python &#23433;&#35037;<a class="anchor-link" href="#python-&#23433;&#35037;">&#182;</a></h2><details>
-    <summary>使用官網python</summary>
-    <ol>
-        <li>把「Add Python 3.x to PATH」的選取方塊打勾，這樣的目的是為了讓Windows可以找到Python，我們的課程將以純的Python環境進行開發。</li>
-        <li>接著點擊「Customize installation」。</li>
-        <li>在Optional Features頁面內，把所有核取方塊打勾。</li>
-        <li>下一步進到「Advanced Options」，把「install for all users」的核取方塊打勾，其他的核取方塊則維持預設值。</li>
-        <li>安裝後，要記得點擊「Disable path length limit」(如果沒有出現此按鈕代表之前已經有設定過了)。</li>
-    </ol>
-    <details>
-        <summary>image</summary>
-        <img src='./img/python_install.png' style='height:500px'>
-    </details>
-</details>
-<hr>
-<details>
-    <summary>使用anaconda</summary>
-    <details>
-        <summary>anaconda簡介</summary>
-        <ol>
-            <li>使用者可以藉由 Anaconda 來針對不同專案創建虛擬環境</li>
-            <ol>
-                <li>更易於管理不同專案</li>
-                <li>避免多個專案同時進行，軟體之間會產生版本衝突</li>
-                <li>
-                    <details>
-                        <summary>image</summary>
-                        <img src='./img/anaconda_environment.png' style='height:500px'>
-                    </details>
-                </li>
-            </ol>
-        </ol>
-    </details>
-    <details>
-        <summary>安裝 Anaconda</summary>
-        <img src='./img/anaconda_install1.png' style='height:500px'>
-        <img src='./img/anaconda_install2.png' style='height:500px'>\
-        <img src='./img/anaconda_install3.png' style='height:500px'>
-    </details>
-</details>
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="P1-14">P1-14<a class="anchor-link" href="#P1-14">&#182;</a></h1><h2 id="&#21629;&#20196;&#25552;&#31034;&#23383;&#20803;(&#31777;&#31281;cmd)">&#21629;&#20196;&#25552;&#31034;&#23383;&#20803;(&#31777;&#31281;cmd)<a class="anchor-link" href="#&#21629;&#20196;&#25552;&#31034;&#23383;&#20803;(&#31777;&#31281;cmd)">&#182;</a></h2><h2 id="&#21629;&#20196;&#25552;&#31034;&#23383;&#20803;&#24120;&#29992;&#25351;&#20196;">&#21629;&#20196;&#25552;&#31034;&#23383;&#20803;&#24120;&#29992;&#25351;&#20196;<a class="anchor-link" href="#&#21629;&#20196;&#25552;&#31034;&#23383;&#20803;&#24120;&#29992;&#25351;&#20196;">&#182;</a></h2><blockquote><h2 id="--&#35722;&#26356;&#30446;&#37636;-(cd,-chdir)">- &#35722;&#26356;&#30446;&#37636; (<code>cd, chdir</code>)<a class="anchor-link" href="#--&#35722;&#26356;&#30446;&#37636;-(cd,-chdir)">&#182;</a></h2><h2 id="--&#26597;&#35426;&#30446;&#37636;-(dir)">- &#26597;&#35426;&#30446;&#37636; (<code>dir</code>)<a class="anchor-link" href="#--&#26597;&#35426;&#30446;&#37636;-(dir)">&#182;</a></h2><h3>- <code>exit</code> &rArr; 離開cmd</h3>
-</blockquote>
-<h2 id="command-line-&#20854;&#20182;&#24120;&#29992;&#25351;&#20196;">command line &#20854;&#20182;&#24120;&#29992;&#25351;&#20196;<a class="anchor-link" href="#command-line-&#20854;&#20182;&#24120;&#29992;&#25351;&#20196;">&#182;</a></h2><blockquote><h2 id="&#39023;&#31034;&#31526;&#21512;&#25351;&#23450;&#25628;&#23563;&#27169;&#24335;&#20043;&#27284;&#26696;&#30340;&#20301;&#32622;&#12290;(where)">&#39023;&#31034;&#31526;&#21512;&#25351;&#23450;&#25628;&#23563;&#27169;&#24335;&#20043;&#27284;&#26696;&#30340;&#20301;&#32622;&#12290;(<code>where</code>)<a class="anchor-link" href="#&#39023;&#31034;&#31526;&#21512;&#25351;&#23450;&#25628;&#23563;&#27169;&#24335;&#20043;&#27284;&#26696;&#30340;&#20301;&#32622;&#12290;(where)">&#182;</a></h2><h2 id="&#24314;&#31435;&#30446;&#37636;-(md,-mkdir)">&#24314;&#31435;&#30446;&#37636; (<code>md, mkdir</code>)<a class="anchor-link" href="#&#24314;&#31435;&#30446;&#37636;-(md,-mkdir)">&#182;</a></h2><h2 id="&#21034;&#38500;&#30446;&#37636;-(rd,-rmdir)">&#21034;&#38500;&#30446;&#37636; (<code>rd, rmdir</code>)<a class="anchor-link" href="#&#21034;&#38500;&#30446;&#37636;-(rd,-rmdir)">&#182;</a></h2><h2 id="&#21034;&#38500;&#22810;&#20491;-/-&#19968;&#20491;&#27284;&#26696;-(del,-erase)">&#21034;&#38500;&#22810;&#20491; / &#19968;&#20491;&#27284;&#26696; (<code>del, erase</code>)<a class="anchor-link" href="#&#21034;&#38500;&#22810;&#20491;-/-&#19968;&#20491;&#27284;&#26696;-(del,-erase)">&#182;</a></h2><h2 id="&#31227;&#21205;/&#26356;&#25913;-&#27284;&#26696;/&#36039;&#26009;&#22846;-&#21517;&#31281;-(move)">&#31227;&#21205;/&#26356;&#25913; &#27284;&#26696;/&#36039;&#26009;&#22846; &#21517;&#31281; (<code>move</code>)<a class="anchor-link" href="#&#31227;&#21205;/&#26356;&#25913;-&#27284;&#26696;/&#36039;&#26009;&#22846;-&#21517;&#31281;-(move)">&#182;</a></h2><h2 id="&#35079;&#35069;&#27284;&#26696;-(copy)">&#35079;&#35069;&#27284;&#26696; (<code>copy</code>)<a class="anchor-link" href="#&#35079;&#35069;&#27284;&#26696;-(copy)">&#182;</a></h2>
-</blockquote>
-<h2 id="command-line-Python&#30456;&#38364;&#25351;&#20196;">command line Python&#30456;&#38364;&#25351;&#20196;<a class="anchor-link" href="#command-line-Python&#30456;&#38364;&#25351;&#20196;">&#182;</a></h2><blockquote><h3 id="--python--h-&#8658;&#26597;&#30475;&#25152;&#26377;&#22312;cmd&#20013;&#30340;python&#25351;&#20196;&#35498;&#26126;">- <code>python -h</code> &#8658;&#26597;&#30475;&#25152;&#26377;&#22312;cmd&#20013;&#30340;python&#25351;&#20196;&#35498;&#26126;<a class="anchor-link" href="#--python--h-&#8658;&#26597;&#30475;&#25152;&#26377;&#22312;cmd&#20013;&#30340;python&#25351;&#20196;&#35498;&#26126;">&#182;</a></h3><h3 id="--python--V(&#22823;&#23531;V)-&#8658;&#26597;&#30475;&#29256;&#26412;(&#27169;&#20223;linux&#25351;&#20196;)">- <code>python -V</code>(&#22823;&#23531;V) &#8658;&#26597;&#30475;&#29256;&#26412;(&#27169;&#20223;linux&#25351;&#20196;)<a class="anchor-link" href="#--python--V(&#22823;&#23531;V)-&#8658;&#26597;&#30475;&#29256;&#26412;(&#27169;&#20223;linux&#25351;&#20196;)">&#182;</a></h3><hr>
-<h2 id="&#20351;&#29992;Anaconda&#38283;&#21855;&#21629;&#20196;&#25552;&#31034;&#23383;&#20803;(&#34395;&#25836;&#29872;&#22659;&#19979;)">&#20351;&#29992;Anaconda&#38283;&#21855;&#21629;&#20196;&#25552;&#31034;&#23383;&#20803;(&#34395;&#25836;&#29872;&#22659;&#19979;)<a class="anchor-link" href="#&#20351;&#29992;Anaconda&#38283;&#21855;&#21629;&#20196;&#25552;&#31034;&#23383;&#20803;(&#34395;&#25836;&#29872;&#22659;&#19979;)">&#182;</a></h2><details>
-    <summary>圖示</summary>
-    <img src='./img/anaconda_env1.png' style='height:500px'>
-    <img src='./img/anaconda_env2.png' style='height:500px'>
-    <img src='./img/anaconda_env3.png' style='height:500px'>
-    <img src='./img/anaconda_env4.png' style='height:500px'>
-    <img src='./img/anaconda_env5.png' style='height:500px'>
-</details>
-</blockquote>
-<hr>
-<h2 id="Python-shell">Python shell<a class="anchor-link" href="#Python-shell">&#182;</a></h2><blockquote><h3>- ＞＞＞ &rArr; Python的命令提示字元(可以下指令的地方)</h3>
-<h3>- ．．． &rArr; Python的第二提示字元</h3>
-<h3>- <code>exit()</code> &rArr; 離開Python shell，是Python的內建function</h3>
-<hr>
-<h2 id="&#22914;&#20309;&#22519;&#34892;Python&#31243;&#24335;&#27284;&#26696;(.py)">&#22914;&#20309;&#22519;&#34892;Python&#31243;&#24335;&#27284;&#26696;(.py)<a class="anchor-link" href="#&#22914;&#20309;&#22519;&#34892;Python&#31243;&#24335;&#27284;&#26696;(.py)">&#182;</a></h2><h3 id="python-XXX.py"><code>python XXX.py</code><a class="anchor-link" href="#python-XXX.py">&#182;</a></h3><hr>
-<h2 id="print(variable)-&#33287;-&#30452;&#25509;&#21628;&#21483;variable&#30340;&#24046;&#30064;:">print(variable) &#33287; &#30452;&#25509;&#21628;&#21483;variable&#30340;&#24046;&#30064;:<a class="anchor-link" href="#print(variable)-&#33287;-&#30452;&#25509;&#21628;&#21483;variable&#30340;&#24046;&#30064;:">&#182;</a></h2><h3>- 直接呼叫variable &rArr; 受益於Python shell 是互動式的，所以才可以直接呼叫變數</h3>
-</blockquote>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3><font color=red>請注意，使用print()時數字還是文字容易弄混</h3>
-
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">123</span>
-<span class="n">x</span> <span class="o">=</span> <span class="s1">&#39;123&#39;</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>123
-123
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&#39;123&#39;</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">y</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>123</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<hr>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="P1-16-IDE-(&#38283;&#30332;&#24037;&#20855;&#31665;)">P1-16 IDE (&#38283;&#30332;&#24037;&#20855;&#31665;)<a class="anchor-link" href="#P1-16-IDE-(&#38283;&#30332;&#24037;&#20855;&#31665;)">&#182;</a></h1><blockquote><h2 id="IDLE-(Python-&#25552;&#20379;&#30340;)">IDLE (Python &#25552;&#20379;&#30340;)<a class="anchor-link" href="#IDLE-(Python-&#25552;&#20379;&#30340;)">&#182;</a></h2><h2 id="VS-code">VS code<a class="anchor-link" href="#VS-code">&#182;</a></h2><h2>Jupyter notebook (網站架構<HTML>)</h2>
-</blockquote>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="VScode">VScode<a class="anchor-link" href="#VScode">&#182;</a></h1><h2 id="&#23433;&#35037;python&#30456;&#38364;&#22871;&#20214;">&#23433;&#35037;python&#30456;&#38364;&#22871;&#20214;<a class="anchor-link" href="#&#23433;&#35037;python&#30456;&#38364;&#22871;&#20214;">&#182;</a></h2><blockquote><h3>由於VS Code不知道Python的安裝路徑，<font color=red>所以當開啟任一個.py檔案時，VS Code會提示你進行設定。</font>此時我們只要按照下圖的步驟，去設定Python.exe的路徑即可。</h3>
-<h3 id="1.-&#23433;&#35037;Python-extension">1. &#23433;&#35037;Python extension<a class="anchor-link" href="#1.-&#23433;&#35037;Python-extension">&#182;</a></h3><blockquote><details>
-     <summary>image</summary>
-     <img src='./img/vscode_py_ext.png'  style='height:500px;'>
-   </details>
-</blockquote>
-<h3 id="2.-&#38283;&#21855;&#36039;&#26009;&#22846;&#20006;&#26032;&#22686;&#25110;&#35712;&#21462;.py&#27284;">2. &#38283;&#21855;&#36039;&#26009;&#22846;&#20006;&#26032;&#22686;&#25110;&#35712;&#21462;.py&#27284;<a class="anchor-link" href="#2.-&#38283;&#21855;&#36039;&#26009;&#22846;&#20006;&#26032;&#22686;&#25110;&#35712;&#21462;.py&#27284;">&#182;</a></h3><blockquote><details>
-     <summary>image</summary>
-     <img src='./img/vscode_open_folder.png'  style='height:500px;'><br>
-   </details>
-   <details>
-     <summary>image</summary>
-     <img src='./img/vscode_create_py.png'  style='height:500px;'><br>
-   </details>
-</blockquote>
-<h3 id="3.-&#35373;&#23450;Python.exe&#30340;&#36335;&#24465;">3. &#35373;&#23450;Python.exe&#30340;&#36335;&#24465;<a class="anchor-link" href="#3.-&#35373;&#23450;Python.exe&#30340;&#36335;&#24465;">&#182;</a></h3><blockquote><details>
-     <summary>image</summary>
-     <img src='./img/vscode_set_py.png'  style='height:500px;'><br>
-   </details>
-</blockquote>
-</blockquote>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Jupyter-notebook">Jupyter notebook<a class="anchor-link" href="#Jupyter-notebook">&#182;</a></h1><details>
-    <summary>使用pip安裝Jupyter notebook</summary>
-    <ol>
-        <li>
-            以<font color=red>系統管理員身分</font>的身分在命令提示字元中輸入指令: <code>pip install jupyter notebook</code> (安裝程式都用系統管理員身分) (macOS 請在terminal中輸入<code>sudo pip3 install jupyter notebook</code>)
-            <details>
-               <summary>image</summary>
-               <img src="img/jupyter_install1.png">
-               <img src="img/jupyter_install2.png">
-           </details>
-           <details>
-               <summary>image-macOS</summary>
-                <div>在terminal輸入<code>sudo pip3 install jupyter notebook</code>，接著輸入登入系統時的密碼(輸入時terminal不會顯示)，輸入完密碼後按enter 即可</div>
-               <img src="img/mac_terminal.jpg">
-           </details>
-        </li>
-        <li>
-            安裝完成後(看到<font color=red>C:\WINDOWS\system32</font>才代表安裝完成)再輸入<code>exit</code>退出命令提示字元(macOS 也是輸入<code>exit</code>)
-            <details>
-               <summary>image</summary>
-               <img src="img/jupyter_install3.png">
-           </details>
-        </li>
-    </ol>
-    <hr>
-    <ol>
-        啟動Jupyter notebook
-        <li>
-            開啟教材資料夾，並在路徑列輸入<code>cmd</code>以<font color=red>一般使用者</font>的身分開啟(macOS 請將教材資料夾放在桌面，並開啟一個新的terminal)
-            <details>
-               <summary>image</summary>
-               <img src="img/jupyter_install4.png">
-           </details>
-        </li>
-        <li>
-            在命令提示字元中輸入指令 <code>jupyter notebook</code> (執行程式用一般身分即可) (macOS 參考下方圖片:)
-             <details>
-                   <summary>image-mac OS</summary>
-                   <ol>
-                       <li>將教材資料夾(以zip檔的形式)下載後，放到桌面上</li>
-                       <li>開啟 terminal後輸入<code>jupyter notebook</code></li>
-                       <li>請輸入完後到Desktop裡找教材資料夾即可
-                           <details>
-                               <img src="img/mac_jupyter_notebook.png">
-                           </details>
-                       </li>
-                   </ol>
-               </details>
-        </li>
-    </ol>
-</details><hr>
-<details>
-    <summary>使用anaconda安裝jupyter notebook</summary>
-    <img src="img/anaconda_jupyter.png">
-</details><h2 id="Jupyter-notebook-&#20171;&#32057;">Jupyter notebook &#20171;&#32057;<a class="anchor-link" href="#Jupyter-notebook-&#20171;&#32057;">&#182;</a></h2><blockquote><h3 id="Jupyter-notebook-&#26159;&#19968;&#20491;&#20114;&#21205;&#24335;&#31558;&#35352;&#26412;&#65292;&#26412;&#36074;&#26159;&#19968;&#20491;Web-&#25033;&#29992;&#31243;&#24335;&#65292;&#20027;&#38913;&#38754;&#30001;&#35377;&#22810;Cell&#32068;&#25104;">Jupyter notebook &#26159;&#19968;&#20491;&#20114;&#21205;&#24335;&#31558;&#35352;&#26412;&#65292;&#26412;&#36074;&#26159;&#19968;&#20491;Web &#25033;&#29992;&#31243;&#24335;&#65292;&#20027;&#38913;&#38754;&#30001;&#35377;&#22810;Cell&#32068;&#25104;<a class="anchor-link" href="#Jupyter-notebook-&#26159;&#19968;&#20491;&#20114;&#21205;&#24335;&#31558;&#35352;&#26412;&#65292;&#26412;&#36074;&#26159;&#19968;&#20491;Web-&#25033;&#29992;&#31243;&#24335;&#65292;&#20027;&#38913;&#38754;&#30001;&#35377;&#22810;Cell&#32068;&#25104;">&#182;</a></h3><blockquote><h3 id="--Ipython-&#23601;&#26159;-Jupyter-Python-&#30340;-Kernel-(ipython-:-&#20114;&#21205;&#24335;)">- Ipython &#23601;&#26159; Jupyter Python &#30340; Kernel (ipython : &#20114;&#21205;&#24335;)<a class="anchor-link" href="#--Ipython-&#23601;&#26159;-Jupyter-Python-&#30340;-Kernel-(ipython-:-&#20114;&#21205;&#24335;)">&#182;</a></h3><h3>- Cell &rArr; 每一個Cell都是可以執行的區塊，裡面可以輸入程式碼</h3>
-<blockquote><details>
-        <summary>功能分類說明</summary>
-        <ol>
-            <li>Code cells &rArr; 用來寫 code 所使用的</li>
-            <li>Markdown cells &rArr; 用來作筆記用的</li>
-        </ol>
-        <img src="./img/cell_utility.png">
-    </details>
-<details>
-        <summary>Cell模式說明</summary>
-        <ol>
-            <li>命令模式(Cell外框以藍色顯示)</li>
-            <li>編輯模式(Cell外框以綠色顯示，且會有游標閃動)</li>
-        </ol>
-    </details>
-</blockquote>
-</blockquote>
-</blockquote>
-<h2 id="Jupyter-notebook-&#24120;&#29992;&#21151;&#33021;">Jupyter notebook &#24120;&#29992;&#21151;&#33021;<a class="anchor-link" href="#Jupyter-notebook-&#24120;&#29992;&#21151;&#33021;">&#182;</a></h2><blockquote><h3>- 快捷鍵 : Help &rarr; Keybosrd ShortCuts</h3>
-<blockquote><p><details>
-    <summary>span</summary>
-        <p>
-            <img src='./img/hotkey_commend.png' style='height:500px'>
-            <img src='./img/hotkey_edit.png' style='height:300px'>
-        <p/>
-    </details>
-    <br></p>
-<h3>- auto compelete &rArr; Tab</h3>
-<h3>- shift + Tab &rArr; 快速查詢函式、方法的用法</h3>
-<h3>- ?指令 &rArr; 查看說明文件</h3>
-<h3>- % &rArr; jupyter的魔法函式</h3>
-<h3>- ! + cli 指令 &rArr; 執行作業系統命令</h3>
-</blockquote>
-</blockquote>
-<h2 id="&#38364;&#38281;Jupyter-notebook">&#38364;&#38281;Jupyter notebook<a class="anchor-link" href="#&#38364;&#38281;Jupyter-notebook">&#182;</a></h2><blockquote><h3 id="Server-(&#36890;&#24120;&#20197;cmd&#20171;&#38754;&#22519;&#34892;)">Server (&#36890;&#24120;&#20197;cmd&#20171;&#38754;&#22519;&#34892;)<a class="anchor-link" href="#Server-(&#36890;&#24120;&#20197;cmd&#20171;&#38754;&#22519;&#34892;)">&#182;</a></h3><blockquote><h3 id="Ctrl+C">Ctrl+C<a class="anchor-link" href="#Ctrl+C">&#182;</a></h3><h3 id="&#28687;&#35261;&#22120;&#38913;&#31805;">&#28687;&#35261;&#22120;&#38913;&#31805;<a class="anchor-link" href="#&#28687;&#35261;&#22120;&#38913;&#31805;">&#182;</a></h3><h3 id="&#30452;&#25509;&#38364;&#38281;&#21363;&#21487;">&#30452;&#25509;&#38364;&#38281;&#21363;&#21487;<a class="anchor-link" href="#&#30452;&#25509;&#38364;&#38281;&#21363;&#21487;">&#182;</a></h3>
-</blockquote>
+<h1 id="P12-3">P12-3<a class="anchor-link" href="#P12-3">&#182;</a></h1><h2>Set &rArr; 無序(unordered)、可變(mutable)</h2>
+<blockquote><h3>P3-3<img src='./img/py_data_type.png'></h3>
 </blockquote>
 
 </div>
@@ -17904,7 +17547,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">basket</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="s1">&#39;apple&#39;</span><span class="p">,</span> <span class="s1">&#39;pear&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="s1">&#39;banana&#39;</span><span class="p">}</span>
+<span class="n">basket</span>
 </pre></div>
 
      </div>
@@ -17918,7 +17562,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span>print<span class="o">?</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;grape in basket : </span><span class="si">{</span><span class="s2">&quot;grape&quot;</span> <span class="ow">in</span> <span class="n">basket</span><span class="si">}</span><span class="s1">, orange in basket : </span><span class="si">{</span><span class="s2">&quot;orange&quot;</span> <span class="ow">in</span> <span class="n">basket</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17932,7 +17576,32 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">timeit</span> print(&#39;Hi&#39;)
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">b</span> <span class="o">=</span> <span class="p">()</span>
+<span class="n">c</span> <span class="o">=</span> <span class="p">{}</span> <span class="c1"># 因為 { } 代表空字典(Dict)</span>
+<span class="n">d</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>  <span class="c1"># 空集合</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">b</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">c</span><span class="p">),</span> <span class="nb">type</span><span class="p">(</span><span class="n">d</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Set-&#27794;&#26377;&#38918;&#24207;">Set &#27794;&#26377;&#38918;&#24207;<a class="anchor-link" href="#Set-&#27794;&#26377;&#38918;&#24207;">&#182;</a></h3>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;s1 == s2 : </span><span class="si">{</span><span class="n">s1</span> <span class="o">==</span> <span class="n">s2</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -17946,7 +17615,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>dir
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">}</span>
+<span class="n">s1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>    <span class="c1"># error no ordered</span>
 </pre></div>
 
      </div>
@@ -17963,19 +17633,224 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3>在Jupyter notebook的Cell中呼叫變數的話，只會出現最後一個結果，如果要在一個Cell內列印出多個變數的數值 &rArr; <code>print()</code></h3>
+<h1 id="P12-6">P12-6<a class="anchor-link" href="#P12-6">&#182;</a></h1><blockquote><p><img src=".\img\set.png"  style='height:450px; width:750px'></p>
+<h2 id="&#21253;&#21547;">&#21253;&#21547;<a class="anchor-link" href="#&#21253;&#21547;">&#182;</a></h2><h3 id="$$\subset-\Rightarrow-&#25976;&#23416;&#31526;&#34399;:&#21253;&#21547;&#26044;$$">$$\subset \Rightarrow &#25976;&#23416;&#31526;&#34399;:&#21253;&#21547;&#26044;$$<a class="anchor-link" href="#$$\subset-\Rightarrow-&#25976;&#23416;&#31526;&#34399;:&#21253;&#21547;&#26044;$$">&#182;</a></h3><h3 id="$$\supset-\Rightarrow-&#25976;&#23416;&#31526;&#34399;:&#21253;&#21547;$$">$$\supset \Rightarrow &#25976;&#23416;&#31526;&#34399;:&#21253;&#21547;$$<a class="anchor-link" href="#$$\supset-\Rightarrow-&#25976;&#23416;&#31526;&#34399;:&#21253;&#21547;$$">&#182;</a></h3>
+</blockquote>
 
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">20</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;{1,2,3} | {2,3,4} = &#39;</span><span class="p">,</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span> <span class="o">|</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">})</span>  <span class="c1"># 聯集</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;{1,2,3} &amp; {2,3,4} = &#39;</span><span class="p">,</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span> <span class="o">&amp;</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">},</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>  <span class="c1"># 交集</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;{1,2,3} - {2,3,4} = &#39;</span><span class="p">,</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span> <span class="o">-</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">})</span>  <span class="c1"># diff</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;{2,3,4} - {2,3,1} = &#39;</span><span class="p">,</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">}</span> <span class="o">-</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">})</span>  <span class="c1"># diff</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;{1,2,3} ^ {2,3,4} = &#39;</span><span class="p">,</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span> <span class="o">^</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">},</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>  <span class="c1"># symmetric diff</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;{1,2} &lt; {1,2,3,4} = &#39;</span><span class="p">,</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">}</span> <span class="o">&lt;</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">})</span>  <span class="c1"># sub</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;{1,2} &gt; {1,2,3,4} = &#39;</span><span class="p">,</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">}</span> <span class="o">&gt;</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">})</span>  <span class="c1"># sup</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="P12-10">P12-10<a class="anchor-link" href="#P12-10">&#182;</a></h1>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;66316666&#39;</span><span class="p">};</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="s1">&#39;66316666&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">s2</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">s1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">s2</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s1</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">s1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">s1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">s1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">s1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Set&#20839;&#19981;&#33021;&#25918;&#21487;&#35722;&#39006;&#22411;&#30340;&#36039;&#26009;">Set&#20839;&#19981;&#33021;&#25918;&#21487;&#35722;&#39006;&#22411;&#30340;&#36039;&#26009;<a class="anchor-link" href="#Set&#20839;&#19981;&#33021;&#25918;&#21487;&#35722;&#39006;&#22411;&#30340;&#36039;&#26009;">&#182;</a></h3>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">{[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]}</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">{{</span><span class="s1">&#39;A&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">}}</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">{{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">}}</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="P12-11">P12-11<a class="anchor-link" href="#P12-11">&#182;</a></h1>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span> <span class="n">b</span> <span class="o">=</span> <span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">};</span> <span class="n">c</span> <span class="o">=</span> <span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">};</span> <span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">}</span>
+
+<span class="nb">print</span> <span class="p">(</span><span class="sa">f</span><span class="s1">&#39;a = </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1">,  b = </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s1">,  c = </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s1">,  d= </span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s1"> </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a.isdisjoint(d) :                   &#39;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">isdisjoint</span><span class="p">(</span><span class="n">d</span><span class="p">))</span>     
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a.isdisjoint(b) :                   &#39;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">isdisjoint</span><span class="p">(</span><span class="n">b</span><span class="p">),</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> <span class="c1"># 沒交集</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a.issubset(b) :                     &#39;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">issubset</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a.issubset(d) :                     &#39;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">issubset</span><span class="p">(</span><span class="n">d</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a.issubset(d) == (a&lt;d) :            &#39;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">issubset</span><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="o">==</span> <span class="p">(</span><span class="n">a</span><span class="o">&lt;</span><span class="n">d</span><span class="p">),</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;d.issuperset(a) :                   &#39;</span><span class="p">,</span> <span class="n">d</span><span class="o">.</span><span class="n">issuperset</span><span class="p">(</span><span class="n">a</span><span class="p">))</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;d.issuperset(a) == (d&gt;a) :          &#39;</span><span class="p">,</span> <span class="n">d</span><span class="o">.</span><span class="n">issuperset</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">==</span> <span class="p">(</span><span class="n">d</span><span class="o">&gt;</span><span class="n">a</span><span class="p">),</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="P12-12">P12-12<a class="anchor-link" href="#P12-12">&#182;</a></h1>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a.union(b) :                        &#39;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">b</span><span class="p">))</span> <span class="c1"># 聯集</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a.union(b) == a|b:                  &#39;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">union</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">==</span> <span class="n">a</span><span class="o">|</span><span class="n">b</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;b.intersection(c):                  &#39;</span><span class="p">,</span> <span class="n">b</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>  <span class="c1">#交集</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;b.intersection(c) == b&amp;c :          &#39;</span><span class="p">,</span> <span class="n">b</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">==</span> <span class="n">b</span><span class="o">&amp;</span><span class="n">c</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a.difference(d) :                   &#39;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">d</span><span class="p">))</span>  <span class="c1"># 差集</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;d.difference(a) :                   &#39;</span><span class="p">,</span> <span class="n">d</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>  <span class="c1"># 差集</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;d.difference(a) == (d-a):           &#39;</span><span class="p">,</span> <span class="n">d</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">==</span> <span class="p">(</span><span class="n">d</span><span class="o">-</span><span class="n">a</span><span class="p">),</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>  <span class="c1"># 差集</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a.symmetric_difference(b) :         &#39;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">symmetric_difference</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>  <span class="c1">#對稱差集</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;a.symmetric_difference(b) == (a^b): &#39;</span><span class="p">,</span> <span class="n">a</span><span class="o">.</span><span class="n">symmetric_difference</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">==</span> <span class="p">(</span><span class="n">a</span><span class="o">^</span><span class="n">b</span><span class="p">),</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>  
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="P12-13">P12-13<a class="anchor-link" href="#P12-13">&#182;</a></h1>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span> <span class="n">b</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span>
+
+<span class="n">a</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
 <span class="n">a</span>
-<span class="n">b</span>
 </pre></div>
 
      </div>
@@ -17983,39 +17858,16 @@ a.anchor-link {
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>20</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">20</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span> <span class="n">b</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span>
+
+<span class="n">a</span><span class="o">.</span><span class="n">intersection_update</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
+<span class="n">a</span>                         <span class="c1">#傳回與 b集合的交集</span>
 </pre></div>
 
      </div>
@@ -18023,26 +17875,54 @@ a.anchor-link {
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span> <span class="n">b</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span>
+<span class="n">a</span><span class="o">.</span><span class="n">difference_update</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="n">a</span>
+</pre></div>
 
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>10
-20
-</pre>
+     </div>
+</div>
 </div>
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span> <span class="n">b</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span>
+<span class="n">a</span><span class="o">.</span><span class="n">symmetric_difference_update</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="n">a</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span> <span class="n">b</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+
+<span class="n">a</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">b</span><span class="p">);</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">id</span><span class="p">(</span><span class="n">a</span><span class="p">))</span> <span class="c1"># set is mutable</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
 </div>
 
 </div>
@@ -18054,33 +17934,158 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1>&spades; 補充</h1>
+<h1 id="P12-14">P12-14<a class="anchor-link" href="#P12-14">&#182;</a></h1>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">};</span> <span class="n">b</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">};</span> <span class="n">c</span> <span class="o">=</span> <span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">};</span> <span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">}</span>
+
+<span class="n">a</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># set isn&#39;t repeatable</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>  
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
+<span class="n">a</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">a</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
+<span class="n">a</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">a</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
+<span class="n">a</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="c1"># 如果 elem 存在於 s ，則將其移除。此方法不會觸發 KeyError 的例外</span>
+<span class="n">a</span>  
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="&#38748;&#24907;&#35486;&#35328;&amp;&#21205;&#24907;&#35486;&#35328;-&#35498;&#26126;">&#38748;&#24907;&#35486;&#35328;&amp;&#21205;&#24907;&#35486;&#35328; &#35498;&#26126;<a class="anchor-link" href="#&#38748;&#24907;&#35486;&#35328;&amp;&#21205;&#24907;&#35486;&#35328;-&#35498;&#26126;">&#182;</a></h1><blockquote><h2>具體來說，<font color =red>靜態語言</font>是指變數是否帶有資料型態，反之則為<font color =green>動態語言</font>。</h2>
-<blockquote><h3>- <font color =red>靜態語言</font>寫程序時要聲明所有變量的數據類型</h3>
-<h3>- <font color =green>動態語言</font>編程不用給任何變量指定數據類型。</h3>
-<h3>- 省略變數類型宣告動作 &rarr; 動態語言</h3>
-</blockquote>
-</blockquote>
+<h1 id="P12-17">P12-17<a class="anchor-link" href="#P12-17">&#182;</a></h1>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="n">num</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">30</span><span class="p">)</span> <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">1</span><span class="p">}</span>
+<span class="n">s</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s2</span> <span class="o">=</span> <span class="p">{</span><span class="n">num</span><span class="o">%</span><span class="k">3</span> for num in range(1,30)}
+<span class="n">s2</span> <span class="c1"># 元素不重複</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Visual-Studio-Code-step-by-step-flow-debug">Visual Studio Code-step by step flow debug<a class="anchor-link" href="#Visual-Studio-Code-step-by-step-flow-debug">&#182;</a></h2><h3 id="1.-&#20808;&#22312;Visual-Studio-Code-&#36969;&#30070;&#22320;&#35373;&#23450;&#20013;&#26039;&#40670;,-&#32780;&#22312;&#31243;&#24335;&#22519;&#34892;&#21040;&#26576;&#20491;&#20013;&#26039;&#40670;&#23601;&#26371;pause">1. &#20808;&#22312;Visual Studio Code &#36969;&#30070;&#22320;&#35373;&#23450;&#20013;&#26039;&#40670;, &#32780;&#22312;&#31243;&#24335;&#22519;&#34892;&#21040;&#26576;&#20491;&#20013;&#26039;&#40670;&#23601;&#26371;pause<a class="anchor-link" href="#1.-&#20808;&#22312;Visual-Studio-Code-&#36969;&#30070;&#22320;&#35373;&#23450;&#20013;&#26039;&#40670;,-&#32780;&#22312;&#31243;&#24335;&#22519;&#34892;&#21040;&#26576;&#20491;&#20013;&#26039;&#40670;&#23601;&#26371;pause">&#182;</a></h3><blockquote><p>如下圖第2、3行的紅點<img src='./img/vscode_debug_1.png' style='height:400px'></p>
-<h3>2. 再點選上方頁簽的Run &rarr; Start Debugging(或是輸入f5)來執行程式,用f5執行程式,碰到中斷點,程式執行會pause</h3>
-<p>如下圖綠框圈選部分<img src='./img/vscode_debug_2.png' style='height:400px'></p>
-<h3 id="3.&#36984;&#25799;Python&#27284;&#26696;-(&#20597;&#37679;&#30446;&#21069;&#20351;&#29992;&#20013;&#30340;&#27284;&#26696;)">3.&#36984;&#25799;Python&#27284;&#26696; (&#20597;&#37679;&#30446;&#21069;&#20351;&#29992;&#20013;&#30340;&#27284;&#26696;)<a class="anchor-link" href="#3.&#36984;&#25799;Python&#27284;&#26696;-(&#20597;&#37679;&#30446;&#21069;&#20351;&#29992;&#20013;&#30340;&#27284;&#26696;)">&#182;</a></h3><p>如下圖綠框圈選部分<img src='./img/vscode_debug_3.png' style='height:400px'></p>
-<h3 id="4.&#22312;&#24038;&#37002;watch&#27396;&#20301;&#26032;&#22686;&#35201;&#35264;&#23519;&#30340;&#35722;&#25976;">4.&#22312;&#24038;&#37002;watch&#27396;&#20301;&#26032;&#22686;&#35201;&#35264;&#23519;&#30340;&#35722;&#25976;<a class="anchor-link" href="#4.&#22312;&#24038;&#37002;watch&#27396;&#20301;&#26032;&#22686;&#35201;&#35264;&#23519;&#30340;&#35722;&#25976;">&#182;</a></h3><p>如下圖綠框圈選部分<img src='./img/vscode_debug_4.png' style='height:400px'></p>
-<h3 id="5.&#40670;&#25802;&#19978;&#26041;&#30340;continue&#25353;&#37397;(&#25110;&#26159;&#36664;&#20837;f5)&#22519;&#34892;&#31243;&#24335;">5.&#40670;&#25802;&#19978;&#26041;&#30340;continue&#25353;&#37397;(&#25110;&#26159;&#36664;&#20837;f5)&#22519;&#34892;&#31243;&#24335;<a class="anchor-link" href="#5.&#40670;&#25802;&#19978;&#26041;&#30340;continue&#25353;&#37397;(&#25110;&#26159;&#36664;&#20837;f5)&#22519;&#34892;&#31243;&#24335;">&#182;</a></h3><p>如下圖綠框圈選部分<img src='./img/vscode_debug_5.png' style='height:400px'></p>
-<h3 id="6.&#30070;&#31243;&#24335;&#30908;&#30340;&#24213;&#33394;&#35722;&#28858;&#40643;&#33394;&#26178;&#65292;&#20195;&#34920;&#22519;&#34892;&#21040;&#35442;&#34892;&#31243;&#24335;&#30908;&#65292;&#20197;&#27492;&#35264;&#23519;&#22914;&#20309;&#35722;&#25976;&#26159;&#22914;&#20309;&#35722;&#21270;&#30340;&#12290;">6.&#30070;&#31243;&#24335;&#30908;&#30340;&#24213;&#33394;&#35722;&#28858;&#40643;&#33394;&#26178;&#65292;&#20195;&#34920;&#22519;&#34892;&#21040;&#35442;&#34892;&#31243;&#24335;&#30908;&#65292;&#20197;&#27492;&#35264;&#23519;&#22914;&#20309;&#35722;&#25976;&#26159;&#22914;&#20309;&#35722;&#21270;&#30340;&#12290;<a class="anchor-link" href="#6.&#30070;&#31243;&#24335;&#30908;&#30340;&#24213;&#33394;&#35722;&#28858;&#40643;&#33394;&#26178;&#65292;&#20195;&#34920;&#22519;&#34892;&#21040;&#35442;&#34892;&#31243;&#24335;&#30908;&#65292;&#20197;&#27492;&#35264;&#23519;&#22914;&#20309;&#35722;&#25976;&#26159;&#22914;&#20309;&#35722;&#21270;&#30340;&#12290;">&#182;</a></h3><p><img src='./img/vscode_debug.gif' style='height:400px'></p>
-</blockquote>
+<h1 id="&#36039;&#26009;&#22411;&#24907;&#32317;&#32080;">&#36039;&#26009;&#22411;&#24907;&#32317;&#32080;<a class="anchor-link" href="#&#36039;&#26009;&#22411;&#24907;&#32317;&#32080;">&#182;</a></h1><p><img src='./img/py_data_type_2.png'></p>
 
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 </body>
 
