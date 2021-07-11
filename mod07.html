@@ -9,11 +9,11 @@
 
 
 <style type="text/css">
-    pre { line-height: 125%; }
-td.linenos pre { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
-span.linenos { color: #000000; background-color: #f0f0f0; padding-left: 5px; padding-right: 5px; }
-td.linenos pre.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
-span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+    pre { line-height: 125%; margin: 0; }
+td.linenos pre { color: #000000; background-color: #f0f0f0; padding: 0 5px 0 5px; }
+span.linenos { color: #000000; background-color: #f0f0f0; padding: 0 5px 0 5px; }
+td.linenos pre.special { color: #000000; background-color: #ffffc0; padding: 0 5px 0 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding: 0 5px 0 5px; }
 .highlight .hll { background-color: var(--jp-cell-editor-active-background) }
 .highlight { background: var(--jp-cell-editor-background); color: var(--jp-mirror-editor-variable-color) }
 .highlight .c { color: var(--jp-mirror-editor-comment-color); font-style: italic } /* Comment */
@@ -60,7 +60,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <style type="text/css">
     div#notebook {
  font-family: sans-serif;
- font-size: 14pt;
+ font-size: 20pt;
  line-height: 170%;
  color: #b5c2d9;
  -webkit-font-smoothing: antialiased !important;
@@ -69,7 +69,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 body,
 div.body {
  font-family: sans-serif;
- font-size: 14pt;
+ font-size: 20pt;
  color: #899ab8;
  background-color: #1d1e23;
  background: #1d1e23;
@@ -306,14 +306,14 @@ body > #header {
  z-index: 100;
 }
 .list_container {
- font-size: 14pt;
+ font-size: 20pt;
  color: #899ab8;
  border: none;
  text-shadow: none !important;
 }
 .list_container > div {
  border-bottom: 1px solid rgba(80,92,133,.22);
- font-size: 14pt;
+ font-size: 20pt;
 }
 .list_header > div,
 .list_item > div {
@@ -326,7 +326,7 @@ body > #header {
  margin-left: -1px;
  vertical-align: middle;
  line-height: 22px;
- font-size: 14pt;
+ font-size: 20pt;
 }
 .item_icon {
  color: #4c8be2;
@@ -372,7 +372,7 @@ body > #header {
 }
 button#tree-selector-btn {
  height: 34px;
- font-size: 13.0pt;
+ font-size: 19.0pt;
  border: none;
  left: 0px;
  border-radius: 0px !important;
@@ -418,7 +418,7 @@ div.list_item:hover {
  background-color: rgba(80,90,133,.06);
 }
 .breadcrumb > li {
- font-size: 13.0pt;
+ font-size: 19.0pt;
  color: #899ab8;
  border: none;
  text-shadow: none !important;
@@ -506,7 +506,7 @@ ul#tabs a {
 }
 div#notebook {
  font-family: sans-serif;
- font-size: 14pt;
+ font-size: 20pt;
  padding-top: 4px;
 }
 .notebook_app {
@@ -549,7 +549,7 @@ div#header-container {
 #header,
 .edit_app #header {
  font-family: sans-serif;
- font-size: 14pt;
+ font-size: 20pt;
  box-shadow: none;
  background-color: #1d1e23;
 }
@@ -591,7 +591,7 @@ p.navbar-text.indicator_area {
 }
 .navbar-default {
  font-family: sans-serif;
- font-size: 14pt;
+ font-size: 20pt;
  background-color: #1d1e23;
  border-color: #313643;
  line-height: 1.5em;
@@ -599,7 +599,7 @@ p.navbar-text.indicator_area {
 }
 .navbar-default .navbar-nav > li > a {
  font-family: sans-serif;
- font-size: 14pt;
+ font-size: 20pt;
  color: #899ab8;
  display: block;
  line-height: 1.5em;
@@ -695,7 +695,7 @@ div.notification_widget.info,
  color: #4c8be2;
 }
 .item_buttons .kernel-name {
- font-size: 14pt;
+ font-size: 20pt;
  color: #4c8be2;
 }
 .running_notebook_icon:before {
@@ -873,7 +873,7 @@ i.fa.fa-icon {
 }
 .dropdown-menu {
  font-family: sans-serif;
- font-size: 14pt;
+ font-size: 20pt;
  box-shadow: none;
  padding: 0px;
  text-align: left;
@@ -884,7 +884,7 @@ i.fa.fa-icon {
 }
 .dropdown-menu:hover {
  font-family: sans-serif;
- font-size: 14pt;
+ font-size: 20pt;
  box-shadow: none;
  padding: 0px;
  text-align: left;
@@ -895,7 +895,7 @@ i.fa.fa-icon {
 }
 .dropdown-menu > li > a {
  font-family: sans-serif;
- font-size: 13.0pt;
+ font-size: 19.0pt;
  display: block;
  padding: 10px 20px 9px 10px;
  color: #899ab8;
@@ -929,7 +929,7 @@ i.fa.fa-icon {
 .dropdown-menu > .disabled > a:hover,
 .dropdown-menu > .disabled > a:focus {
  font-family: sans-serif;
- font-size: 13.0pt;
+ font-size: 19.0pt;
  font-weight: normal;
  color: #526488;
  padding: none;
@@ -1043,7 +1043,7 @@ div.kse-dropdown > .dropdown-menu,
 .item_buttons > .btn,
 .item_buttons > .btn-group,
 .item_buttons > .input-group {
- font-size: 14pt;
+ font-size: 20pt;
  background: transparent;
  background-color: transparent;
  border: 0px solid #2e3642;
@@ -1166,7 +1166,7 @@ div.dynamic-buttons > button,
 }
 .dropdown-header {
  font-family: sans-serif !important;
- font-size: 14pt !important;
+ font-size: 20pt !important;
  color: #7aa05d !important;
  border-bottom: none !important;
  padding: 0px !important;
@@ -1230,7 +1230,7 @@ fieldset[disabled] .btn-default.focus {
 }
 .input-group-addon {
  padding: 2px 5px;
- font-size: 14pt;
+ font-size: 20pt;
  font-weight: normal;
  height: auto;
  color: #899ab8;
@@ -1310,7 +1310,7 @@ div.modal-footer > button:hover {
 }
 .modal-content {
  font-family: sans-serif;
- font-size: 13.0pt;
+ font-size: 19.0pt;
  position: relative;
  background: #2e3642;
  background-color: #2e3642;
@@ -1321,7 +1321,7 @@ div.modal-footer > button:hover {
 }
 .modal-header {
  font-family: sans-serif;
- font-size: 14pt;
+ font-size: 20pt;
  color: #899ab8;
  background: #2e3642;
  background-color: #2e3642;
@@ -1365,7 +1365,7 @@ div.panel-default,
 .panel,
 .panel-default {
  font-family: sans-serif;
- font-size: 14pt;
+ font-size: 20pt;
  background-color: #384152;
  color: #899ab8;
  margin-bottom: 14px;
@@ -1424,7 +1424,7 @@ textarea {
 }
 select.form-control.select-xs {
  height: 33px;
- font-size: 14pt;
+ font-size: 20pt;
 }
 .toolbar select,
 .toolbar label {
@@ -1745,7 +1745,7 @@ div.output_wrapper {
 div.output_subarea.output_text.output_stream.output_stdout,
 div.output_subarea.output_text {
  font-family: monospace, monospace;
- font-size: 14pt !important;
+ font-size: 20pt !important;
  line-height: 150% !important;
  background-color: #373e4b;
  color: #b1bed6;
@@ -1755,7 +1755,7 @@ div.output_subarea.output_text {
 }
 div.output_area pre {
  font-family: monospace, monospace;
- font-size: 14pt !important;
+ font-size: 20pt !important;
  line-height: 151% !important;
  color: #b1bed6;
  border-top-right-radius: 0px;
@@ -1766,7 +1766,7 @@ div.output_area {
 }
 div.output_html {
  font-family: monospace, monospace;
- font-size: 14pt;
+ font-size: 20pt;
  color: #dbdfef;
  background-color: #373e4b;
  background: #373e4b;
@@ -1848,7 +1848,7 @@ div.text_cell,
 div.text_cell_render pre,
 div.text_cell_render {
  font-family: sans-serif;
- font-size: 16pt;
+ font-size: 20pt;
  line-height: 130% !important;
  color: #abb7ce;
  background: #2c303c;
@@ -1960,7 +1960,7 @@ div.text_cell.rendered.selected .prompt {
 }
 div.rendered_html code {
  font-family: monospace, monospace;
- font-size: 16pt;
+ font-size: 20pt;
  padding-top: 3px;
  padding-left: 2px;
  color: #b5c2d9;
@@ -1976,7 +1976,7 @@ samp {
 .well code,
 code {
  font-family: monospace, monospace;
- font-size: 16pt !important;
+ font-size: 20pt !important;
  line-height: 170% !important;
  color: #abb7ce;
  background: #262c36;
@@ -1985,7 +1985,7 @@ code {
 }
 kbd {
  padding: 1px;
- font-size: 16pt;
+ font-size: 20pt;
  font-weight: 800;
  color: #b5c2d9;
  background-color: transparent !important;
@@ -1996,7 +1996,7 @@ pre {
  display: block;
  padding: 8.5px;
  margin: 0 0 9px;
- font-size: 13.0pt;
+ font-size: 19.0pt;
  line-height: 1.42857143;
  color: #b5c2d9;
  background-color: #262c36;
@@ -2016,7 +2016,7 @@ div.rendered_html {
 }
 div.rendered_html pre {
  font-family: monospace, monospace;
- font-size: 16pt !important;
+ font-size: 20pt !important;
  line-height: 170% !important;
  color: #abb7ce !important;
  background: #262c36;
@@ -2032,7 +2032,7 @@ div.rendered_html pre {
 div.text_cell_render pre,
 div.text_cell_render code {
  font-family: monospace, monospace;
- font-size: 16pt !important;
+ font-size: 20pt !important;
  line-height: 170% !important;
  color: #abb7ce;
  background: #1d1e23;
@@ -2143,7 +2143,7 @@ div#_vivaldi-spatnav-focus-indicator._vivaldi-spatnav-focus-indicator {
 }
 .rendered_html td {
  font-family: sans-serif !important;
- font-size: 14pt;
+ font-size: 20pt;
 }
 .rendered_html table {
  font-family: sans-serif !important;
@@ -2157,7 +2157,7 @@ div#_vivaldi-spatnav-focus-indicator._vivaldi-spatnav-focus-indicator {
 }
 .rendered_html thead {
  font-family: sans-serif !important;
- font-size: 15.0pt !important;
+ font-size: 21.0pt !important;
  background: #2e3642;
  color: #d4d8ec;
  border-bottom: 1px solid #2e3642;
@@ -2185,7 +2185,7 @@ div.widget-area {
 }
 div.widget-area a {
  font-family: sans-serif;
- font-size: 13.0pt;
+ font-size: 19.0pt;
  font-weight: normal;
  font-style: normal;
  color: #899ab8;
@@ -2194,7 +2194,7 @@ div.widget-area a {
 div.widget-area a:hover,
 div.widget-area a:focus {
  font-family: sans-serif;
- font-size: 13.0pt;
+ font-size: 19.0pt;
  font-weight: normal;
  font-style: normal;
  color: #bbc2e0;
@@ -2594,7 +2594,7 @@ div.collapsible_headings_toggle .fa-caret-right:before {
 #navigate_menu a,
 .toc {
  color: #899ab8 !important;
- font-size: 16pt !important;
+ font-size: 20pt !important;
 }
 #toc li > span:hover {
  background-color: #313643 !important;
@@ -2603,15 +2603,15 @@ div.collapsible_headings_toggle .fa-caret-right:before {
 #navigate_menu a:hover,
 .toc {
  color: #d8dcee !important;
- font-size: 16pt !important;
+ font-size: 20pt !important;
 }
 #toc-wrapper .toc-item-num {
  color: #7aa05d !important;
- font-size: 16pt !important;
+ font-size: 20pt !important;
 }
 input.raw_input {
  font-family: monospace, monospace;
- font-size: 16pt !important;
+ font-size: 20pt !important;
  color: #b5c2d9;
  background-color: #262c36;
  border-color: #242a33;
@@ -2699,7 +2699,7 @@ body > div.modal.cmd-palette.typeahead-field {
 .typeahead-dropdown,
 .typeahead-list {
  font-family: sans-serif;
- font-size: 14pt;
+ font-size: 20pt;
  color: #899ab8;
  background-color: #202937;
  border: none;
@@ -2847,7 +2847,7 @@ div#short-key-bindings-intro.well,
 }
 .terminal-app .terminal {
  font-family: monospace, monospace;
- font-size: 16pt;
+ font-size: 20pt;
  line-height: 170%;
  color: #b5c2d9;
  background: #2c303c;
@@ -2963,7 +2963,7 @@ div#pager .ui-resizable-handle {
 div.CodeMirror,
 div.CodeMirror pre {
  font-family: monospace, monospace;
- font-size: 16pt;
+ font-size: 20pt;
  line-height: 170%;
  color: #b5c2d9;
 }
@@ -3025,7 +3025,7 @@ div.js-error {
 }
 .ipython_tooltip {
  font-family: monospace, monospace;
- font-size: 16pt;
+ font-size: 20pt;
  line-height: 170%;
  border: 2px solid #21262c;
  background: #323a44;
@@ -3039,7 +3039,7 @@ div.js-error {
 }
 .ipython_tooltip .tooltiptext pre {
  font-family: monospace, monospace;
- font-size: 16pt;
+ font-size: 20pt;
  line-height: 170%;
  background: #323a44;
  background-color: #323a44;
@@ -3061,7 +3061,7 @@ div.tooltiptext.bigtooltip {
 }
 .cm-s-ipython.CodeMirror {
  font-family: monospace, monospace;
- font-size: 16pt;
+ font-size: 20pt;
  background: #2c303c;
  color: #b5c2d9;
  border-radius: 2px;
@@ -3286,7 +3286,7 @@ body :focus .MathJax {
  margin-left: 2px;
  overflow: auto;
  font-family: monospace, monospace;
- font-size: 16pt;
+ font-size: 20pt;
  color: #b5c2d9;
  width: auto;
 }
@@ -17468,23 +17468,7 @@ a.anchor-link {
 .highlight  {
     margin: 0.4em;
 }
-
-/* Input area styling */
-.jp-InputArea {
-    overflow: hidden;
-}
-
-.jp-InputArea-editor {
-    overflow: hidden;
-}
-
-@media print {
-  body {
-    margin: 0;
-  }
-}
 </style>
-
 
 
 <!-- Load mathjax -->
@@ -17556,10 +17540,10 @@ a.anchor-link {
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># while stmt</span>
@@ -17570,12 +17554,34 @@ a.anchor-link {
     <span class="n">r</span> <span class="o">=</span> <span class="n">r</span><span class="o">*</span><span class="n">n</span> <span class="c1"># equal to r *= n</span>
     <span class="n">n</span> <span class="o">=</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span> <span class="c1"># equal to n += 1</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">m</span><span class="si">}</span><span class="s1">! = </span><span class="si">{</span><span class="n">r</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="s1">&#39;! = &#39;</span><span class="p">,</span><span class="n">r</span><span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Input factorial: 5
+5 ! =  120
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -17723,7 +17729,7 @@ a.anchor-link {
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">i</span><span class="si">:</span><span class="s1">1</span><span class="si">}</span><span class="s1"> * </span><span class="si">{</span><span class="n">j</span><span class="si">:</span><span class="s1">1</span><span class="si">}</span><span class="s1"> = </span><span class="si">{</span><span class="n">i</span><span class="o">*</span><span class="n">j</span><span class="si">:</span><span class="s1">2</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;,  &#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39; * &#39;</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="s1">&#39; = &#39;</span><span class="p">,</span><span class="n">i</span><span class="o">*</span><span class="n">j</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;,  &#39;</span><span class="p">)</span>
 
     <span class="nb">print</span><span class="p">()</span> <span class="c1"># 當作換行使用</span>
 </pre></div>
@@ -17822,7 +17828,7 @@ a.anchor-link {
             <span class="k">break</span>
         <span class="k">elif</span> <span class="n">i</span><span class="o">*</span><span class="n">j</span><span class="o">==</span><span class="mi">28</span><span class="p">:</span>
             <span class="k">continue</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">i</span><span class="si">:</span><span class="s1">1</span><span class="si">}</span><span class="s1"> * </span><span class="si">{</span><span class="n">j</span><span class="si">:</span><span class="s1">1</span><span class="si">}</span><span class="s1"> = </span><span class="si">{</span><span class="n">i</span><span class="o">*</span><span class="n">j</span><span class="si">:</span><span class="s1">2</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;,   &#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="s1">&#39; * &#39;</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="s1">&#39; = &#39;</span><span class="p">,</span><span class="n">i</span><span class="o">*</span><span class="n">j</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;,  &#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
 </pre></div>
 
