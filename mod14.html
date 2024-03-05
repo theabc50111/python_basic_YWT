@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>mod00</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>mod14</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7516,9 +7516,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1><font color="red"> Module_00 課程簡介--Python先修課程</font></h1>
-<h2 id="%E8%AA%B2%E7%A8%8B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85">課程注意事項<a class="anchor-link" href="#%E8%AA%B2%E7%A8%8B%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85">¶</a></h2><blockquote>
-<h3 id="%E8%AB%8B%E5%9B%BA%E5%AE%9A%E5%BA%A7%E4%BD%8D">請固定座位<a class="anchor-link" href="#%E8%AB%8B%E5%9B%BA%E5%AE%9A%E5%BA%A7%E4%BD%8D">¶</a></h3><h3 id="%E6%94%BE%E5%AD%B8%E6%99%82%E9%96%93%E8%A6%81%E6%9B%B4%E6%AD%A3%E7%82%BA?:?">放學時間要更正為?:?<a class="anchor-link" href="#%E6%94%BE%E5%AD%B8%E6%99%82%E9%96%93%E8%A6%81%E6%9B%B4%E6%AD%A3%E7%82%BA?:?">¶</a></h3><h3 id="%E4%B8%8A%E8%AA%B2%E6%99%82%E9%95%B750%E5%88%86%E9%90%98,%E4%BC%91%E6%81%AF%E6%99%82%E9%95%B710%E5%88%86%E9%90%98,%E8%87%AA%E7%94%B1%E7%99%BC%E5%95%8F%E3%80%81%E4%B8%8A%E5%BB%81%E6%89%80">上課時長50分鐘,休息時長10分鐘,自由發問、上廁所<a class="anchor-link" href="#%E4%B8%8A%E8%AA%B2%E6%99%82%E9%95%B750%E5%88%86%E9%90%98,%E4%BC%91%E6%81%AF%E6%99%82%E9%95%B710%E5%88%86%E9%90%98,%E8%87%AA%E7%94%B1%E7%99%BC%E5%95%8F%E3%80%81%E4%B8%8A%E5%BB%81%E6%89%80">¶</a></h3><h3 id="%E6%9C%80%E5%BE%8C%E4%B8%80%E5%A4%A9%E6%9C%89%E7%B7%9A%E4%B8%8A%E6%95%99%E5%AD%B8%E8%A9%95%E9%87%8F">最後一天有線上教學評量<a class="anchor-link" href="#%E6%9C%80%E5%BE%8C%E4%B8%80%E5%A4%A9%E6%9C%89%E7%B7%9A%E4%B8%8A%E6%95%99%E5%AD%B8%E8%A9%95%E9%87%8F">¶</a></h3></blockquote>
+<h1><font color="red"> Module_14_函數引數</font></h1>
 </div>
 </div>
 </div>
@@ -7529,7 +7527,60 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="%E7%82%BA%E4%BB%80%E9%BA%BC%E8%A6%81%E5%AD%B8%E5%9F%BA%E7%A4%8E%E8%AA%9E%E6%B3%95%EF%BC%9F">為什麼要學基礎語法？<a class="anchor-link" href="#%E7%82%BA%E4%BB%80%E9%BA%BC%E8%A6%81%E5%AD%B8%E5%9F%BA%E7%A4%8E%E8%AA%9E%E6%B3%95%EF%BC%9F">¶</a></h2>
+<h1 id="p14-3-%E4%BD%8D%E7%BD%AE%E5%BC%95%E6%95%B8">p14-3 位置引數<a class="anchor-link" href="#p14-3-%E4%BD%8D%E7%BD%AE%E5%BC%95%E6%95%B8">¶</a></h1>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'x : </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'y : </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+
+<span class="n">my_function</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span> <span class="c1"># 位置引數的接收順序一一對照參數的順序傳給函數</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">my_function</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="c1"># 位置引數的數量與函式的參數數量不一致</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Function definition</span>
+<span class="k">def</span> <span class="nf">printinfo</span><span class="p">(</span><span class="n">dbname</span><span class="p">,</span> <span class="n">port</span><span class="p">):</span>  <span class="c1"># two parameters</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'DB Name:'</span><span class="p">,</span> <span class="n">dbname</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Port:'</span><span class="p">,</span> <span class="n">port</span><span class="p">)</span>
+
+<span class="c1"># Call function</span>
+<span class="n">printinfo</span><span class="p">(</span><span class="s1">'MSSQL'</span><span class="p">,</span> <span class="mi">1433</span><span class="p">)</span>   <span class="c1"># two required arguments</span>
+<span class="n">printinfo</span><span class="p">(</span><span class="mi">3306</span><span class="p">,</span> <span class="s1">'MySQL'</span><span class="p">)</span>   <span class="c1"># note that order of arguments</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -7540,10 +7591,90 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<details>
-<summary>What ChatGPT can do?</summary>
-<img alt="No description has been provided for this image" src="./img/chatgpt.png"/>
-</details>
+<hr/>
+<h1 id="P14-4-keyword-arguments">P14-4 keyword arguments<a class="anchor-link" href="#P14-4-keyword-arguments">¶</a></h1>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 關鍵字引數</span>
+<span class="c1"># Function definition</span>
+<span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'x : </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'y : </span><span class="si">{</span><span class="n">y</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+
+<span class="n">my_function</span><span class="p">(</span><span class="n">y</span> <span class="o">=</span> <span class="mi">6</span><span class="p">,</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span> <span class="c1"># key-word arguments ,可以不需依照順序傳引數，而是使用引數名稱(x、y)來傳遞引數值</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Function definition</span>
+<span class="k">def</span> <span class="nf">printinfo</span><span class="p">(</span><span class="n">dbname</span><span class="p">,</span> <span class="n">port</span><span class="p">):</span>  <span class="c1"># two parameters</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'DB Name:'</span><span class="p">,</span> <span class="n">dbname</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Port:'</span><span class="p">,</span> <span class="n">port</span><span class="p">)</span>
+
+<span class="c1"># Call function</span>
+<span class="n">printinfo</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="mi">1433</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">'MSSQL'</span><span class="p">)</span>  <span class="c1"># keyword args</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">printinfo</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'MSSQL'</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">1433</span><span class="p">)</span>  <span class="c1"># keyword args可以不需依照順序傳引數</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">printinfo</span><span class="p">(</span><span class="s1">'MySQL'</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">3306</span><span class="p">)</span>   <span class="c1"># 1 positional arguments, 1 kwarg</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">printinfo</span><span class="p">(</span><span class="s1">'MSSQL'</span><span class="p">,</span> <span class="mi">1433</span><span class="p">)</span>   <span class="c1"># 2 positional arguments</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -7554,10 +7685,35 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<details>
-<summary>Why should I hire a software engineer if I can just copy and paste code from Stack Overflow?</summary>
-<img alt="No description has been provided for this image" src="./img/idiom.jpg"/>
-</details>
+<h3 id="Look-built-in-function-document">Look built-in function document<a class="anchor-link" href="#Look-built-in-function-document">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span>print<span class="o">?</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'ABC'</span><span class="p">,</span><span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span> <span class="c1"># 'ABC'就是位置引數，end就是關鍵字引數 </span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -7568,10 +7724,497 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<details>
-<summary>After knowing basic knowledge, what ChatGPT can do?</summary>
-<img alt="No description has been provided for this image" src="./img/chatgpt2.png"/>
-</details>
+<hr/>
+<h1 id="P14-5-default-arguments">P14-5 default arguments<a class="anchor-link" href="#P14-5-default-arguments">¶</a></h1>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Function definition</span>
+<span class="k">def</span> <span class="nf">printinfo</span><span class="p">(</span><span class="n">tblname</span><span class="p">,</span> <span class="n">dbname</span><span class="o">=</span><span class="s1">'MySQL'</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">3306</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Table Name:'</span><span class="p">,</span> <span class="n">tblname</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'DB Name:'</span><span class="p">,</span> <span class="n">dbname</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Port:'</span><span class="p">,</span> <span class="n">port</span><span class="p">)</span>
+
+<span class="n">printinfo</span><span class="p">(</span><span class="s1">'person'</span><span class="p">)</span> <span class="c1"># 1 positional argument, two default arguments</span>
+<span class="n">printinfo</span><span class="p">(</span><span class="n">tblname</span><span class="o">=</span><span class="s1">'person'</span><span class="p">)</span> <span class="c1"># 1 keyword argument,  two default arguments</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">printinfo</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="mi">3330</span><span class="p">,</span> <span class="n">tblname</span><span class="o">=</span><span class="s1">'products'</span><span class="p">)</span> <span class="c1"># 2 keyword arguments, one of them has default value, but is covered by the new given value. the last one is default arguments</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">printinfo</span><span class="p">(</span><span class="s1">'person'</span><span class="p">,</span> <span class="s1">'MSSQL'</span><span class="p">,</span> <span class="mi">1433</span><span class="p">)</span> <span class="c1"># 3 positional arguments, two of them have default value, but they are covered by the new given value</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">printinfo</span><span class="p">(</span><span class="s1">'products'</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">3330</span><span class="p">)</span>  <span class="c1"># 1 positional, 1 keyword arguments. the last one is default arguments</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E5%B8%B6%E8%91%97%E9%A0%90%E8%A8%AD%E5%BC%95%E6%95%B8%E7%9A%84%E5%8F%83%E6%95%B8%E5%BF%85%E9%A0%88%E8%A8%AD%E7%BD%AE%E5%9C%A8%E4%B8%80%E8%88%AC%E5%87%BD%E6%95%B8%E5%8F%83%E6%95%B8%E5%BE%8C%E9%9D%A2">帶著預設引數的參數必須設置在一般函數參數後面<a class="anchor-link" href="#%E5%B8%B6%E8%91%97%E9%A0%90%E8%A8%AD%E5%BC%95%E6%95%B8%E7%9A%84%E5%8F%83%E6%95%B8%E5%BF%85%E9%A0%88%E8%A8%AD%E7%BD%AE%E5%9C%A8%E4%B8%80%E8%88%AC%E5%87%BD%E6%95%B8%E5%8F%83%E6%95%B8%E5%BE%8C%E9%9D%A2">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># non-default argument follows default argument</span>
+<span class="k">def</span> <span class="nf">printinfo</span><span class="p">(</span><span class="n">tblname</span><span class="o">=</span><span class="s2">"table1"</span><span class="p">,</span> <span class="n">dbname</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">3306</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Table Name:'</span><span class="p">,</span> <span class="n">tblname</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'DB Name:'</span><span class="p">,</span> <span class="n">dbname</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Port:'</span><span class="p">,</span> <span class="n">port</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Look-built-in-function-document">Look built-in function document<a class="anchor-link" href="#Look-built-in-function-document">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span>print<span class="o">?</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">'ABC'</span><span class="p">)</span> <span class="c1"># end 與 sep 都沒傳引數，使用預設值 =&gt; 預設引數</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
+<h1 id="P14-6-%E4%B8%8D%E5%9B%BA%E5%AE%9A%E9%95%B7%E5%BC%95%E6%95%B8">P14-6 不固定長引數<a class="anchor-link" href="#P14-6-%E4%B8%8D%E5%9B%BA%E5%AE%9A%E9%95%B7%E5%BC%95%E6%95%B8">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E5%9C%A8%E5%8F%83%E6%95%B8%E5%90%8D%E7%A8%B1%E5%89%8D%E9%9D%A2%E5%8A%A0%E4%B8%8A%E3%87%90%E5%80%8B%E6%98%9F%E8%99%9F(*)-%E4%BB%A3%E8%A1%A8%E5%AE%83%E5%8F%AF%E4%BB%A5%E6%8E%A5%E6%94%B6Arbitrary-argument">在參數名稱前面加上㇐個星號(*) 代表它可以接收Arbitrary argument<a class="anchor-link" href="#%E5%9C%A8%E5%8F%83%E6%95%B8%E5%90%8D%E7%A8%B1%E5%89%8D%E9%9D%A2%E5%8A%A0%E4%B8%8A%E3%87%90%E5%80%8B%E6%98%9F%E8%99%9F(*)-%E4%BB%A3%E8%A1%A8%E5%AE%83%E5%8F%AF%E4%BB%A5%E6%8E%A5%E6%94%B6Arbitrary-argument">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 在參數前面加上一個*，就可以接收複數個引數，且數量可以不固定</span>
+<span class="k">def</span> <span class="nf">person</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">age</span><span class="p">,</span><span class="o">*</span><span class="n">experience</span><span class="p">):</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Hi </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">, you are </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s1"> years old, you have work experience in </span><span class="si">{</span><span class="n">experience</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+
+<span class="n">person</span><span class="p">(</span><span class="s1">'Nick'</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="s1">'CompanyA'</span><span class="p">,</span> <span class="s1">'CompanyB'</span><span class="p">,</span> <span class="s1">'CompanyC'</span><span class="p">,</span> <span class="s1">'CompanyD'</span><span class="p">,</span><span class="s1">'CompanyE'</span><span class="p">)</span> <span class="c1"># 'Nick'、18 is  position argumnets, 'CompanyA', 'CompanyB', 'CompanyC', 'CompanyD' is arbitrary arguments </span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E5%9C%A8%E5%8F%83%E6%95%B8%E5%90%8D%E7%A8%B1%E5%89%8D%E9%9D%A2%E5%8A%A0%E4%B8%8A%E5%85%A9%E5%80%8B%E6%98%9F%E8%99%9F(**)-%E4%BB%A3%E8%A1%A8%E5%AE%83%E5%8F%AF%E4%BB%A5%E6%8E%A5%E6%94%B6Arbitrary-keyword-argument">在參數名稱前面加上兩個星號(**) 代表它可以接收Arbitrary keyword argument<a class="anchor-link" href="#%E5%9C%A8%E5%8F%83%E6%95%B8%E5%90%8D%E7%A8%B1%E5%89%8D%E9%9D%A2%E5%8A%A0%E4%B8%8A%E5%85%A9%E5%80%8B%E6%98%9F%E8%99%9F(**)-%E4%BB%A3%E8%A1%A8%E5%AE%83%E5%8F%AF%E4%BB%A5%E6%8E%A5%E6%94%B6Arbitrary-keyword-argument">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># 在參數前面加上兩個*，就可以接收複數個關鍵字引數，且數量可以不固定</span>
+<span class="k">def</span> <span class="nf">person</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">age</span><span class="p">,</span><span class="o">**</span><span class="n">experience</span><span class="p">):</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Hi </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">, you are </span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s1"> years old, you have work experience in </span><span class="si">{</span><span class="n">experience</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+
+<span class="n">person</span><span class="p">(</span><span class="s1">'Nick'</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="n">CompanyA</span><span class="o">=</span><span class="s2">"3 years"</span><span class="p">,</span> <span class="n">CompanyB</span><span class="o">=</span><span class="s2">"1 year"</span><span class="p">)</span> <span class="c1"># 'Nick'、18 is  position argumnets, CompanyA="3 years", CompanyB="1 year" is arbitrary keyword arguments </span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E5%8F%AF%E4%BB%A5%E6%8E%A5%E6%94%B6Arbitrary-argument-/-Arbitrary-keyword-argument-%E7%9A%84%E5%8F%83%E6%95%B8%E6%9C%80%E5%A5%BD%E6%94%BE%E5%9C%A8%E4%B8%80%E8%88%AC%E5%87%BD%E6%95%B8%E5%8F%83%E6%95%B8%E5%BE%8C%E9%9D%A2">可以接收Arbitrary argument / Arbitrary keyword argument 的參數最好放在一般函數參數後面<a class="anchor-link" href="#%E5%8F%AF%E4%BB%A5%E6%8E%A5%E6%94%B6Arbitrary-argument-/-Arbitrary-keyword-argument-%E7%9A%84%E5%8F%83%E6%95%B8%E6%9C%80%E5%A5%BD%E6%94%BE%E5%9C%A8%E4%B8%80%E8%88%AC%E5%87%BD%E6%95%B8%E5%8F%83%E6%95%B8%E5%BE%8C%E9%9D%A2">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="o">*</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">e</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"a=</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">, b=</span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">, c=</span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s2">, d=</span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s2">, e=</span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="n">func</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">d</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">func</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">d</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">e</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">func</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="n">d</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">func</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>  <span class="c1"># d只能接收kwarg，所以d無法接收到引數</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
+<h1 id="P14-7-%E5%B8%B8%E8%A6%8B%E7%9A%84%E9%8C%AF%E8%AA%A4%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">P14-7 常見的錯誤使用方法<a class="anchor-link" href="#P14-7-%E5%B8%B8%E8%A6%8B%E7%9A%84%E9%8C%AF%E8%AA%A4%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95">¶</a></h1>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># non-default argument after default argument</span>
+<span class="k">def</span> <span class="nf">printinfo</span><span class="p">(</span><span class="n">tblname</span><span class="o">=</span><span class="s2">"table1"</span><span class="p">,</span> <span class="n">dbname</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">3306</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Table Name:'</span><span class="p">,</span> <span class="n">tblname</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'DB Name:'</span><span class="p">,</span> <span class="n">dbname</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Port:'</span><span class="p">,</span> <span class="n">port</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># required argument missing</span>
+<span class="k">def</span> <span class="nf">printinfo</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">35</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Name:'</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Age'</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span>
+
+<span class="n">printinfo</span><span class="p">()</span>  <span class="c1"># lack of required arg</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># positional after keyword argument</span>
+<span class="k">def</span> <span class="nf">printinfo</span><span class="p">(</span><span class="n">tblname</span><span class="p">,</span> <span class="n">dbname</span><span class="o">=</span><span class="s1">'MySQL'</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">3306</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Table Name:'</span><span class="p">,</span> <span class="n">tblname</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'DB Name:'</span><span class="p">,</span> <span class="n">dbname</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Port:'</span><span class="p">,</span> <span class="n">port</span><span class="p">)</span>
+    
+<span class="n">printinfo</span><span class="p">(</span><span class="n">port</span><span class="o">=</span><span class="mi">8888</span><span class="p">,</span> <span class="s1">'person'</span><span class="p">)</span>  <span class="c1"># keyword argument has to be after required argument</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># duplicate arguments  2 tblname</span>
+<span class="k">def</span> <span class="nf">printinfo</span><span class="p">(</span><span class="n">tblname</span><span class="p">,</span> <span class="n">dbname</span><span class="o">=</span><span class="s1">'MySQL'</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="mi">3306</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Table Name:'</span><span class="p">,</span> <span class="n">tblname</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'DB Name:'</span><span class="p">,</span> <span class="n">dbname</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'Port:'</span><span class="p">,</span> <span class="n">port</span><span class="p">)</span>
+    
+<span class="n">printinfo</span><span class="p">(</span><span class="s1">'person'</span><span class="p">,</span> <span class="n">tblname</span><span class="o">=</span><span class="s1">'products'</span><span class="p">)</span>     
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># duplicate arguments  2 b</span>
+<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="o">*</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">e</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"a=</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">, b=</span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">, c=</span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s2">, d=</span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s2">, e=</span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="n">func</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">e</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span><span class="n">d</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="c1"># func(1,b=9,2,3,4,5,6,d=10)</span>
+<span class="c1"># func(8,7,6,5,4,8)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># positional after keyword argument</span>
+<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="o">*</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">e</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"a=</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">, b=</span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">, c=</span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s2">, d=</span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s2">, e=</span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="n">func</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="n">d</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="c1"># func(8,7,6,5,4,8)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># required argument missing</span>
+<span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span><span class="o">*</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">e</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"a=</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">, b=</span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">, c=</span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s2">, d=</span><span class="si">{</span><span class="n">d</span><span class="si">}</span><span class="s2">, e=</span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="n">func</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
+<h1 id="%E2%99%A0-%E8%A3%9C%E5%85%85">♠ 補充<a class="anchor-link" href="#%E2%99%A0-%E8%A3%9C%E5%85%85">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="P6-2">P6-2<a class="anchor-link" href="#P6-2">¶</a></h3><blockquote>
+<h3 id="print(*objects,-end='%5Cn')">print(*objects, end='\n')<a class="anchor-link" href="#print(*objects,-end='%5Cn')">¶</a></h3><h3 id="P6-6">P6-6<a class="anchor-link" href="#P6-6">¶</a></h3><h3 id="str.format(*args,-***kwargs)">str.format(*args, ***kwargs)<a class="anchor-link" href="#str.format(*args,-***kwargs)">¶</a></h3><h3 id="P11-7">P11-7<a class="anchor-link" href="#P11-7">¶</a></h3><h3>dict1 = dict(one=1, two=2, three=3) <font color="red"># arbitrary keyword arguments</font></h3>
+<h3 id="P12-6">P12-6<a class="anchor-link" href="#P12-6">¶</a></h3><h3>s.update(*others) <font color="red"># arbitrary arguments</font></h3>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E5%87%BD%E5%BC%8F%E5%8F%83%E6%95%B8%E8%A8%AD%E5%AE%9A%E9%A0%86%E5%BA%8F:">函式參數設定順序:<a class="anchor-link" href="#%E5%87%BD%E5%BC%8F%E5%8F%83%E6%95%B8%E8%A8%AD%E5%AE%9A%E9%A0%86%E5%BA%8F:">¶</a></h3><pre><code>
+def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
+      -----------    ----------     ----------
+        |             |                  |
+        |        Positional or keyword   |
+        |                                - Keyword only
+         -- Positional only
+</code></pre>
+<h4 id="%E5%87%BD%E5%BC%8F%E5%8F%83%E6%95%B8%E8%A8%AD%E5%AE%9A%E9%A0%86%E5%BA%8F%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85:">函式參數設定順序注意事項:<a class="anchor-link" href="#%E5%87%BD%E5%BC%8F%E5%8F%83%E6%95%B8%E8%A8%AD%E5%AE%9A%E9%A0%86%E5%BA%8F%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85:">¶</a></h4><blockquote>
+<ul>
+<li>擁有預設引數的參數必須要定義在一般參數之後</li>
+</ul>
+<blockquote>
+<ul>
+<li>這裡是指在以/ 、* 為界線，在這個界線內的參數必須符合這個條件:
+擁有預設引數的參數必須要定義在一般位置參數之後</li>
+</ul>
+</blockquote>
+<ul>
+<li><code>/</code>Positional-only parameters前面只能擺擁有預設引數的參數、一般參數</li>
+<li>定義參數時，<code>*</code>(Keyword-Only Arguments)  與 <code>*args</code>(Arbitrary Argument Lists) 只能存在其中一個</li>
+<li><code>*args</code>(Arbitrary Argument Lists)後面的參數只能接收關鍵字引數(Keyword-Only Arguments)</li>
+<li><code>**kwargs</code>必須定義在<code>*arg</code>之後 (<code>*</code>name must occur before <code>**</code>name)</li>
+</ul>
+</blockquote>
+<hr/>
+<h3 id="%E5%BC%95%E6%95%B8%E8%A8%AD%E5%AE%9A%E9%A0%86%E5%BA%8F%E2%87%92%E4%BD%8D%E7%BD%AE%E5%BC%95%E6%95%B8%E2%86%92%E9%97%9C%E9%8D%B5%E5%AD%97%E5%BC%95%E6%95%B8">引數設定順序⇒位置引數→關鍵字引數<a class="anchor-link" href="#%E5%BC%95%E6%95%B8%E8%A8%AD%E5%AE%9A%E9%A0%86%E5%BA%8F%E2%87%92%E4%BD%8D%E7%BD%AE%E5%BC%95%E6%95%B8%E2%86%92%E9%97%9C%E9%8D%B5%E5%AD%97%E5%BC%95%E6%95%B8">¶</a></h3><blockquote>
+<h3 id="func(a,b,d=500,c=600)"><code>func(a,b,d=500,c=600)</code><a class="anchor-link" href="#func(a,b,d=500,c=600)">¶</a></h3></blockquote>
+<p>ref :</p>
+<ul>
+<li><a href="https://docs.python.org/3.12/tutorial/controlflow.html#special-parameters">https://docs.python.org/3.12/tutorial/controlflow.html#special-parameters</a></li>
+<li><a href="https://docs.python.org/3.12/tutorial/controlflow.html#recap">https://docs.python.org/3.12/tutorial/controlflow.html#recap</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Arguments-unpacking">Arguments unpacking<a class="anchor-link" href="#Arguments-unpacking">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># unpack string to be arbitrary arguments</span>
+<span class="s1">'</span><span class="si">{2}</span><span class="s1">, </span><span class="si">{0}</span><span class="s1">, </span><span class="si">{1}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">*</span><span class="s1">'abc'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># unpack dict to be arbitrary keyword arguments</span>
+<span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'name'</span><span class="p">:</span> <span class="s1">'III'</span><span class="p">,</span> <span class="s1">'est'</span><span class="p">:</span> <span class="mi">40</span><span class="p">}</span> 
+<span class="s1">'The name is </span><span class="si">{name}</span><span class="s1">, aged </span><span class="si">{est}</span><span class="s1">.'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="o">**</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
