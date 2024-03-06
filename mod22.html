@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>mod13</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>mod22</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7516,7 +7516,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1><font color="red"> Module_13_function</font></h1>
+<h1><font color="red"> Module_22_Iterator &amp; Generator</font></h1>
 </div>
 </div>
 </div>
@@ -7527,12 +7527,10 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="P13-2">P13-2<a class="anchor-link" href="#P13-2">¶</a></h1><h2 id="%E4%BD%BF%E7%94%A8%E5%87%BD%E6%95%B8/%E5%87%BD%E5%BC%8F%E7%9A%84%E5%A5%BD%E8%99%95-:">使用函數/函式的好處 :<a class="anchor-link" href="#%E4%BD%BF%E7%94%A8%E5%87%BD%E6%95%B8/%E5%87%BD%E5%BC%8F%E7%9A%84%E5%A5%BD%E8%99%95-:">¶</a></h2><blockquote>
-<h3 id="%E7%A8%8B%E5%BC%8F%E7%A2%BC%E9%87%8D%E8%A4%87%E4%BD%BF%E7%94%A8">程式碼重複使用<a class="anchor-link" href="#%E7%A8%8B%E5%BC%8F%E7%A2%BC%E9%87%8D%E8%A4%87%E4%BD%BF%E7%94%A8">¶</a></h3><h3 id="%E5%8A%9F%E8%83%BD%E5%88%87%E5%89%B2%EF%BC%8C%E6%A8%A1%E7%B5%84%E5%8C%96%EF%BC%8C%E7%B5%90%E6%A7%8B%E5%8C%96">功能切割，模組化，結構化<a class="anchor-link" href="#%E5%8A%9F%E8%83%BD%E5%88%87%E5%89%B2%EF%BC%8C%E6%A8%A1%E7%B5%84%E5%8C%96%EF%BC%8C%E7%B5%90%E6%A7%8B%E5%8C%96">¶</a></h3><h3 id="%E7%B0%A1%E5%8C%96%E7%A8%8B%E5%BC%8F%E6%8F%90%E9%AB%98%E7%A8%8B%E5%BC%8F%E7%9A%84%E5%8F%AF%E8%AE%80%E6%80%A7">簡化程式提高程式的可讀性<a class="anchor-link" href="#%E7%B0%A1%E5%8C%96%E7%A8%8B%E5%BC%8F%E6%8F%90%E9%AB%98%E7%A8%8B%E5%BC%8F%E7%9A%84%E5%8F%AF%E8%AE%80%E6%80%A7">¶</a></h3><h3 id="%E6%98%93%E6%96%BC%E7%B6%AD%E8%AD%B7%E5%8F%8A%E7%AE%A1%E7%90%86">易於維護及管理<a class="anchor-link" href="#%E6%98%93%E6%96%BC%E7%B6%AD%E8%AD%B7%E5%8F%8A%E7%AE%A1%E7%90%86">¶</a></h3><h2 id="%E4%B9%8B%E5%89%8D%E7%9A%84%E7%AB%A0%E7%AF%80%E6%8F%90%E5%88%B0%E5%90%84%E7%A8%AE%E5%85%A7%E5%BB%BA%E7%9A%84Function%E8%88%87%E4%B8%8D%E5%90%8C%E8%B3%87%E6%96%99%E5%9E%8B%E5%88%A5%E7%9A%84Method%EF%BC%8C%E6%9C%89%E6%99%82%E6%9C%83%E6%8A%8AFunction%E8%88%87Method%E5%85%A9%E5%80%8B%E8%A9%9E%E6%B7%B7%E7%94%A8">之前的章節提到各種內建的Function與不同資料型別的Method，有時會把Function與Method兩個詞混用<a class="anchor-link" href="#%E4%B9%8B%E5%89%8D%E7%9A%84%E7%AB%A0%E7%AF%80%E6%8F%90%E5%88%B0%E5%90%84%E7%A8%AE%E5%85%A7%E5%BB%BA%E7%9A%84Function%E8%88%87%E4%B8%8D%E5%90%8C%E8%B3%87%E6%96%99%E5%9E%8B%E5%88%A5%E7%9A%84Method%EF%BC%8C%E6%9C%89%E6%99%82%E6%9C%83%E6%8A%8AFunction%E8%88%87Method%E5%85%A9%E5%80%8B%E8%A9%9E%E6%B7%B7%E7%94%A8">¶</a></h2><details>
-<summary style="margin-left: 2em;">illustrator</summary>
-<img alt="No description has been provided for this image" src="./img/method_func.png" style="height:300px"/>
+<h1 id="P22-3">P22-3<a class="anchor-link" href="#P22-3">¶</a></h1><details>
+<summary style="font-size: 1.25em;">iterable &amp; iterator &amp; generator 的關係</summary>
+<img alt="No description has been provided for this image" src="./img/Iterables_iterator_generator.jpg"/>
 </details>
-</blockquote>
 </div>
 </div>
 </div>
@@ -7544,9 +7542,12 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">S</span><span class="o">=</span><span class="s1">'hello'</span>
-<span class="n">S</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
-<span class="nb">len</span><span class="p">(</span><span class="n">S</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Iterable</span><span class="p">,</span> <span class="n">Iterator</span>
+
+<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Is numbers a instance of Iterable:</span><span class="si">{</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">numbers</span><span class="p">,</span><span class="w"> </span><span class="n">Iterable</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>  <span class="c1"># list is an iterable</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Is numbers a inatance of Iterator:</span><span class="si">{</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">numbers</span><span class="p">,</span><span class="w"> </span><span class="n">Iterator</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>  <span class="c1"># list is not a iterator</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">dir</span><span class="p">(</span><span class="n">numbers</span><span class="p">))</span>  <span class="c1"># __iter__ but lack of __next__</span>
 </pre></div>
 </div>
 </div>
@@ -7560,7 +7561,22 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h1 id="P13-4">P13-4<a class="anchor-link" href="#P13-4">¶</a></h1><img alt="No description has been provided for this image" src="./img/main_func2.png" style="height:400px"/>
+<h1 id="P22-4">P22-4<a class="anchor-link" href="#P22-4">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li><h3 id="%E5%85%A7%E5%BB%BA%E5%87%BD%E6%95%B8iter()%E5%BB%BA%E7%AB%8BIterator">內建函數<code>iter()</code>建立Iterator<a class="anchor-link" href="#%E5%85%A7%E5%BB%BA%E5%87%BD%E6%95%B8iter()%E5%BB%BA%E7%AB%8BIterator">¶</a></h3></li>
+<li><h3 id="%E5%B1%AC%E6%96%BCiterator%E7%9A%84%E7%89%A9%E4%BB%B6%E6%9C%83%E5%8C%85%E5%90%AB__iter__()-%E8%88%87-__next__()">屬於iterator的物件會包含<code>__iter__()</code> 與 <code>__next__()</code><a class="anchor-link" href="#%E5%B1%AC%E6%96%BCiterator%E7%9A%84%E7%89%A9%E4%BB%B6%E6%9C%83%E5%8C%85%E5%90%AB__iter__()-%E8%88%87-__next__()">¶</a></h3></li>
+<li><h3 id="Iterator-%E8%A3%A1%E7%9A%84%E5%85%83%E7%B4%A0%E7%94%A8%E5%AE%8C%E4%B9%8B%E5%BE%8C%E6%9C%83%E7%99%BC%E5%87%BAStopIteration">Iterator 裡的元素用完之後會發出<code>StopIteration</code><a class="anchor-link" href="#Iterator-%E8%A3%A1%E7%9A%84%E5%85%83%E7%B4%A0%E7%94%A8%E5%AE%8C%E4%B9%8B%E5%BE%8C%E6%9C%83%E7%99%BC%E5%87%BAStopIteration">¶</a></h3></li>
+</ul>
 </div>
 </div>
 </div>
@@ -7572,15 +7588,53 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Function definition</span>
-<span class="k">def</span> <span class="nf">make_a_sound</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'Hello'</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Iterable</span><span class="p">,</span> <span class="n">Iterator</span>
 
-<span class="c1"># main function    </span>
-<span class="n">make_a_sound</span><span class="p">()</span> <span class="c1"># Call function, caller</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'-'</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>  <span class="c1"># Call function for 3 times</span>
-    <span class="n">make_a_sound</span><span class="p">()</span>
+<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">numbers_iterator</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>  <span class="c1"># Create an iterator</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers_iterator</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Is numbers_iterator a instance of Iterable:</span><span class="si">{</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">numbers_iterator</span><span class="p">,</span><span class="w"> </span><span class="n">Iterable</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Is numbers_iterator a inatance of Iterator:</span><span class="si">{</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">numbers_iterator</span><span class="p">,</span><span class="w"> </span><span class="n">Iterator</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">dir</span><span class="p">(</span><span class="n">numbers_iterator</span><span class="p">))</span>  <span class="c1"># __iter__ &amp; __next__</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">numbers_iterator</span><span class="p">))</span>  <span class="c1"># Print elements one by one</span>
+<span class="k">except</span> <span class="ne">StopIteration</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"numbers_iterator raise StopItreration"</span><span class="p">)</span>  <span class="c1"># Handle end of iteration</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E5%8F%AF%E4%BB%A5%E9%80%8F%E9%81%8Enext()%E6%88%96%E6%98%AFfor-loop%E4%BE%86%E5%B0%8DIterator%E5%8F%96%E5%80%BC">可以透過<code>next()</code>或是for-loop來對Iterator取值<a class="anchor-link" href="#%E5%8F%AF%E4%BB%A5%E9%80%8F%E9%81%8Enext()%E6%88%96%E6%98%AFfor-loop%E4%BE%86%E5%B0%8DIterator%E5%8F%96%E5%80%BC">¶</a></h3><ul>
+<li><h4 id="%E9%80%8F%E9%81%8Enext()%E5%B0%8DIterator%E5%8F%96%E5%80%BC%EF%BC%8C%E5%8F%AF%E4%BB%A5%E8%87%AA%E8%A1%8C%E9%81%B8%E6%93%87%E8%A6%81%E5%BE%9EIterator%E5%8F%96%E5%A4%9A%E5%B0%91%E5%80%BC">透過<code>next()</code>對Iterator取值，可以自行選擇要從Iterator取多少值<a class="anchor-link" href="#%E9%80%8F%E9%81%8Enext()%E5%B0%8DIterator%E5%8F%96%E5%80%BC%EF%BC%8C%E5%8F%AF%E4%BB%A5%E8%87%AA%E8%A1%8C%E9%81%B8%E6%93%87%E8%A6%81%E5%BE%9EIterator%E5%8F%96%E5%A4%9A%E5%B0%91%E5%80%BC">¶</a></h4></li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">numbers_iterator</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>  <span class="c1"># Create an iterator</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">numbers_iterator</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">numbers_iterator</span><span class="p">))</span>    <span class="c1"># 透過next()對Iterator取值，可以自行選擇要從Iterator取多少值</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"---------------------In for loop---------------------"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">numbers_iterator</span> <span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7594,7 +7648,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h1 id="P13-5">P13-5<a class="anchor-link" href="#P13-5">¶</a></h1>
+<h1 id="P22-5">P22-5<a class="anchor-link" href="#P22-5">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7605,7 +7659,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E5%A6%82%E6%9E%9C%E5%87%BD%E6%95%B8%E5%85%A7%E6%B2%92%E6%9C%89%E6%98%8E%E7%A2%BA%E7%9A%84%E4%BD%BF%E7%94%A8-return-%E6%95%98%E8%BF%B0%EF%BC%8C%E9%A0%90%E8%A8%AD%E7%82%BA-%E2%80%9Creturn-None%E2%80%9D">如果函數內沒有明確的使用 return 敘述，預設為 “return None”<a class="anchor-link" href="#%E5%A6%82%E6%9E%9C%E5%87%BD%E6%95%B8%E5%85%A7%E6%B2%92%E6%9C%89%E6%98%8E%E7%A2%BA%E7%9A%84%E4%BD%BF%E7%94%A8-return-%E6%95%98%E8%BF%B0%EF%BC%8C%E9%A0%90%E8%A8%AD%E7%82%BA-%E2%80%9Creturn-None%E2%80%9D">¶</a></h3>
+<h3 id="Lazy-evaluation">Lazy evaluation<a class="anchor-link" href="#Lazy-evaluation">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7617,92 +7671,10 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sum_num</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span><span class="n">num2</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"In funcion:"</span><span class="p">,</span><span class="n">num1</span><span class="o">+</span><span class="n">num2</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">'output of sum_num(5,6) :'</span><span class="p">,</span> <span class="n">sum_num</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E6%AF%94%E8%BC%83%E4%BD%BF%E7%94%A8return-%E8%88%87%E6%B2%92%E6%9C%89-return%E7%9A%84%E5%B7%AE%E5%88%A5">比較使用return 與沒有 return的差別<a class="anchor-link" href="#%E6%AF%94%E8%BC%83%E4%BD%BF%E7%94%A8return-%E8%88%87%E6%B2%92%E6%9C%89-return%E7%9A%84%E5%B7%AE%E5%88%A5">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sum_num_ret</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"In funcion:"</span><span class="p">,</span><span class="n">num1</span><span class="o">+</span><span class="n">num2</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">num1</span><span class="o">+</span><span class="n">num2</span>
-
-<span class="c1"># main function</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'output of sum_num(5,6) :'</span><span class="p">,</span> <span class="n">sum_num_ret</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sum_num_ret</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"In funcion:"</span><span class="p">,</span><span class="n">num1</span><span class="o">+</span><span class="n">num2</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">num1</span><span class="o">+</span><span class="n">num2</span>
-
-<span class="c1"># main function</span>
-<span class="n">sum_num_ret</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">sum_num_ret</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span><span class="s1">'abc'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])))</span>
 </pre></div>
 </div>
 </div>
@@ -7715,7 +7687,10 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E5%85%83%E7%B5%84(tuple)-%E6%A0%BC%E5%BC%8F%E5%82%B3%E5%9B%9E%E5%A4%9A%E5%80%8B%E8%B3%87%E6%96%99">可以使用元組(tuple) 格式傳回多個資料<a class="anchor-link" href="#%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E5%85%83%E7%B5%84(tuple)-%E6%A0%BC%E5%BC%8F%E5%82%B3%E5%9B%9E%E5%A4%9A%E5%80%8B%E8%B3%87%E6%96%99">¶</a></h3>
+<h3 id="%E5%BB%BA%E7%AB%8Bgenerator%E7%9A%84%E6%96%B9%E5%BC%8F">建立generator的方式<a class="anchor-link" href="#%E5%BB%BA%E7%AB%8Bgenerator%E7%9A%84%E6%96%B9%E5%BC%8F">¶</a></h3><ul>
+<li><h4 id="(x-for-x-in-%5B1,2,3%5D)"><code>(x for x in [1,2,3])</code><a class="anchor-link" href="#(x-for-x-in-%5B1,2,3%5D)">¶</a></h4></li>
+<li><h4 id="yield"><code>yield</code><a class="anchor-link" href="#yield">¶</a></h4></li>
+</ul>
 </div>
 </div>
 </div>
@@ -7727,13 +7702,35 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sum_num2</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span><span class="n">num2</span><span class="p">):</span>
-    <span class="n">sum_num</span> <span class="o">=</span> <span class="n">num1</span><span class="o">+</span><span class="n">num2</span>
-    <span class="n">multi_num</span> <span class="o">=</span> <span class="n">num1</span><span class="o">*</span><span class="n">num2</span>
-    <span class="k">return</span> <span class="n">sum_num</span><span class="p">,</span> <span class="n">multi_num</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>          <span class="c1"># lazy evaluation</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>    <span class="c1"># generator</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">my_generator</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]:</span>
+        <span class="k">yield</span> <span class="n">i</span>
 
-<span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="n">sum_num2</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">my_generator</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>          <span class="c1"># lazy evaluation</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>    <span class="c1"># generator</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -7746,7 +7743,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E4%BD%BF%E7%94%A8help()-%E6%88%96%E8%80%85-?(Jupyter-notebook%E7%9A%84%E5%8A%9F%E8%83%BD)-%E5%B0%8B%E6%89%BE%E5%87%BD%E5%BC%8F%E7%9A%84%E8%AA%AA%E6%98%8E(document-string)">使用help() 或者 ?(Jupyter notebook的功能) 尋找函式的說明(document string)<a class="anchor-link" href="#%E4%BD%BF%E7%94%A8help()-%E6%88%96%E8%80%85-?(Jupyter-notebook%E7%9A%84%E5%8A%9F%E8%83%BD)-%E5%B0%8B%E6%89%BE%E5%87%BD%E5%BC%8F%E7%9A%84%E8%AA%AA%E6%98%8E(document-string)">¶</a></h3>
+<h3 id="yield%E5%8F%AF%E4%BB%A5%E7%94%A8%E4%BE%86%E6%9A%AB%E5%81%9C%E5%92%8C%E6%81%A2%E5%BE%A9%E8%BF%AD%E4%BB%A3"><code>yield</code>可以用來暫停和恢復迭代<a class="anchor-link" href="#yield%E5%8F%AF%E4%BB%A5%E7%94%A8%E4%BE%86%E6%9A%AB%E5%81%9C%E5%92%8C%E6%81%A2%E5%BE%A9%E8%BF%AD%E4%BB%A3">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7758,51 +7755,18 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">func1</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">"""print python world"""</span> <span class="c1"># document string</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'python world'</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">func1</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span>func1<span class="o">?</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span>print<span class="o">?</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">my_generator</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'before'</span><span class="p">)</span>
+    <span class="k">yield</span> <span class="mi">10</span>            <span class="c1"># break 1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'middle'</span><span class="p">)</span>
+    <span class="k">yield</span> <span class="mi">20</span>            <span class="c1"># break 2</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">'after'</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">my_generator</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>  <span class="c1"># =&gt; before</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>  <span class="c1"># =&gt; middle</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>  <span class="c1"># =&gt; after</span>
+<span class="c1"># exception StopIteration</span>
 </pre></div>
 </div>
 </div>
@@ -7815,7 +7779,13 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E7%BF%92%E6%85%A3%E4%B8%8A%EF%BC%8C%E5%A6%82%E6%9E%9C%E8%BF%B4%E5%9C%88%E4%B8%8A%E7%9A%84%E8%AE%8A%E6%95%B8%E6%B2%92%E6%9C%89%E4%BD%BF%E7%94%A8%E5%88%B0%EF%BC%8C%E5%8F%AF%E4%BD%BF%E7%94%A8%E5%BA%95%E7%B7%9A-_-%E4%BB%A3%E6%9B%BF%EF%BC%8C%E8%A1%A8%E7%A4%BA%E6%B2%92%E6%9C%89%E4%BD%BF%E7%94%A8%E5%88%B0%E9%80%99%E5%80%8B%E8%AE%8A%E6%95%B8%E3%80%82">習慣上，如果迴圈上的變數沒有使用到，可使用底線 _ 代替，表示沒有使用到這個變數。<a class="anchor-link" href="#%E7%BF%92%E6%85%A3%E4%B8%8A%EF%BC%8C%E5%A6%82%E6%9E%9C%E8%BF%B4%E5%9C%88%E4%B8%8A%E7%9A%84%E8%AE%8A%E6%95%B8%E6%B2%92%E6%9C%89%E4%BD%BF%E7%94%A8%E5%88%B0%EF%BC%8C%E5%8F%AF%E4%BD%BF%E7%94%A8%E5%BA%95%E7%B7%9A-_-%E4%BB%A3%E6%9B%BF%EF%BC%8C%E8%A1%A8%E7%A4%BA%E6%B2%92%E6%9C%89%E4%BD%BF%E7%94%A8%E5%88%B0%E9%80%99%E5%80%8B%E8%AE%8A%E6%95%B8%E3%80%82">¶</a></h3>
+<h3 id="%E8%87%AA%E8%A8%82%E8%BF%AD%E4%BB%A3%E7%9A%84%E9%82%8F%E8%BC%AF">自訂迭代的邏輯<a class="anchor-link" href="#%E8%87%AA%E8%A8%82%E8%BF%AD%E4%BB%A3%E7%9A%84%E9%82%8F%E8%BC%AF">¶</a></h3><ul>
+<li><h4 id="yield%E5%8F%AF%E4%BB%A5%E7%94%A8%E4%BE%86%E6%9A%AB%E5%81%9C%E5%92%8C%E6%81%A2%E5%BE%A9%E8%BF%AD%E4%BB%A3%EF%BC%8C%E5%8F%AF%E4%BB%A5%E9%80%8F%E9%81%8E%E9%80%99%E5%80%8B%E7%89%B9%E6%80%A7%E4%BE%86%E8%87%AA%E8%A8%82%E8%BF%AD%E4%BB%A3%E9%82%8F%E8%BC%AF%EF%BC%8C%E4%BE%8B%E5%A6%82%EF%BC%9A"><code>yield</code>可以用來暫停和恢復迭代，可以透過這個特性來自訂迭代邏輯，例如：<a class="anchor-link" href="#yield%E5%8F%AF%E4%BB%A5%E7%94%A8%E4%BE%86%E6%9A%AB%E5%81%9C%E5%92%8C%E6%81%A2%E5%BE%A9%E8%BF%AD%E4%BB%A3%EF%BC%8C%E5%8F%AF%E4%BB%A5%E9%80%8F%E9%81%8E%E9%80%99%E5%80%8B%E7%89%B9%E6%80%A7%E4%BE%86%E8%87%AA%E8%A8%82%E8%BF%AD%E4%BB%A3%E9%82%8F%E8%BC%AF%EF%BC%8C%E4%BE%8B%E5%A6%82%EF%BC%9A">¶</a></h4><ul>
+<li><h5 id="Iterator%E5%8F%AA%E8%83%BD%E4%BD%BF%E7%94%A8%E4%B8%80%E6%AC%A1%EF%BC%8C%E7%95%B6%E8%A3%A1%E9%9D%A2%E7%9A%84%E5%85%83%E7%B4%A0%E9%83%BD%E7%94%A8%E5%AE%8C%E4%B9%8B%E5%BE%8C%E5%B0%B1%E4%B8%8D%E8%83%BD%E5%9C%A8%E7%94%A8%E4%BA%86%E3%80%82">Iterator只能使用一次，當裡面的元素都用完之後就不能在用了。<a class="anchor-link" href="#Iterator%E5%8F%AA%E8%83%BD%E4%BD%BF%E7%94%A8%E4%B8%80%E6%AC%A1%EF%BC%8C%E7%95%B6%E8%A3%A1%E9%9D%A2%E7%9A%84%E5%85%83%E7%B4%A0%E9%83%BD%E7%94%A8%E5%AE%8C%E4%B9%8B%E5%BE%8C%E5%B0%B1%E4%B8%8D%E8%83%BD%E5%9C%A8%E7%94%A8%E4%BA%86%E3%80%82">¶</a></h5></li>
+<li><h5 id="%E5%8F%AF%E4%BB%A5%E9%80%8F%E9%81%8Eyield%E8%87%AA%E8%A8%82generator%E8%88%87%E8%BF%AD%E4%BB%A3%E9%82%8F%E8%BC%AF%E4%BE%86%E9%81%94%E5%88%B0%EF%BC%9A%E5%9C%A8%E4%BD%BF%E7%94%A8for-loop%E5%8F%96%E5%80%BC%E6%99%82%E5%8F%AF%E4%BB%A5%E5%BE%97%E5%88%B0%E8%B7%9FIterator%E4%B8%80%E6%A8%A3%E7%B5%90%E6%9E%9C%EF%BC%8C%E4%BD%86%E6%98%AF%E5%8F%88%E8%A6%81%E4%BB%A4%E5%AE%83%E5%8F%AF%E4%BB%A5%E9%87%8D%E8%A4%87%E8%A2%AB%E4%BD%BF%E7%94%A8">可以透過<code>yield</code>自訂generator與迭代邏輯來達到：在使用for loop取值時可以得到跟Iterator一樣結果，但是又要令它可以重複被使用<a class="anchor-link" href="#%E5%8F%AF%E4%BB%A5%E9%80%8F%E9%81%8Eyield%E8%87%AA%E8%A8%82generator%E8%88%87%E8%BF%AD%E4%BB%A3%E9%82%8F%E8%BC%AF%E4%BE%86%E9%81%94%E5%88%B0%EF%BC%9A%E5%9C%A8%E4%BD%BF%E7%94%A8for-loop%E5%8F%96%E5%80%BC%E6%99%82%E5%8F%AF%E4%BB%A5%E5%BE%97%E5%88%B0%E8%B7%9FIterator%E4%B8%80%E6%A8%A3%E7%B5%90%E6%9E%9C%EF%BC%8C%E4%BD%86%E6%98%AF%E5%8F%88%E8%A6%81%E4%BB%A4%E5%AE%83%E5%8F%AF%E4%BB%A5%E9%87%8D%E8%A4%87%E8%A2%AB%E4%BD%BF%E7%94%A8">¶</a></h5></li>
+</ul>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -7827,183 +7797,28 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>  <span class="c1">#因為 i 沒用到</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'good'</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<hr/>
-<h1 id="P13-6">P13-6<a class="anchor-link" href="#P13-6">¶</a></h1><h2 id="Python%E8%AA%9E%E8%A8%80%E6%9C%89%E5%85%A9%E7%A8%AE%E8%AE%8A%E6%95%B8%E7%9A%84%E5%8F%AF%E8%A6%8B%E5%BA%A6">Python語言有兩種變數的可見度<a class="anchor-link" href="#Python%E8%AA%9E%E8%A8%80%E6%9C%89%E5%85%A9%E7%A8%AE%E8%AE%8A%E6%95%B8%E7%9A%84%E5%8F%AF%E8%A6%8B%E5%BA%A6">¶</a></h2><h3 id="--%E5%9C%A8%E5%87%BD%E6%95%B8%E5%85%A7%E7%9A%84%E8%AE%8A%E6%95%B8%E7%A8%B1%E7%82%BA%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8">- 在函數內的變數稱為區域變數<a class="anchor-link" href="#--%E5%9C%A8%E5%87%BD%E6%95%B8%E5%85%A7%E7%9A%84%E8%AE%8A%E6%95%B8%E7%A8%B1%E7%82%BA%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8">¶</a></h3><h3 id="--%E5%9C%A8%E5%87%BD%E6%95%B8%E4%B9%8B%E5%A4%96%E7%9A%84%E8%AE%8A%E6%95%B8%E7%A8%B1%E7%82%BA%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8">- 在函數之外的變數稱為全域變數<a class="anchor-link" href="#--%E5%9C%A8%E5%87%BD%E6%95%B8%E4%B9%8B%E5%A4%96%E7%9A%84%E8%AE%8A%E6%95%B8%E7%A8%B1%E7%82%BA%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8">¶</a></h3><blockquote>
-<h3 id="(1)-%E6%9C%80%E5%A4%96%E9%9D%A2%E7%9A%84%E7%AF%84%E7%96%87%E5%8D%B3%E5%85%A8%E5%9F%9F%E7%AF%84%E7%96%87%EF%BC%8C%E8%AD%98%E5%88%A5%E5%AD%97%E6%9C%89-foo%E3%80%82">(1) 最外面的範疇即<font color="red">全域範疇</font>，識別字有 foo。<a class="anchor-link" href="#(1)-%E6%9C%80%E5%A4%96%E9%9D%A2%E7%9A%84%E7%AF%84%E7%96%87%E5%8D%B3%E5%85%A8%E5%9F%9F%E7%AF%84%E7%96%87%EF%BC%8C%E8%AD%98%E5%88%A5%E5%AD%97%E6%9C%89-foo%E3%80%82">¶</a></h3><h3 id="(2)-%E4%B8%AD%E9%96%93%E7%9A%84%E7%AF%84%E7%96%87%E6%98%AF%E5%9C%A8-foo-%E8%A3%A1%E9%9D%A2%EF%BC%8C%E8%AD%98%E5%88%A5%E5%AD%97%E6%9C%89-a%E3%80%81b%E3%80%81bar%E3%80%81foo%E3%80%82">(2) 中間的範疇是在 foo 裡面，識別字有 a、b、bar、foo。<a class="anchor-link" href="#(2)-%E4%B8%AD%E9%96%93%E7%9A%84%E7%AF%84%E7%96%87%E6%98%AF%E5%9C%A8-foo-%E8%A3%A1%E9%9D%A2%EF%BC%8C%E8%AD%98%E5%88%A5%E5%AD%97%E6%9C%89-a%E3%80%81b%E3%80%81bar%E3%80%81foo%E3%80%82">¶</a></h3><h3 id="(3)-%E6%9C%80%E8%A3%A1%E9%9D%A2%E7%9A%84%E7%AF%84%E7%96%87%E6%98%AF%E5%9C%A8-bar-%E8%A3%A1%E9%9D%A2%EF%BC%8C%E8%AD%98%E5%88%A5%E5%AD%97%E5%8F%AA%E6%9C%89-a%E3%80%81b%E3%80%81c%E3%80%81bar%E3%80%81foo%E3%80%82">(3) 最裡面的範疇是在 bar 裡面，識別字只有 a、b、c、bar、foo。<a class="anchor-link" href="#(3)-%E6%9C%80%E8%A3%A1%E9%9D%A2%E7%9A%84%E7%AF%84%E7%96%87%E6%98%AF%E5%9C%A8-bar-%E8%A3%A1%E9%9D%A2%EF%BC%8C%E8%AD%98%E5%88%A5%E5%AD%97%E5%8F%AA%E6%9C%89-a%E3%80%81b%E3%80%81c%E3%80%81bar%E3%80%81foo%E3%80%82">¶</a></h3><img alt="No description has been provided for this image" src="./img/variable_scope.png" style="height:400px"/>
-</blockquote>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
-    <span class="n">b</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="mi">2</span>
-    <span class="k">def</span> <span class="nf">bar</span><span class="p">(</span><span class="n">c</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
-    <span class="n">bar</span><span class="p">(</span><span class="n">b</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">MyIterator</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">max_num</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_num</span> <span class="o">=</span> <span class="n">max_num</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="n">foo</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<hr/>
-<h1 id="P13-7">P13-7<a class="anchor-link" href="#P13-7">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3>如果函數內有指定㇐個值給變數，該變數則自動視為區域變數，<font color="red">區域變數只能在該函數內存取</font></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fun2</span><span class="p">():</span>
-    <span class="n">b</span><span class="o">=</span><span class="s1">'Hi!!!!'</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-
-<span class="n">fun2</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>  <span class="c1"># NameError</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E5%87%BD%E6%95%B8%E5%8F%AF%E4%BB%A5%E7%9B%B4%E6%8E%A5%E5%8F%83%E8%80%83%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8">函數可以直接參考全域變數<a class="anchor-link" href="#%E5%87%BD%E6%95%B8%E5%8F%AF%E4%BB%A5%E7%9B%B4%E6%8E%A5%E5%8F%83%E8%80%83%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8">¶</a></h3><h4 id="%E6%9C%83%E5%85%88%E6%90%9C%E5%B0%8B%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8%EF%BC%8C%E5%A6%82%E6%9E%9C%E6%89%BE%E4%B8%8D%E5%88%B0%E8%A9%B2%E8%AE%8A%E6%95%B8%E5%90%8D%E7%A8%B1%EF%BC%8C%E5%86%8D%E5%B0%8B%E6%89%BE%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8%E3%80%82">會先搜尋區域變數，如果找不到該變數名稱，再尋找全域變數。<a class="anchor-link" href="#%E6%9C%83%E5%85%88%E6%90%9C%E5%B0%8B%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8%EF%BC%8C%E5%A6%82%E6%9E%9C%E6%89%BE%E4%B8%8D%E5%88%B0%E8%A9%B2%E8%AE%8A%E6%95%B8%E5%90%8D%E7%A8%B1%EF%BC%8C%E5%86%8D%E5%B0%8B%E6%89%BE%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8%E3%80%82">¶</a></h4>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s1">'A'</span> <span class="c1"># global</span>
-<span class="k">def</span> <span class="nf">func1</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-
-<span class="n">func1</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E5%A6%82%E6%9E%9C%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8%E8%88%87%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8%E5%90%8C%E5%90%8D%EF%BC%8C%E5%B0%87%E6%9C%83%E4%BB%A5%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8%E7%82%BA%E5%84%AA%E5%85%88">如果區域變數與全域變數同名，將會以區域變數為優先<a class="anchor-link" href="#%E5%A6%82%E6%9E%9C%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8%E8%88%87%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8%E5%90%8C%E5%90%8D%EF%BC%8C%E5%B0%87%E6%9C%83%E4%BB%A5%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8%E7%82%BA%E5%84%AA%E5%85%88">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Function definition</span>
-<span class="k">def</span> <span class="nf">sum_data</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">):</span>
-    <span class="n">total</span>  <span class="o">=</span> <span class="n">arg1</span> <span class="o">+</span> <span class="n">arg2</span><span class="p">;</span> <span class="c1"># total is local variable</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'In function local total :'</span><span class="p">,</span> <span class="n">total</span><span class="p">)</span>
-
-<span class="c1"># MAIN    </span>
-<span class="c1"># Call function</span>
-
-<span class="c1"># Using global variable</span>
-<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># This is global variable</span>
-
-<span class="n">sum_data</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Outside function global total :'</span><span class="p">,</span> <span class="n">total</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E5%A6%82%E6%9E%9C%E5%87%BD%E6%95%B8%E5%85%A7%E6%9C%89%E6%8C%87%E5%AE%9A%E3%87%90%E5%80%8B%E5%80%BC%E7%B5%A6%E8%AE%8A%E6%95%B8%EF%BC%8C%E8%A9%B2%E8%AE%8A%E6%95%B8%E5%89%87%E8%87%AA%E5%8B%95%E8%A6%96%E7%82%BA%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8%EF%BC%8C%E9%99%A4%E9%9D%9E%E6%98%8E%E7%A2%BA%E4%BD%BF%E7%94%A8-%E2%80%9Cglobal%E2%80%9D-%E9%97%9C%E9%8D%B5%E5%AD%97%E5%AE%A3%E5%91%8A%E8%A9%B2%E8%AE%8A%E6%95%B8%E7%82%BA%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8">如果函數內有指定㇐個值給變數，該變數則自動視為區域變數，除非<font color="red">明確使用 “global” 關鍵字宣告該變數</font>為全域變數<a class="anchor-link" href="#%E5%A6%82%E6%9E%9C%E5%87%BD%E6%95%B8%E5%85%A7%E6%9C%89%E6%8C%87%E5%AE%9A%E3%87%90%E5%80%8B%E5%80%BC%E7%B5%A6%E8%AE%8A%E6%95%B8%EF%BC%8C%E8%A9%B2%E8%AE%8A%E6%95%B8%E5%89%87%E8%87%AA%E5%8B%95%E8%A6%96%E7%82%BA%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8%EF%BC%8C%E9%99%A4%E9%9D%9E%E6%98%8E%E7%A2%BA%E4%BD%BF%E7%94%A8-%E2%80%9Cglobal%E2%80%9D-%E9%97%9C%E9%8D%B5%E5%AD%97%E5%AE%A3%E5%91%8A%E8%A9%B2%E8%AE%8A%E6%95%B8%E7%82%BA%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">func3</span><span class="p">():</span>
-    <span class="k">global</span> <span class="n">c</span> 
-    <span class="n">c</span> <span class="o">=</span> <span class="s1">'Hi!!'</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-
-<span class="n">func3</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'outside function:'</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+        
+    <span class="k">def</span> <span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">index</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_num</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">index</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">StopIteration</span>
+        
+<span class="n">my_iterator</span> <span class="o">=</span> <span class="n">MyIterator</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"---------------------In for loop---------------------"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">my_iterator</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"-------------------------my_iterator return nothing-------------------------"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">my_iterator</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>  <span class="c1"># empty</span>
 </pre></div>
 </div>
 </div>
@@ -8017,93 +7832,24 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="s1">'Hello'</span>
-<span class="k">def</span> <span class="nf">func3</span><span class="p">():</span>
-    <span class="k">global</span> <span class="n">c</span> 
-    <span class="n">c</span> <span class="o">=</span> <span class="s1">'Hi!!'</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'inside function c is : </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">MyGenerator</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">max_num</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_num</span> <span class="o">=</span> <span class="n">max_num</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'before call func3, c is : </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
-<span class="n">func3</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'after call func3, outside c is : </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E5%85%A8%E5%9F%9F%E7%AF%84%E5%9C%8D%E5%AE%9A%E7%BE%A9%E7%9A%84%E5%87%BD%E6%95%B8%E5%8F%AF%E4%BB%A5%E5%9C%A8%E6%95%B4%E5%80%8B%E7%A8%8B%E5%BC%8F%E5%85%A7%E4%BD%BF%E7%94%A8">全域範圍定義的<font color="red">函數</font>可以在整個程式內使用<a class="anchor-link" href="#%E5%85%A8%E5%9F%9F%E7%AF%84%E5%9C%8D%E5%AE%9A%E7%BE%A9%E7%9A%84%E5%87%BD%E6%95%B8%E5%8F%AF%E4%BB%A5%E5%9C%A8%E6%95%B4%E5%80%8B%E7%A8%8B%E5%BC%8F%E5%85%A7%E4%BD%BF%E7%94%A8">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="k">def</span> <span class="nf">add_2</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">x</span><span class="o">+</span><span class="n">a</span> <span class="c1"># 可以使用a，因為全域變數可以在整個程式內使用</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">index</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">while</span> <span class="bp">self</span><span class="o">.</span><span class="n">index</span> <span class="o">&lt;=</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_num</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">index</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">yield</span> <span class="bp">self</span><span class="o">.</span><span class="n">index</span>
 
-<span class="k">def</span> <span class="nf">multiply1</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">add_2</span><span class="p">(</span><span class="n">y</span><span class="p">))</span> <span class="c1"># 可以使用add_2()，因為全域範圍定義的函數可以在整個程式內使用</span>
 
-<span class="n">multiply1</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E7%B7%B4%E7%BF%92">練習<a class="anchor-link" href="#%E7%B7%B4%E7%BF%92">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">spam</span><span class="p">():</span>
-    <span class="k">global</span> <span class="n">eggs</span>
-    <span class="n">eggs</span> <span class="o">=</span> <span class="s1">'spam'</span>    <span class="c1"># this is the global</span>
-    
-<span class="k">def</span> <span class="nf">bacon</span><span class="p">():</span>
-    <span class="n">eggs</span> <span class="o">=</span> <span class="s1">'bacon'</span>   <span class="c1"># this is a local</span>
-    
-<span class="k">def</span> <span class="nf">ham</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">eggs</span><span class="p">)</span>  <span class="c1"># this is the global</span>
-
-<span class="c1"># MAIN</span>
-<span class="n">eggs</span> <span class="o">=</span> <span class="mi">42</span>        <span class="c1"># this is the global</span>
-
-<span class="n">ham</span><span class="p">()</span>
-
-<span class="n">bacon</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">eggs</span><span class="p">)</span>      <span class="c1"># 42</span>
-
-<span class="n">spam</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">eggs</span><span class="p">)</span>      <span class="c1"># spam</span>
-
-<span class="n">ham</span><span class="p">()</span>            <span class="c1"># spam</span>
+<span class="n">my_generator</span> <span class="o">=</span> <span class="n">MyGenerator</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">my_generator</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"-------------------------my_generator would start over again-------------------------"</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">my_generator</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8128,29 +7874,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Method-&amp;-Funcion">Method &amp; Funcion<a class="anchor-link" href="#Method-&amp;-Funcion">¶</a></h3><ol>
-<li>Python作者Guido van Rossum說：Method跟Function是㇐樣的</li>
-<li>Python的物件導向是建置在以函數為基礎(function base)的環竟</li>
-<li>因此之前的章節提到各種內建的Function與不同資料型別的Method，例如len()、int()、sum()、str.upper()、list.append()等，有時會把Function與Method兩個詞混用</li>
-</ol>
-<blockquote>
-<p>Python’s object oriented features are built upon a function based environment. Using non-data descriptors, the two are merged seamlessly. Class dictionaries store methods as functions. In a class definition, methods are written using def or lambda, the usual tools for creating functions.
-ref:</p>
-</blockquote>
-<ul>
-<li><a href="https://docs.python.org/3/howto/descriptor.html#functions-and-methods">https://docs.python.org/3/howto/descriptor.html#functions-and-methods</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Python-%E6%B2%92%E6%9C%89block-variable-(%E5%85%B6%E4%BB%96%E8%AA%9E%E8%A8%80%E6%89%8D%E6%9C%89)">Python 沒有block variable (其他語言才有)<a class="anchor-link" href="#Python-%E6%B2%92%E6%9C%89block-variable-(%E5%85%B6%E4%BB%96%E8%AA%9E%E8%A8%80%E6%89%8D%E6%9C%89)">¶</a></h3>
+<h3 id="%E5%A6%82%E6%9E%9C__iter__()-%E7%9A%84%E5%9B%9E%E5%82%B3%E5%80%BC%E6%98%AF%E4%B8%80%E5%80%8Biterator%EF%BC%8C%E5%89%87%E5%91%BC%E5%8F%ABiter()-%E6%9C%83%E5%BE%97%E5%88%B0__iter__()-%E7%9A%84%E5%9B%9E%E5%82%B3%E5%80%BC">如果__iter__() 的回傳值是一個iterator，則呼叫iter() 會得到__iter__() 的回傳值<a class="anchor-link" href="#%E5%A6%82%E6%9E%9C__iter__()-%E7%9A%84%E5%9B%9E%E5%82%B3%E5%80%BC%E6%98%AF%E4%B8%80%E5%80%8Biterator%EF%BC%8C%E5%89%87%E5%91%BC%E5%8F%ABiter()-%E6%9C%83%E5%BE%97%E5%88%B0__iter__()-%E7%9A%84%E5%9B%9E%E5%82%B3%E5%80%BC">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8162,10 +7886,108 @@ ref:</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">A</span><span class="p">():</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="o">+</span><span class="mi">100</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">result</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">A</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="fm">__iter__</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">iter</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
 
-<span class="n">i</span>  <span class="c1"># it's still globle after for... loop</span>
+<span class="k">class</span> <span class="nc">B</span><span class="p">():</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mi">10</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">B</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">.</span><span class="fm">__iter__</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">iter</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<details>
+<summary>for loop 會先看__iter__()，而next() 會直接看__next__()</summary>
+<img alt="No description has been provided for this image" src="./img/forloop_iter.png"/>
+</details>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Fibonacci</span><span class="p">():</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="o">+</span><span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">,</span> <span class="p">[</span><span class="mi">100</span><span class="p">,</span><span class="mi">200</span><span class="p">,</span><span class="mi">300</span><span class="p">])</span>
+        <span class="k">return</span> <span class="n">result</span> <span class="c1"># instead of self, we use map() as return value of __iter__ </span>
+    <span class="k">def</span> <span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span>
+        <span class="k">if</span> <span class="n">result</span> <span class="o">&lt;</span><span class="mi">100</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">result</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">StopIteration</span>
+
+<span class="n">fibos</span> <span class="o">=</span> <span class="n">Fibonacci</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">fibos</span><span class="p">))</span> <span class="c1">#=&gt; 0</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">fibos</span><span class="p">))</span> <span class="c1">#=&gt; 1</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">fibos</span><span class="p">))</span> <span class="c1">#=&gt; 1</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">fibos</span><span class="p">))</span> <span class="c1">#=&gt; 2</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"---------------------------------</span><span class="si">{</span><span class="nb">iter</span><span class="p">(</span><span class="n">fibos</span><span class="p">)</span><span class="si">}</span><span class="s2">---------------------------------"</span><span class="p">)</span> 
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">fibos</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="iterator%E7%89%A9%E4%BB%B6%E7%9A%84%E5%85%A7%E5%AE%B9%EF%BC%8C%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8list()%E4%B8%80%E6%AC%A1%E6%80%A7%E5%85%A8%E9%83%A8%E5%8F%96%E5%87%BA">iterator物件的內容，可以使用<code>list()</code>一次性全部取出<a class="anchor-link" href="#iterator%E7%89%A9%E4%BB%B6%E7%9A%84%E5%85%A7%E5%AE%B9%EF%BC%8C%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8list()%E4%B8%80%E6%AC%A1%E6%80%A7%E5%85%A8%E9%83%A8%E5%8F%96%E5%87%BA">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Fibonacci</span><span class="p">():</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+    <span class="k">def</span> <span class="fm">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">a</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">a</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">b</span>
+        <span class="k">if</span> <span class="n">result</span> <span class="o">&lt;</span><span class="mi">100</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">result</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">StopIteration</span>
+
+<span class="n">fibos</span> <span class="o">=</span> <span class="n">Fibonacci</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">fibos</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>

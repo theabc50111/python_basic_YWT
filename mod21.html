@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>mod13</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>mod21</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7516,7 +7516,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1><font color="red"> Module_13_function</font></h1>
+<h1><font color="red"> Module_21_類別與物件導向</font></h1>
 </div>
 </div>
 </div>
@@ -7527,12 +7527,8 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="P13-2">P13-2<a class="anchor-link" href="#P13-2">¶</a></h1><h2 id="%E4%BD%BF%E7%94%A8%E5%87%BD%E6%95%B8/%E5%87%BD%E5%BC%8F%E7%9A%84%E5%A5%BD%E8%99%95-:">使用函數/函式的好處 :<a class="anchor-link" href="#%E4%BD%BF%E7%94%A8%E5%87%BD%E6%95%B8/%E5%87%BD%E5%BC%8F%E7%9A%84%E5%A5%BD%E8%99%95-:">¶</a></h2><blockquote>
-<h3 id="%E7%A8%8B%E5%BC%8F%E7%A2%BC%E9%87%8D%E8%A4%87%E4%BD%BF%E7%94%A8">程式碼重複使用<a class="anchor-link" href="#%E7%A8%8B%E5%BC%8F%E7%A2%BC%E9%87%8D%E8%A4%87%E4%BD%BF%E7%94%A8">¶</a></h3><h3 id="%E5%8A%9F%E8%83%BD%E5%88%87%E5%89%B2%EF%BC%8C%E6%A8%A1%E7%B5%84%E5%8C%96%EF%BC%8C%E7%B5%90%E6%A7%8B%E5%8C%96">功能切割，模組化，結構化<a class="anchor-link" href="#%E5%8A%9F%E8%83%BD%E5%88%87%E5%89%B2%EF%BC%8C%E6%A8%A1%E7%B5%84%E5%8C%96%EF%BC%8C%E7%B5%90%E6%A7%8B%E5%8C%96">¶</a></h3><h3 id="%E7%B0%A1%E5%8C%96%E7%A8%8B%E5%BC%8F%E6%8F%90%E9%AB%98%E7%A8%8B%E5%BC%8F%E7%9A%84%E5%8F%AF%E8%AE%80%E6%80%A7">簡化程式提高程式的可讀性<a class="anchor-link" href="#%E7%B0%A1%E5%8C%96%E7%A8%8B%E5%BC%8F%E6%8F%90%E9%AB%98%E7%A8%8B%E5%BC%8F%E7%9A%84%E5%8F%AF%E8%AE%80%E6%80%A7">¶</a></h3><h3 id="%E6%98%93%E6%96%BC%E7%B6%AD%E8%AD%B7%E5%8F%8A%E7%AE%A1%E7%90%86">易於維護及管理<a class="anchor-link" href="#%E6%98%93%E6%96%BC%E7%B6%AD%E8%AD%B7%E5%8F%8A%E7%AE%A1%E7%90%86">¶</a></h3><h2 id="%E4%B9%8B%E5%89%8D%E7%9A%84%E7%AB%A0%E7%AF%80%E6%8F%90%E5%88%B0%E5%90%84%E7%A8%AE%E5%85%A7%E5%BB%BA%E7%9A%84Function%E8%88%87%E4%B8%8D%E5%90%8C%E8%B3%87%E6%96%99%E5%9E%8B%E5%88%A5%E7%9A%84Method%EF%BC%8C%E6%9C%89%E6%99%82%E6%9C%83%E6%8A%8AFunction%E8%88%87Method%E5%85%A9%E5%80%8B%E8%A9%9E%E6%B7%B7%E7%94%A8">之前的章節提到各種內建的Function與不同資料型別的Method，有時會把Function與Method兩個詞混用<a class="anchor-link" href="#%E4%B9%8B%E5%89%8D%E7%9A%84%E7%AB%A0%E7%AF%80%E6%8F%90%E5%88%B0%E5%90%84%E7%A8%AE%E5%85%A7%E5%BB%BA%E7%9A%84Function%E8%88%87%E4%B8%8D%E5%90%8C%E8%B3%87%E6%96%99%E5%9E%8B%E5%88%A5%E7%9A%84Method%EF%BC%8C%E6%9C%89%E6%99%82%E6%9C%83%E6%8A%8AFunction%E8%88%87Method%E5%85%A9%E5%80%8B%E8%A9%9E%E6%B7%B7%E7%94%A8">¶</a></h2><details>
-<summary style="margin-left: 2em;">illustrator</summary>
-<img alt="No description has been provided for this image" src="./img/method_func.png" style="height:300px"/>
-</details>
-</blockquote>
+<hr/>
+<h1 id="P21-3-Class">P21-3 Class<a class="anchor-link" href="#P21-3-Class">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7544,9 +7540,122 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">S</span><span class="o">=</span><span class="s1">'hello'</span>
-<span class="n">S</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
-<span class="nb">len</span><span class="p">(</span><span class="n">S</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Account</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">''' 定義用戶帳號類別 '''</span>
+    <span class="k">def</span> <span class="nf">get_balance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>            <span class="c1"># 定義成員方法，成員方法的第一個參數要是self(成員方法，Member method, 實例方法，Instance method，物件方法，Object method)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">=</span> <span class="mi">0</span>              <span class="c1"># 定義成員屬性，存取成員的attribute時，需要在前面加上 self(成員屬性，Member attribute, 實例屬性，Instance attribute，物件屬性，Object attribute)</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">"Not set yet, the defalt values of balance:</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="si">}</span><span class="s2">"</span>  <span class="c1"># 存取成員的attribute時，需要在前面加上 self</span>
+
+<span class="n">user_a_account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">()</span>              <span class="c1"># 定義成員user_a_bank，其類別為Account</span>
+<span class="c1"># print("銀行餘額是 ", user_a_account.balance)  # balance是user_a_account的屬性，執行user_a_account.get_balance()前，user_a_account.balance不存在</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"銀行餘額是(透過存取Member methods): </span><span class="si">{</span><span class="n">user_a_account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"銀行餘額是 "</span><span class="p">,</span> <span class="n">user_a_account</span><span class="o">.</span><span class="n">balance</span><span class="p">)</span>  <span class="c1"># balance是user_a_account的屬性</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="__init__()"><code>__init__()</code><a class="anchor-link" href="#__init__()">¶</a></h3><ul>
+<li><h4 id="self%E6%8C%87%E5%90%91%E5%89%9B%E8%A2%AB%E5%BB%BA%E7%AB%8B%E7%9A%84%E6%88%90%E5%93%A1%E6%9C%AC%E8%BA%AB"><code>self</code>指向剛被建立的成員本身<a class="anchor-link" href="#self%E6%8C%87%E5%90%91%E5%89%9B%E8%A2%AB%E5%BB%BA%E7%AB%8B%E7%9A%84%E6%88%90%E5%93%A1%E6%9C%AC%E8%BA%AB">¶</a></h4></li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Account</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">''' 定義用戶帳號類別 '''</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uname</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>       <span class="c1"># 初始化方法</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">uname</span>                   <span class="c1"># 設定存款者名字，self指向剛被建立的成員本身</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">=</span> <span class="n">money</span>                <span class="c1"># 設定所存的錢</span>
+
+    <span class="k">def</span> <span class="nf">get_balance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>                  <span class="c1"># 獲得存款餘額</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">balance</span>                 
+
+<span class="n">isaac_account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s1">'Isaac Li'</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>  <span class="c1"># 定義成員isaac_account, self指向issac_account本身(self指向剛被建立的成員本身)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">isaac_account</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">的存款餘額是</span><span class="si">{</span><span class="n">isaac_account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E5%90%84%E6%88%90%E5%93%A1%E4%B9%8B%E9%96%93%E7%9A%84%E5%B1%AC%E6%80%A7%E8%88%87%E8%B3%87%E6%96%99%E4%BA%92%E4%B8%8D%E7%9B%B8%E9%97%9C">各成員之間的屬性與資料互不相關<a class="anchor-link" href="#%E5%90%84%E6%88%90%E5%93%A1%E4%B9%8B%E9%96%93%E7%9A%84%E5%B1%AC%E6%80%A7%E8%88%87%E8%B3%87%E6%96%99%E4%BA%92%E4%B8%8D%E7%9B%B8%E9%97%9C">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Account</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">''' 定義用戶帳號類別 '''</span>
+    <span class="n">bankname</span> <span class="o">=</span> <span class="s1">'Taipei Bank'</span>                                            <span class="c1"># 定義屬性</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uname</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>                                   <span class="c1"># 初始化方法</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">uname</span>                                               <span class="c1"># 設定存款者名字</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">=</span> <span class="n">money</span>                                            <span class="c1"># 設定所存的錢</span>
+
+    <span class="k">def</span> <span class="nf">save_money</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>                                        <span class="c1"># 設計存款方法</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">+=</span> <span class="n">money</span>                                           <span class="c1"># 執行存款</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">存進</span><span class="si">{</span><span class="n">money</span><span class="si">}</span><span class="s2">，目前餘額為：</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>       <span class="c1"># 列印存款完成</span>
+
+    <span class="k">def</span> <span class="nf">withdraw_money</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>                                    <span class="c1"># 設計提款方法</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">-=</span> <span class="n">money</span>                                           <span class="c1"># 執行提款</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">提領出</span><span class="si">{</span><span class="n">money</span><span class="si">}</span><span class="s2">，目前餘額為：</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>     <span class="c1"># 列印提款完成</span>
+
+    <span class="k">def</span> <span class="nf">get_balance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>                  <span class="c1"># 獲得存款餘額</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"目前</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">帳戶裡的餘額為</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="n">isaac_account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s1">'Isaac Li'</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>         <span class="c1"># 定義成員isaac_account, self指向issac_account</span>
+<span class="n">isaac_account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">()</span>                      <span class="c1"># 獲得存款餘額                </span>
+<span class="n">isaac_account</span><span class="o">.</span><span class="n">save_money</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>                    <span class="c1"># 存款500元</span>
+<span class="n">isaac_account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">()</span>                      <span class="c1"># 獲得存款餘額</span>
+<span class="n">isaac_account</span><span class="o">.</span><span class="n">withdraw_money</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span>                <span class="c1"># 提款400元</span>
+<span class="n">isaac_account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">()</span>                      <span class="c1"># 獲得存款餘額</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">isaac_account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s1">'Isaac Li'</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>             <span class="c1"># self指向issac_account本身</span>
+<span class="n">nick_account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s1">'Nick Tsao'</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>             <span class="c1"># self指向nick_account本身</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"type of isaac_account:</span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">isaac_account</span><span class="p">)</span><span class="si">}</span><span class="s2">, type of nick_account:</span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">nick_account</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>  <span class="c1"># 在Account 類別上建立兩個成員：isaac_account, nick_account</span>
+<span class="n">isaac_account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">()</span>                      
+<span class="n">nick_account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">()</span>          
+<span class="n">nick_account</span><span class="o">.</span><span class="n">save_money</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>        <span class="c1"># nick存進500元</span>
+<span class="n">isaac_account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">()</span>         <span class="c1"># isaac存款餘額還是100，nick存進500元不會影響到issac的餘額</span>
+<span class="n">nick_account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">()</span>          <span class="c1"># nick存款餘額700元，nick存進500元只影響到自己的餘額</span>
 </pre></div>
 </div>
 </div>
@@ -7560,7 +7669,18 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h1 id="P13-4">P13-4<a class="anchor-link" href="#P13-4">¶</a></h1><img alt="No description has been provided for this image" src="./img/main_func2.png" style="height:400px"/>
+<h1 id="P21-5-Encapsulation">P21-5 Encapsulation<a class="anchor-link" href="#P21-5-Encapsulation">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E5%A6%82%E6%9E%9C%E6%B2%92%E6%9C%89%E9%80%B2%E8%A1%8C%E5%B0%81%E8%A3%9D%EF%BC%8C%E5%AE%B9%E6%98%93%E7%99%BC%E7%94%9F%E6%88%90%E5%93%A1%E7%9A%84%E8%B3%87%E6%96%99%E8%A2%AB%E9%8C%AF%E8%AA%A4%E8%AE%8A%E5%8B%95">如果沒有進行封裝，容易發生成員的資料被錯誤變動<a class="anchor-link" href="#%E5%A6%82%E6%9E%9C%E6%B2%92%E6%9C%89%E9%80%B2%E8%A1%8C%E5%B0%81%E8%A3%9D%EF%BC%8C%E5%AE%B9%E6%98%93%E7%99%BC%E7%94%9F%E6%88%90%E5%93%A1%E7%9A%84%E8%B3%87%E6%96%99%E8%A2%AB%E9%8C%AF%E8%AA%A4%E8%AE%8A%E5%8B%95">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7572,15 +7692,170 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Function definition</span>
-<span class="k">def</span> <span class="nf">make_a_sound</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'Hello'</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Account</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">''' 定義用戶帳號類別 '''</span>
+    <span class="n">bankname</span> <span class="o">=</span> <span class="s1">'Taipei Bank'</span>                                            <span class="c1"># 定義屬性</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uname</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>                                   <span class="c1"># 初始化方法</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">uname</span>                                               <span class="c1"># 設定存款者名字</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">=</span> <span class="n">money</span>                                            <span class="c1"># 設定所存的錢</span>
 
-<span class="c1"># main function    </span>
-<span class="n">make_a_sound</span><span class="p">()</span> <span class="c1"># Call function, caller</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'-'</span><span class="o">*</span><span class="mi">30</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>  <span class="c1"># Call function for 3 times</span>
-    <span class="n">make_a_sound</span><span class="p">()</span>
+    <span class="k">def</span> <span class="nf">save_money</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>                                        <span class="c1"># 設計存款方法</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">+=</span> <span class="n">money</span>                                           <span class="c1"># 執行存款</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">存進</span><span class="si">{</span><span class="n">money</span><span class="si">}</span><span class="s2">，目前餘額為：</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>       <span class="c1"># 列印存款完成</span>
+
+    <span class="k">def</span> <span class="nf">withdraw_money</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>                                    <span class="c1"># 設計提款方法</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">-=</span> <span class="n">money</span>                                           <span class="c1"># 執行提款</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">提領出</span><span class="si">{</span><span class="n">money</span><span class="si">}</span><span class="s2">，目前餘額為：</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>     <span class="c1"># 列印提款完成</span>
+
+    <span class="k">def</span> <span class="nf">get_balance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>                  <span class="c1"># 獲得存款餘額</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"目前</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">帳戶裡的餘額為</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="n">isaac_account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s1">'Isaac Li'</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>         <span class="c1"># 定義成員isaac_account, self指向issac_account</span>
+<span class="n">isaac_account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">()</span>                      
+<span class="n">isaac_account</span><span class="o">.</span><span class="n">balance</span> <span class="o">=</span> <span class="mi">20000</span>                    <span class="c1"># 沒有封裝的話，很容易在操作成員時誤改該成員的資料</span>
+<span class="n">isaac_account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">()</span>                      
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E9%80%8F%E9%81%8E%E7%A7%81%E6%9C%89%E5%8C%96%E5%B1%AC%E6%80%A7%E4%BE%86%E5%AF%A6%E7%8F%BE%E5%B0%81%E8%A3%9D%E6%80%A7%E8%B3%AA">透過私有化屬性來實現封裝性質<a class="anchor-link" href="#%E9%80%8F%E9%81%8E%E7%A7%81%E6%9C%89%E5%8C%96%E5%B1%AC%E6%80%A7%E4%BE%86%E5%AF%A6%E7%8F%BE%E5%B0%81%E8%A3%9D%E6%80%A7%E8%B3%AA">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Account</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">''' 定義用戶帳號類別 '''</span>
+    <span class="n">bankname</span> <span class="o">=</span> <span class="s1">'Taipei Bank'</span>                                            <span class="c1"># 定義屬性</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uname</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>                                   <span class="c1"># 初始化方法</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">uname</span>                                               <span class="c1"># 設定存款者名字</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__balance</span> <span class="o">=</span> <span class="n">money</span>                                          <span class="c1"># 將餘額設定為私有化</span>
+
+    <span class="k">def</span> <span class="nf">save_money</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>                                        <span class="c1"># 設計存款方法</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">+=</span> <span class="n">money</span>                                           <span class="c1"># 執行存款</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">存進</span><span class="si">{</span><span class="n">money</span><span class="si">}</span><span class="s2">，目前餘額為：</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__balance</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>       <span class="c1"># 列印存款完成</span>
+
+    <span class="k">def</span> <span class="nf">withdraw_money</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>                                    <span class="c1"># 設計提款方法</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">-=</span> <span class="n">money</span>                                           <span class="c1"># 執行提款</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">提領出</span><span class="si">{</span><span class="n">money</span><span class="si">}</span><span class="s2">，目前餘額為：</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__balance</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>     <span class="c1"># 列印提款完成</span>
+
+    <span class="k">def</span> <span class="nf">get_balance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>                  <span class="c1"># 獲得存款餘額</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"目前</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">帳戶裡的餘額為</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__balance</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+
+<span class="n">isaac_account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s1">'Isaac Li'</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>         <span class="c1"># 定義成員isaac_account, self指向issac_account</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"名字：</span><span class="si">{</span><span class="n">isaac_account</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="n">isaac_account</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">"!!ISAAC!!"</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"名字：</span><span class="si">{</span><span class="n">isaac_account</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="n">isaac_account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">()</span>                      <span class="c1"># 只能透過類別提供的方法來存取</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">isaac_account</span><span class="o">.</span><span class="n">__balance</span><span class="p">)</span>                   <span class="c1"># 無法從外部存取私有化的屬性</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E9%80%8F%E9%81%8E@property%E5%AF%A6%E7%8F%BE%E5%B0%81%E8%A3%9D%E6%80%A7%E8%B3%AA">透過@property實現封裝性質<a class="anchor-link" href="#%E9%80%8F%E9%81%8E@property%E5%AF%A6%E7%8F%BE%E5%B0%81%E8%A3%9D%E6%80%A7%E8%B3%AA">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Account</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">''' 定義用戶帳號類別 '''</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uname</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">uname</span>                        <span class="c1"># 習慣上，底線開頭的屬性代表最好不要去變動</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_hard_to_guess</span> <span class="o">=</span> <span class="n">money</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">balance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>                           <span class="c1"># balance()被@property轉化成為只能讀取的屬性</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hard_to_guess</span>
+
+
+
+<span class="n">isaac_account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s1">'Isaac Li'</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>         <span class="c1"># 定義成員isaac_account, self指向issac_account</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">isaac_account</span><span class="o">.</span><span class="n">balance</span><span class="p">)</span>                     <span class="c1"># balance被轉化成屬性，不再是方法，而且它只能被讀取</span>
+<span class="n">isaac_account</span><span class="o">.</span><span class="n">balance</span> <span class="o">=</span> <span class="mi">500</span>                      <span class="c1"># 無法從外部直接修改</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E9%80%8F%E9%81%8Esetter%E4%BE%86%E6%94%B9%E8%AE%8Aproperty">透過setter來改變property<a class="anchor-link" href="#%E9%80%8F%E9%81%8Esetter%E4%BE%86%E6%94%B9%E8%AE%8Aproperty">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Account</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">''' 定義用戶帳號類別 '''</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uname</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">uname</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_hard_to_guess</span> <span class="o">=</span> <span class="n">money</span>
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">balance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hard_to_guess</span>
+
+    <span class="nd">@balance</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">save_money</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>                                               <span class="c1"># 透過setter將其轉化為可以對balance的值進行修改的屬性</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_hard_to_guess</span> <span class="o">+=</span> <span class="n">money</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">存進</span><span class="si">{</span><span class="n">money</span><span class="si">}</span><span class="s2">，目前餘額為：</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_hard_to_guess</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+    <span class="nd">@balance</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">withdraw_money</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>                                           <span class="c1"># 透過setter將其轉化為可以對balance的值進行修改的屬性</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_hard_to_guess</span> <span class="o">-=</span> <span class="n">money</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">提領出</span><span class="si">{</span><span class="n">money</span><span class="si">}</span><span class="s2">，目前餘額為：</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_hard_to_guess</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">get_balance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"目前</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">帳戶裡的餘額為</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+
+<span class="n">isaac_account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s1">'Isaac Li'</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">isaac_account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">()</span>                      
+<span class="n">isaac_account</span><span class="o">.</span><span class="n">save_money</span> <span class="o">=</span> <span class="mi">500</span>
+<span class="n">isaac_account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">()</span>
+<span class="n">isaac_account</span><span class="o">.</span><span class="n">withdraw_money</span> <span class="o">=</span> <span class="mi">200</span>
+<span class="n">isaac_account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">()</span>                      
 </pre></div>
 </div>
 </div>
@@ -7594,7 +7869,7 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h1 id="P13-5">P13-5<a class="anchor-link" href="#P13-5">¶</a></h1>
+<h1 id="P21-6-Inheritance">P21-6 Inheritance<a class="anchor-link" href="#P21-6-Inheritance">¶</a></h1>
 </div>
 </div>
 </div>
@@ -7605,7 +7880,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E5%A6%82%E6%9E%9C%E5%87%BD%E6%95%B8%E5%85%A7%E6%B2%92%E6%9C%89%E6%98%8E%E7%A2%BA%E7%9A%84%E4%BD%BF%E7%94%A8-return-%E6%95%98%E8%BF%B0%EF%BC%8C%E9%A0%90%E8%A8%AD%E7%82%BA-%E2%80%9Creturn-None%E2%80%9D">如果函數內沒有明確的使用 return 敘述，預設為 “return None”<a class="anchor-link" href="#%E5%A6%82%E6%9E%9C%E5%87%BD%E6%95%B8%E5%85%A7%E6%B2%92%E6%9C%89%E6%98%8E%E7%A2%BA%E7%9A%84%E4%BD%BF%E7%94%A8-return-%E6%95%98%E8%BF%B0%EF%BC%8C%E9%A0%90%E8%A8%AD%E7%82%BA-%E2%80%9Creturn-None%E2%80%9D">¶</a></h3>
+<h3 id="%E5%AD%90%E9%A1%9E%E5%88%A5%E5%8F%AF%E4%BB%A5%E7%B9%BC%E6%89%BF%E7%88%B6%E9%A1%9E%E5%88%A5%E7%9A%84attribute-/-method">子類別可以繼承父類別的attribute / method<a class="anchor-link" href="#%E5%AD%90%E9%A1%9E%E5%88%A5%E5%8F%AF%E4%BB%A5%E7%B9%BC%E6%89%BF%E7%88%B6%E9%A1%9E%E5%88%A5%E7%9A%84attribute-/-method">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7617,42 +7892,30 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sum_num</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span><span class="n">num2</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"In funcion:"</span><span class="p">,</span><span class="n">num1</span><span class="o">+</span><span class="n">num2</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Father</span><span class="p">():</span>
+    <span class="k">def</span> <span class="nf">hometown</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'我住在台北'</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s1">'output of sum_num(5,6) :'</span><span class="p">,</span> <span class="n">sum_num</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E6%AF%94%E8%BC%83%E4%BD%BF%E7%94%A8return-%E8%88%87%E6%B2%92%E6%9C%89-return%E7%9A%84%E5%B7%AE%E5%88%A5">比較使用return 與沒有 return的差別<a class="anchor-link" href="#%E6%AF%94%E8%BC%83%E4%BD%BF%E7%94%A8return-%E8%88%87%E6%B2%92%E6%9C%89-return%E7%9A%84%E5%B7%AE%E5%88%A5">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sum_num_ret</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"In funcion:"</span><span class="p">,</span><span class="n">num1</span><span class="o">+</span><span class="n">num2</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">num1</span><span class="o">+</span><span class="n">num2</span>
+<span class="k">class</span> <span class="nc">Son</span><span class="p">(</span><span class="n">Father</span><span class="p">):</span>               <span class="c1"># Son 繼承 Father</span>
+    <span class="k">pass</span>
 
-<span class="c1"># main function</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'output of sum_num(5,6) :'</span><span class="p">,</span> <span class="n">sum_num_ret</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">))</span>
+<span class="n">dylan</span> <span class="o">=</span> <span class="n">Father</span><span class="p">()</span>
+<span class="n">isaac</span> <span class="o">=</span> <span class="n">Son</span><span class="p">()</span>
+<span class="n">dylan</span><span class="o">.</span><span class="n">hometown</span><span class="p">()</span>
+<span class="n">isaac</span><span class="o">.</span><span class="n">hometown</span><span class="p">()</span>      <span class="c1"># Son 沒有定義hometown()，它是從Father那裡繼承過來的</span>
 </pre></div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E5%AD%90%E9%A1%9E%E5%88%A5%E7%9A%84%E7%89%A9%E4%BB%B6%E5%8F%AF%E4%BB%A5%E8%A2%AB%E8%A6%96%E7%82%BA%E7%88%B6%E9%A1%9E%E5%88%A5%E7%89%A9%E4%BB%B6%EF%BC%8C%E4%BD%86%E6%98%AF%E7%88%B6%E9%A1%9E%E5%88%A5%E7%9A%84%E7%89%A9%E4%BB%B6%E4%B8%8D%E8%83%BD%E8%A2%AB%E7%95%B6%E4%BD%9C%E5%AD%90%E9%A1%9E%E5%88%A5%E7%9A%84%E7%89%A9%E4%BB%B6">子類別的物件可以被視為父類別物件，但是父類別的物件不能被當作子類別的物件<a class="anchor-link" href="#%E5%AD%90%E9%A1%9E%E5%88%A5%E7%9A%84%E7%89%A9%E4%BB%B6%E5%8F%AF%E4%BB%A5%E8%A2%AB%E8%A6%96%E7%82%BA%E7%88%B6%E9%A1%9E%E5%88%A5%E7%89%A9%E4%BB%B6%EF%BC%8C%E4%BD%86%E6%98%AF%E7%88%B6%E9%A1%9E%E5%88%A5%E7%9A%84%E7%89%A9%E4%BB%B6%E4%B8%8D%E8%83%BD%E8%A2%AB%E7%95%B6%E4%BD%9C%E5%AD%90%E9%A1%9E%E5%88%A5%E7%9A%84%E7%89%A9%E4%BB%B6">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7664,76 +7927,19 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sum_num_ret</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="n">num2</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"In funcion:"</span><span class="p">,</span><span class="n">num1</span><span class="o">+</span><span class="n">num2</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">num1</span><span class="o">+</span><span class="n">num2</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Father</span><span class="p">():</span>
+    <span class="k">def</span> <span class="nf">hometown</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'我住在台北'</span><span class="p">)</span>
 
-<span class="c1"># main function</span>
-<span class="n">sum_num_ret</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">sum_num_ret</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="nb">print</span><span class="p">(</span><span class="s1">'abc'</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E5%85%83%E7%B5%84(tuple)-%E6%A0%BC%E5%BC%8F%E5%82%B3%E5%9B%9E%E5%A4%9A%E5%80%8B%E8%B3%87%E6%96%99">可以使用元組(tuple) 格式傳回多個資料<a class="anchor-link" href="#%E5%8F%AF%E4%BB%A5%E4%BD%BF%E7%94%A8%E5%85%83%E7%B5%84(tuple)-%E6%A0%BC%E5%BC%8F%E5%82%B3%E5%9B%9E%E5%A4%9A%E5%80%8B%E8%B3%87%E6%96%99">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sum_num2</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span><span class="n">num2</span><span class="p">):</span>
-    <span class="n">sum_num</span> <span class="o">=</span> <span class="n">num1</span><span class="o">+</span><span class="n">num2</span>
-    <span class="n">multi_num</span> <span class="o">=</span> <span class="n">num1</span><span class="o">*</span><span class="n">num2</span>
-    <span class="k">return</span> <span class="n">sum_num</span><span class="p">,</span> <span class="n">multi_num</span>
+<span class="k">class</span> <span class="nc">Son</span><span class="p">(</span><span class="n">Father</span><span class="p">):</span>               <span class="c1"># Son 繼承 Father</span>
+    <span class="k">pass</span>
 
-<span class="n">a</span><span class="p">,</span><span class="n">b</span> <span class="o">=</span> <span class="n">sum_num2</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+<span class="n">dylan</span> <span class="o">=</span> <span class="n">Father</span><span class="p">()</span>
+<span class="n">isaac</span> <span class="o">=</span> <span class="n">Son</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Is dylan an instance of Father: </span><span class="si">{</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">dylan</span><span class="p">,</span><span class="w"> </span><span class="n">Father</span><span class="p">)</span><span class="si">}</span><span class="s2">, Is isaac an instance of Father: </span><span class="si">{</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">isaac</span><span class="p">,</span><span class="w"> </span><span class="n">Father</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>      <span class="c1"># 子類別的物件可以被視為父類別物件</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Is dylan an instance of Son: </span><span class="si">{</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">dylan</span><span class="p">,</span><span class="w"> </span><span class="n">Son</span><span class="p">)</span><span class="si">}</span><span class="s2">, Is isaac an instance of Father: </span><span class="si">{</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">isaac</span><span class="p">,</span><span class="w"> </span><span class="n">Son</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>               <span class="c1"># 但是父類別的物件不能被當作子類別的物件</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"type of dylan:</span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">dylan</span><span class="p">)</span><span class="si">}</span><span class="s2">, type of isaac:</span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">isaac</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>
@@ -7746,7 +7952,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E4%BD%BF%E7%94%A8help()-%E6%88%96%E8%80%85-?(Jupyter-notebook%E7%9A%84%E5%8A%9F%E8%83%BD)-%E5%B0%8B%E6%89%BE%E5%87%BD%E5%BC%8F%E7%9A%84%E8%AA%AA%E6%98%8E(document-string)">使用help() 或者 ?(Jupyter notebook的功能) 尋找函式的說明(document string)<a class="anchor-link" href="#%E4%BD%BF%E7%94%A8help()-%E6%88%96%E8%80%85-?(Jupyter-notebook%E7%9A%84%E5%8A%9F%E8%83%BD)-%E5%B0%8B%E6%89%BE%E5%87%BD%E5%BC%8F%E7%9A%84%E8%AA%AA%E6%98%8E(document-string)">¶</a></h3>
+<h3 id="Python%E7%9A%84%E9%A1%9E%E5%88%A5%E5%8F%AF%E4%BB%A5%E5%90%8C%E6%99%82%E7%B9%BC%E6%89%BF%E5%A4%9A%E5%80%8B%E7%88%B6%E9%A1%9E%E5%88%A5">Python的類別可以同時繼承多個父類別<a class="anchor-link" href="#Python%E7%9A%84%E9%A1%9E%E5%88%A5%E5%8F%AF%E4%BB%A5%E5%90%8C%E6%99%82%E7%B9%BC%E6%89%BF%E5%A4%9A%E5%80%8B%E7%88%B6%E9%A1%9E%E5%88%A5">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7758,51 +7964,31 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">func1</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">"""print python world"""</span> <span class="c1"># document string</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'python world'</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">func1</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span>func1<span class="o">?</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span>print<span class="o">?</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Grandfather</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">""" 定義祖父類別 """</span>
+    <span class="k">def</span> <span class="nf">action1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Grandfather"</span><span class="p">)</span>
+        
+<span class="k">class</span> <span class="nc">Father</span><span class="p">(</span><span class="n">Grandfather</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">""" 定義父親類別 """</span>
+    <span class="k">def</span> <span class="nf">action2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>      
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Father"</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Uncle</span><span class="p">(</span><span class="n">Grandfather</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">""" 定義叔父類別 """</span>
+    <span class="k">def</span> <span class="nf">action3</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>      
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Uncle"</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Isaac</span><span class="p">(</span><span class="n">Father</span><span class="p">,</span> <span class="n">Uncle</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">""" 定義Isaac類別 """</span>
+    <span class="k">def</span> <span class="nf">action4</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Isaac"</span><span class="p">)</span>
+
+<span class="n">isaac</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">()</span>
+<span class="n">isaac</span><span class="o">.</span><span class="n">action4</span><span class="p">()</span> 
+<span class="n">isaac</span><span class="o">.</span><span class="n">action3</span><span class="p">()</span>              
+<span class="n">isaac</span><span class="o">.</span><span class="n">action2</span><span class="p">()</span>              
+<span class="n">isaac</span><span class="o">.</span><span class="n">action1</span><span class="p">()</span>      
 </pre></div>
 </div>
 </div>
@@ -7815,7 +8001,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E7%BF%92%E6%85%A3%E4%B8%8A%EF%BC%8C%E5%A6%82%E6%9E%9C%E8%BF%B4%E5%9C%88%E4%B8%8A%E7%9A%84%E8%AE%8A%E6%95%B8%E6%B2%92%E6%9C%89%E4%BD%BF%E7%94%A8%E5%88%B0%EF%BC%8C%E5%8F%AF%E4%BD%BF%E7%94%A8%E5%BA%95%E7%B7%9A-_-%E4%BB%A3%E6%9B%BF%EF%BC%8C%E8%A1%A8%E7%A4%BA%E6%B2%92%E6%9C%89%E4%BD%BF%E7%94%A8%E5%88%B0%E9%80%99%E5%80%8B%E8%AE%8A%E6%95%B8%E3%80%82">習慣上，如果迴圈上的變數沒有使用到，可使用底線 _ 代替，表示沒有使用到這個變數。<a class="anchor-link" href="#%E7%BF%92%E6%85%A3%E4%B8%8A%EF%BC%8C%E5%A6%82%E6%9E%9C%E8%BF%B4%E5%9C%88%E4%B8%8A%E7%9A%84%E8%AE%8A%E6%95%B8%E6%B2%92%E6%9C%89%E4%BD%BF%E7%94%A8%E5%88%B0%EF%BC%8C%E5%8F%AF%E4%BD%BF%E7%94%A8%E5%BA%95%E7%B7%9A-_-%E4%BB%A3%E6%9B%BF%EF%BC%8C%E8%A1%A8%E7%A4%BA%E6%B2%92%E6%9C%89%E4%BD%BF%E7%94%A8%E5%88%B0%E9%80%99%E5%80%8B%E8%AE%8A%E6%95%B8%E3%80%82">¶</a></h3>
+<h3 id="Method-Resolution-Order">Method Resolution Order<a class="anchor-link" href="#Method-Resolution-Order">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7827,8 +8013,29 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>  <span class="c1">#因為 i 沒用到</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'good'</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Grandfather</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">""" 定義祖父類別 """</span>
+    <span class="k">def</span> <span class="nf">action</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Grandfather"</span><span class="p">)</span>
+        
+<span class="k">class</span> <span class="nc">Father</span><span class="p">(</span><span class="n">Grandfather</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">""" 定義父親類別 """</span>
+    <span class="k">def</span> <span class="nf">action</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>      
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Father"</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Uncle</span><span class="p">(</span><span class="n">Grandfather</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">""" 定義叔父類別 """</span>
+    <span class="k">def</span> <span class="nf">action</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>      
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Uncle"</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Isaac</span><span class="p">(</span><span class="n">Father</span><span class="p">,</span> <span class="n">Uncle</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">""" 定義Isaac類別 """</span>
+    <span class="k">def</span> <span class="nf">action</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Isaac"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">Isaac</span><span class="o">.</span><span class="n">mro</span><span class="p">())</span>
+<span class="n">isaac</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">()</span>
+<span class="n">isaac</span><span class="o">.</span><span class="n">action</span><span class="p">()</span>              <span class="c1"># 順序 Isaac -&gt; Father -&gt; Uncle -&gt; Grandfather</span>
 </pre></div>
 </div>
 </div>
@@ -7842,9 +8049,18 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
-<h1 id="P13-6">P13-6<a class="anchor-link" href="#P13-6">¶</a></h1><h2 id="Python%E8%AA%9E%E8%A8%80%E6%9C%89%E5%85%A9%E7%A8%AE%E8%AE%8A%E6%95%B8%E7%9A%84%E5%8F%AF%E8%A6%8B%E5%BA%A6">Python語言有兩種變數的可見度<a class="anchor-link" href="#Python%E8%AA%9E%E8%A8%80%E6%9C%89%E5%85%A9%E7%A8%AE%E8%AE%8A%E6%95%B8%E7%9A%84%E5%8F%AF%E8%A6%8B%E5%BA%A6">¶</a></h2><h3 id="--%E5%9C%A8%E5%87%BD%E6%95%B8%E5%85%A7%E7%9A%84%E8%AE%8A%E6%95%B8%E7%A8%B1%E7%82%BA%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8">- 在函數內的變數稱為區域變數<a class="anchor-link" href="#--%E5%9C%A8%E5%87%BD%E6%95%B8%E5%85%A7%E7%9A%84%E8%AE%8A%E6%95%B8%E7%A8%B1%E7%82%BA%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8">¶</a></h3><h3 id="--%E5%9C%A8%E5%87%BD%E6%95%B8%E4%B9%8B%E5%A4%96%E7%9A%84%E8%AE%8A%E6%95%B8%E7%A8%B1%E7%82%BA%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8">- 在函數之外的變數稱為全域變數<a class="anchor-link" href="#--%E5%9C%A8%E5%87%BD%E6%95%B8%E4%B9%8B%E5%A4%96%E7%9A%84%E8%AE%8A%E6%95%B8%E7%A8%B1%E7%82%BA%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8">¶</a></h3><blockquote>
-<h3 id="(1)-%E6%9C%80%E5%A4%96%E9%9D%A2%E7%9A%84%E7%AF%84%E7%96%87%E5%8D%B3%E5%85%A8%E5%9F%9F%E7%AF%84%E7%96%87%EF%BC%8C%E8%AD%98%E5%88%A5%E5%AD%97%E6%9C%89-foo%E3%80%82">(1) 最外面的範疇即<font color="red">全域範疇</font>，識別字有 foo。<a class="anchor-link" href="#(1)-%E6%9C%80%E5%A4%96%E9%9D%A2%E7%9A%84%E7%AF%84%E7%96%87%E5%8D%B3%E5%85%A8%E5%9F%9F%E7%AF%84%E7%96%87%EF%BC%8C%E8%AD%98%E5%88%A5%E5%AD%97%E6%9C%89-foo%E3%80%82">¶</a></h3><h3 id="(2)-%E4%B8%AD%E9%96%93%E7%9A%84%E7%AF%84%E7%96%87%E6%98%AF%E5%9C%A8-foo-%E8%A3%A1%E9%9D%A2%EF%BC%8C%E8%AD%98%E5%88%A5%E5%AD%97%E6%9C%89-a%E3%80%81b%E3%80%81bar%E3%80%81foo%E3%80%82">(2) 中間的範疇是在 foo 裡面，識別字有 a、b、bar、foo。<a class="anchor-link" href="#(2)-%E4%B8%AD%E9%96%93%E7%9A%84%E7%AF%84%E7%96%87%E6%98%AF%E5%9C%A8-foo-%E8%A3%A1%E9%9D%A2%EF%BC%8C%E8%AD%98%E5%88%A5%E5%AD%97%E6%9C%89-a%E3%80%81b%E3%80%81bar%E3%80%81foo%E3%80%82">¶</a></h3><h3 id="(3)-%E6%9C%80%E8%A3%A1%E9%9D%A2%E7%9A%84%E7%AF%84%E7%96%87%E6%98%AF%E5%9C%A8-bar-%E8%A3%A1%E9%9D%A2%EF%BC%8C%E8%AD%98%E5%88%A5%E5%AD%97%E5%8F%AA%E6%9C%89-a%E3%80%81b%E3%80%81c%E3%80%81bar%E3%80%81foo%E3%80%82">(3) 最裡面的範疇是在 bar 裡面，識別字只有 a、b、c、bar、foo。<a class="anchor-link" href="#(3)-%E6%9C%80%E8%A3%A1%E9%9D%A2%E7%9A%84%E7%AF%84%E7%96%87%E6%98%AF%E5%9C%A8-bar-%E8%A3%A1%E9%9D%A2%EF%BC%8C%E8%AD%98%E5%88%A5%E5%AD%97%E5%8F%AA%E6%9C%89-a%E3%80%81b%E3%80%81c%E3%80%81bar%E3%80%81foo%E3%80%82">¶</a></h3><img alt="No description has been provided for this image" src="./img/variable_scope.png" style="height:400px"/>
-</blockquote>
+<h1 id="P21-7-Polymorphism">P21-7 Polymorphism<a class="anchor-link" href="#P21-7-Polymorphism">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E9%81%8B%E7%AE%97%E5%AD%90%E5%A4%9A%E8%BC%89-(Operator-overloading)">運算子多載 (Operator overloading)<a class="anchor-link" href="#%E9%81%8B%E7%AE%97%E5%AD%90%E5%A4%9A%E8%BC%89-(Operator-overloading)">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7856,13 +8072,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
-    <span class="n">b</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="mi">2</span>
-    <span class="k">def</span> <span class="nf">bar</span><span class="p">(</span><span class="n">c</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
-    <span class="n">bar</span><span class="p">(</span><span class="n">b</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
-
-<span class="n">foo</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>      <span class="c1"># + 用在數字上是數值相加</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"A"</span> <span class="o">+</span> <span class="s2">"B"</span><span class="p">)</span>  <span class="c1"># + 用在字串上是字串連接</span>
 </pre></div>
 </div>
 </div>
@@ -7875,19 +8086,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<hr/>
-<h1 id="P13-7">P13-7<a class="anchor-link" href="#P13-7">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3>如果函數內有指定㇐個值給變數，該變數則自動視為區域變數，<font color="red">區域變數只能在該函數內存取</font></h3>
+<h3 id="Function-Polymorphism">Function Polymorphism<a class="anchor-link" href="#Function-Polymorphism">¶</a></h3>
 </div>
 </div>
 </div>
@@ -7899,12 +8098,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fun2</span><span class="p">():</span>
-    <span class="n">b</span><span class="o">=</span><span class="s1">'Hi!!!!'</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-
-<span class="n">fun2</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>  <span class="c1"># NameError</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>  <span class="c1"># len()用在list上是計算元素的數量</span>
+<span class="nb">len</span><span class="p">(</span><span class="s2">"ABC"</span><span class="p">)</span>            <span class="c1"># len()用在字串上是計算字串長度</span>
 </pre></div>
 </div>
 </div>
@@ -7917,7 +8112,9 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E5%87%BD%E6%95%B8%E5%8F%AF%E4%BB%A5%E7%9B%B4%E6%8E%A5%E5%8F%83%E8%80%83%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8">函數可以直接參考全域變數<a class="anchor-link" href="#%E5%87%BD%E6%95%B8%E5%8F%AF%E4%BB%A5%E7%9B%B4%E6%8E%A5%E5%8F%83%E8%80%83%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8">¶</a></h3><h4 id="%E6%9C%83%E5%85%88%E6%90%9C%E5%B0%8B%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8%EF%BC%8C%E5%A6%82%E6%9E%9C%E6%89%BE%E4%B8%8D%E5%88%B0%E8%A9%B2%E8%AE%8A%E6%95%B8%E5%90%8D%E7%A8%B1%EF%BC%8C%E5%86%8D%E5%B0%8B%E6%89%BE%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8%E3%80%82">會先搜尋區域變數，如果找不到該變數名稱，再尋找全域變數。<a class="anchor-link" href="#%E6%9C%83%E5%85%88%E6%90%9C%E5%B0%8B%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8%EF%BC%8C%E5%A6%82%E6%9E%9C%E6%89%BE%E4%B8%8D%E5%88%B0%E8%A9%B2%E8%AE%8A%E6%95%B8%E5%90%8D%E7%A8%B1%EF%BC%8C%E5%86%8D%E5%B0%8B%E6%89%BE%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8%E3%80%82">¶</a></h4>
+<h3 id="%E8%A4%87%E5%AF%AB(Override)">複寫(Override)<a class="anchor-link" href="#%E8%A4%87%E5%AF%AB(Override)">¶</a></h3><ul>
+<li><h4 id="%E5%A6%82%E6%9E%9C%E5%AD%90%E9%A1%9E%E5%88%A5%E8%88%87%E7%88%B6%E9%A1%9E%E5%88%A5%E6%9C%89%E5%90%8C%E5%90%8Dattribute-/-method%EF%BC%8C%E6%9C%83%E4%BB%A5%E5%AD%90%E9%A1%9E%E5%88%A5%E7%9A%84%E5%84%AA%E5%85%88">如果子類別與父類別有同名attribute / method，會以子類別的優先<a class="anchor-link" href="#%E5%A6%82%E6%9E%9C%E5%AD%90%E9%A1%9E%E5%88%A5%E8%88%87%E7%88%B6%E9%A1%9E%E5%88%A5%E6%9C%89%E5%90%8C%E5%90%8Dattribute-/-method%EF%BC%8C%E6%9C%83%E4%BB%A5%E5%AD%90%E9%A1%9E%E5%88%A5%E7%9A%84%E5%84%AA%E5%85%88">¶</a></h4></li>
+</ul>
 </div>
 </div>
 </div>
@@ -7929,181 +8126,81 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s1">'A'</span> <span class="c1"># global</span>
-<span class="k">def</span> <span class="nf">func1</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
-
-<span class="n">func1</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E5%A6%82%E6%9E%9C%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8%E8%88%87%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8%E5%90%8C%E5%90%8D%EF%BC%8C%E5%B0%87%E6%9C%83%E4%BB%A5%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8%E7%82%BA%E5%84%AA%E5%85%88">如果區域變數與全域變數同名，將會以區域變數為優先<a class="anchor-link" href="#%E5%A6%82%E6%9E%9C%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8%E8%88%87%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8%E5%90%8C%E5%90%8D%EF%BC%8C%E5%B0%87%E6%9C%83%E4%BB%A5%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8%E7%82%BA%E5%84%AA%E5%85%88">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Function definition</span>
-<span class="k">def</span> <span class="nf">sum_data</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">):</span>
-    <span class="n">total</span>  <span class="o">=</span> <span class="n">arg1</span> <span class="o">+</span> <span class="n">arg2</span><span class="p">;</span> <span class="c1"># total is local variable</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'In function local total :'</span><span class="p">,</span> <span class="n">total</span><span class="p">)</span>
-
-<span class="c1"># MAIN    </span>
-<span class="c1"># Call function</span>
-
-<span class="c1"># Using global variable</span>
-<span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># This is global variable</span>
-
-<span class="n">sum_data</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
-
-
-<span class="nb">print</span><span class="p">(</span><span class="s1">'Outside function global total :'</span><span class="p">,</span> <span class="n">total</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E5%A6%82%E6%9E%9C%E5%87%BD%E6%95%B8%E5%85%A7%E6%9C%89%E6%8C%87%E5%AE%9A%E3%87%90%E5%80%8B%E5%80%BC%E7%B5%A6%E8%AE%8A%E6%95%B8%EF%BC%8C%E8%A9%B2%E8%AE%8A%E6%95%B8%E5%89%87%E8%87%AA%E5%8B%95%E8%A6%96%E7%82%BA%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8%EF%BC%8C%E9%99%A4%E9%9D%9E%E6%98%8E%E7%A2%BA%E4%BD%BF%E7%94%A8-%E2%80%9Cglobal%E2%80%9D-%E9%97%9C%E9%8D%B5%E5%AD%97%E5%AE%A3%E5%91%8A%E8%A9%B2%E8%AE%8A%E6%95%B8%E7%82%BA%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8">如果函數內有指定㇐個值給變數，該變數則自動視為區域變數，除非<font color="red">明確使用 “global” 關鍵字宣告該變數</font>為全域變數<a class="anchor-link" href="#%E5%A6%82%E6%9E%9C%E5%87%BD%E6%95%B8%E5%85%A7%E6%9C%89%E6%8C%87%E5%AE%9A%E3%87%90%E5%80%8B%E5%80%BC%E7%B5%A6%E8%AE%8A%E6%95%B8%EF%BC%8C%E8%A9%B2%E8%AE%8A%E6%95%B8%E5%89%87%E8%87%AA%E5%8B%95%E8%A6%96%E7%82%BA%E5%8D%80%E5%9F%9F%E8%AE%8A%E6%95%B8%EF%BC%8C%E9%99%A4%E9%9D%9E%E6%98%8E%E7%A2%BA%E4%BD%BF%E7%94%A8-%E2%80%9Cglobal%E2%80%9D-%E9%97%9C%E9%8D%B5%E5%AD%97%E5%AE%A3%E5%91%8A%E8%A9%B2%E8%AE%8A%E6%95%B8%E7%82%BA%E5%85%A8%E5%9F%9F%E8%AE%8A%E6%95%B8">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">func3</span><span class="p">():</span>
-    <span class="k">global</span> <span class="n">c</span> 
-    <span class="n">c</span> <span class="o">=</span> <span class="s1">'Hi!!'</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
-
-<span class="n">func3</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">'outside function:'</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">c</span> <span class="o">=</span> <span class="s1">'Hello'</span>
-<span class="k">def</span> <span class="nf">func3</span><span class="p">():</span>
-    <span class="k">global</span> <span class="n">c</span> 
-    <span class="n">c</span> <span class="o">=</span> <span class="s1">'Hi!!'</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'inside function c is : </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'before call func3, c is : </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
-<span class="n">func3</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'after call func3, outside c is : </span><span class="si">{</span><span class="n">c</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E5%85%A8%E5%9F%9F%E7%AF%84%E5%9C%8D%E5%AE%9A%E7%BE%A9%E7%9A%84%E5%87%BD%E6%95%B8%E5%8F%AF%E4%BB%A5%E5%9C%A8%E6%95%B4%E5%80%8B%E7%A8%8B%E5%BC%8F%E5%85%A7%E4%BD%BF%E7%94%A8">全域範圍定義的<font color="red">函數</font>可以在整個程式內使用<a class="anchor-link" href="#%E5%85%A8%E5%9F%9F%E7%AF%84%E5%9C%8D%E5%AE%9A%E7%BE%A9%E7%9A%84%E5%87%BD%E6%95%B8%E5%8F%AF%E4%BB%A5%E5%9C%A8%E6%95%B4%E5%80%8B%E7%A8%8B%E5%BC%8F%E5%85%A7%E4%BD%BF%E7%94%A8">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="k">def</span> <span class="nf">add_2</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">x</span><span class="o">+</span><span class="n">a</span> <span class="c1"># 可以使用a，因為全域變數可以在整個程式內使用</span>
-
-<span class="k">def</span> <span class="nf">multiply1</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">add_2</span><span class="p">(</span><span class="n">y</span><span class="p">))</span> <span class="c1"># 可以使用add_2()，因為全域範圍定義的函數可以在整個程式內使用</span>
-
-<span class="n">multiply1</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E7%B7%B4%E7%BF%92">練習<a class="anchor-link" href="#%E7%B7%B4%E7%BF%92">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">spam</span><span class="p">():</span>
-    <span class="k">global</span> <span class="n">eggs</span>
-    <span class="n">eggs</span> <span class="o">=</span> <span class="s1">'spam'</span>    <span class="c1"># this is the global</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Father</span><span class="p">():</span>
+    <span class="k">def</span> <span class="nf">hometown</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'我住在台北'</span><span class="p">)</span>
     
-<span class="k">def</span> <span class="nf">bacon</span><span class="p">():</span>
-    <span class="n">eggs</span> <span class="o">=</span> <span class="s1">'bacon'</span>   <span class="c1"># this is a local</span>
-    
-<span class="k">def</span> <span class="nf">ham</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">eggs</span><span class="p">)</span>  <span class="c1"># this is the global</span>
+    <span class="k">def</span> <span class="nf">occupation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'我是老師'</span><span class="p">)</span>
 
-<span class="c1"># MAIN</span>
-<span class="n">eggs</span> <span class="o">=</span> <span class="mi">42</span>        <span class="c1"># this is the global</span>
+<span class="k">class</span> <span class="nc">Son</span><span class="p">(</span><span class="n">Father</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">occupation</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'我是工程師'</span><span class="p">)</span>
 
-<span class="n">ham</span><span class="p">()</span>
 
-<span class="n">bacon</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">eggs</span><span class="p">)</span>      <span class="c1"># 42</span>
+<span class="n">dylan</span> <span class="o">=</span> <span class="n">Father</span><span class="p">()</span>
+<span class="n">isaac</span> <span class="o">=</span> <span class="n">Son</span><span class="p">()</span>
+<span class="n">dylan</span><span class="o">.</span><span class="n">hometown</span><span class="p">()</span>
+<span class="n">isaac</span><span class="o">.</span><span class="n">hometown</span><span class="p">()</span>        <span class="c1"># Son 沒有定義hometown()，它是從Father那裡繼承過來的</span>
+<span class="n">dylan</span><span class="o">.</span><span class="n">occupation</span><span class="p">()</span>
+<span class="n">isaac</span><span class="o">.</span><span class="n">occupation</span><span class="p">()</span>      <span class="c1"># Son 有定義occupation()，所以Father的occupatoin()被覆蓋過去了</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E9%80%8F%E9%81%8E%E8%A4%87%E5%AF%AB%E9%81%94%E5%88%B0Polymorphism%E7%9A%84%E6%95%88%E6%9E%9C">透過複寫達到Polymorphism的效果<a class="anchor-link" href="#%E9%80%8F%E9%81%8E%E8%A4%87%E5%AF%AB%E9%81%94%E5%88%B0Polymorphism%E7%9A%84%E6%95%88%E6%9E%9C">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Animal</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">"""Animal類別, 這是基底類別 """</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
 
-<span class="n">spam</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">eggs</span><span class="p">)</span>      <span class="c1"># spam</span>
+    <span class="k">def</span> <span class="nf">move</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>              <span class="c1"># 輸出動物 is runninG</span>
+        <span class="k">pass</span>
 
-<span class="n">ham</span><span class="p">()</span>            <span class="c1"># spam</span>
+<span class="k">class</span> <span class="nc">Dog</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Dog類別, 這是Animal的衍生類別 """</span>
+    <span class="k">def</span> <span class="nf">move</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> is a instance of Animals:</span><span class="si">{</span><span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="n">Animal</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> is running"</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Fish</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Fish類別, 這是Animal的衍生類別 """</span>
+    <span class="k">def</span> <span class="nf">move</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> is a instance of Animals:</span><span class="si">{</span><span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="n">Animal</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> is swimming"</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Bird</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Bird類別, 這是Animal的衍生類別 """</span>
+    <span class="k">def</span> <span class="nf">move</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> is a instance of Animals:</span><span class="si">{</span><span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="w"> </span><span class="n">Animal</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> is flying"</span><span class="p">)</span>
+
+<span class="c1"># all of them are instance of Animal but their method has different effect</span>
+<span class="n">mydog</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">(</span><span class="s1">'Lucy'</span><span class="p">)</span>
+<span class="n">mydog</span><span class="o">.</span><span class="n">move</span><span class="p">()</span>
+<span class="n">myfish</span> <span class="o">=</span> <span class="n">Fish</span><span class="p">(</span><span class="s1">'Andy'</span><span class="p">)</span>
+<span class="n">myfish</span><span class="o">.</span><span class="n">move</span><span class="p">()</span>
+<span class="n">mybird</span> <span class="o">=</span> <span class="n">Bird</span><span class="p">(</span><span class="s1">'Jack'</span><span class="p">)</span>
+<span class="n">mybird</span><span class="o">.</span><span class="n">move</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -8128,29 +8225,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Method-&amp;-Funcion">Method &amp; Funcion<a class="anchor-link" href="#Method-&amp;-Funcion">¶</a></h3><ol>
-<li>Python作者Guido van Rossum說：Method跟Function是㇐樣的</li>
-<li>Python的物件導向是建置在以函數為基礎(function base)的環竟</li>
-<li>因此之前的章節提到各種內建的Function與不同資料型別的Method，例如len()、int()、sum()、str.upper()、list.append()等，有時會把Function與Method兩個詞混用</li>
-</ol>
-<blockquote>
-<p>Python’s object oriented features are built upon a function based environment. Using non-data descriptors, the two are merged seamlessly. Class dictionaries store methods as functions. In a class definition, methods are written using def or lambda, the usual tools for creating functions.
-ref:</p>
-</blockquote>
-<ul>
-<li><a href="https://docs.python.org/3/howto/descriptor.html#functions-and-methods">https://docs.python.org/3/howto/descriptor.html#functions-and-methods</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Python-%E6%B2%92%E6%9C%89block-variable-(%E5%85%B6%E4%BB%96%E8%AA%9E%E8%A8%80%E6%89%8D%E6%9C%89)">Python 沒有block variable (其他語言才有)<a class="anchor-link" href="#Python-%E6%B2%92%E6%9C%89block-variable-(%E5%85%B6%E4%BB%96%E8%AA%9E%E8%A8%80%E6%89%8D%E6%9C%89)">¶</a></h3>
+<h3 id="%E9%A1%9E%E5%88%A5%E5%B1%AC%E6%80%A7(Class-Attribute)-&amp;-%E6%88%90%E5%93%A1%E5%B1%AC%E6%80%A7(Member-Attribute,-%E5%AF%A6%E4%BE%8B%E5%B1%AC%E6%80%A7%EF%BC%8CInstance-Attribute%EF%BC%8C%E7%89%A9%E4%BB%B6%E5%B1%AC%E6%80%A7%EF%BC%8CObject-Attribute)">類別屬性(Class Attribute) &amp; 成員屬性(Member Attribute, 實例屬性，Instance Attribute，物件屬性，Object Attribute)<a class="anchor-link" href="#%E9%A1%9E%E5%88%A5%E5%B1%AC%E6%80%A7(Class-Attribute)-&amp;-%E6%88%90%E5%93%A1%E5%B1%AC%E6%80%A7(Member-Attribute,-%E5%AF%A6%E4%BE%8B%E5%B1%AC%E6%80%A7%EF%BC%8CInstance-Attribute%EF%BC%8C%E7%89%A9%E4%BB%B6%E5%B1%AC%E6%80%A7%EF%BC%8CObject-Attribute)">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8162,10 +8237,19 @@ ref:</p>
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">' '</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Account</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">''' 定義用戶帳號類別 '''</span>
+    <span class="n">bankname</span> <span class="o">=</span> <span class="s1">'Taipei Bank'</span>                <span class="c1"># 定義類別屬性(Class attribute)</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uname</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>       
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">uname</span>                   <span class="c1"># 定義成員屬性(Member attribute)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">=</span> <span class="n">money</span>                
 
-<span class="n">i</span>  <span class="c1"># it's still globle after for... loop</span>
+    <span class="k">def</span> <span class="nf">get_balance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>                  <span class="c1"># 定義成員方法(Member methods)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">balance</span>                 <span class="c1"># 取用成員及類別的 attribute 需要加上 self</span>
+
+<span class="n">isaac_account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s1">'Isaac Li'</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>             <span class="c1"># self指向issac_account本身</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"開戶銀行：</span><span class="si">{</span><span class="n">isaac_account</span><span class="o">.</span><span class="n">bankname</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"銀行餘額：</span><span class="si">{</span><span class="n">isaac_account</span><span class="o">.</span><span class="n">balance</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
