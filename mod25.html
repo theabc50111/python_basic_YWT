@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>mod19</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>mod25</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7509,205 +7509,47 @@ a.anchor-link {
 </style>
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-<main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1><font color="red"> Module_19_函數進階使用方法 </font></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="P19-2">P19-2<a class="anchor-link" href="#P19-2">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E7%95%B6%E4%BD%9C%E5%BC%95%E6%95%B8(argument)%E5%82%B3%E9%81%9E">當作引數(argument)傳遞<a class="anchor-link" href="#%E7%95%B6%E4%BD%9C%E5%BC%95%E6%95%B8(argument)%E5%82%B3%E9%81%9E">¶</a></h3><ul>
-<li><h4 id="Function-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%83%8F%E4%B8%80%E8%88%AC%E7%89%A9%E4%BB%B6%E4%B8%80%E6%A8%A3,%E7%95%B6%E4%BD%9C%E5%BC%95%E6%95%B8%E5%82%B3%E7%B5%A6%E5%85%B6%E4%BB%96%E7%9A%84-functions">Function 也可以像一般物件一樣,當作引數傳給其他的 functions<a class="anchor-link" href="#Function-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E5%83%8F%E4%B8%80%E8%88%AC%E7%89%A9%E4%BB%B6%E4%B8%80%E6%A8%A3,%E7%95%B6%E4%BD%9C%E5%BC%95%E6%95%B8%E5%82%B3%E7%B5%A6%E5%85%B6%E4%BB%96%E7%9A%84-functions">¶</a></h4></li>
-</ul>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<main><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">add_one</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">num</span> <span class="o">+</span> <span class="mi">1</span>
-
-<span class="k">def</span> <span class="nf">myfunc</span><span class="p">(</span><span class="n">func</span><span class="p">):</span> 
-<span class="w">    </span><span class="sd">"""</span>
-<span class="sd">    - func: take function as arg</span>
-<span class="sd">    """</span>
-    <span class="n">num</span> <span class="o">=</span> <span class="mi">12</span> 
-    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-
-<span class="n">myfunc</span><span class="p">(</span><span class="n">add_one</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">subprocess</span> <span class="kn">import</span> <span class="n">Popen</span>
+<span class="n">note</span> <span class="o">=</span> <span class="n">Popen</span><span class="p">(</span><span class="s1">'ping -c 5 8.8.8.8'</span><span class="p">,</span> <span class="n">shell</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'info of note process: </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">note</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E7%95%B6%E4%BD%9Cfunction%E7%9A%84%E5%82%B3%E5%9B%9E%E5%80%BC">當作function的傳回值<a class="anchor-link" href="#%E7%95%B6%E4%BD%9Cfunction%E7%9A%84%E5%82%B3%E5%9B%9E%E5%80%BC">¶</a></h3><ul>
-<li><h4 id="%E5%87%BD%E6%95%B8%E5%82%B3%E5%9B%9E%E5%87%BD%E6%95%B8-%E2%87%92-Function-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E7%94%A2%E7%94%9F%E5%8F%A6%E4%B8%80%E5%80%8Bfunction,%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E5%B0%B1%E6%98%AF%E5%88%A9%E7%94%A8%E5%87%BD%E6%95%B8%E5%82%B3%E5%9B%9E%E5%8F%A6%E4%B8%80%E5%80%8B%E5%87%BD%E6%95%B8">函數傳回函數 ⇒ Function 也可以產生另一個function,使用技巧就是利用函數傳回另一個函數<a class="anchor-link" href="#%E5%87%BD%E6%95%B8%E5%82%B3%E5%9B%9E%E5%87%BD%E6%95%B8-%E2%87%92-Function-%E4%B9%9F%E5%8F%AF%E4%BB%A5%E7%94%A2%E7%94%9F%E5%8F%A6%E4%B8%80%E5%80%8Bfunction,%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%E5%B0%B1%E6%98%AF%E5%88%A9%E7%94%A8%E5%87%BD%E6%95%B8%E5%82%B3%E5%9B%9E%E5%8F%A6%E4%B8%80%E5%80%8B%E5%87%BD%E6%95%B8">¶</a></h4></li>
-</ul>
-</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>info of note process: &lt;subprocess.Popen object at 0x7fd6941b5b50&gt;
+</pre>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">say_hello</span><span class="p">():</span> 
-    <span class="k">def</span> <span class="nf">say_hi</span><span class="p">():</span> 
-        <span class="k">return</span> <span class="s2">"Hi"</span> 
-    <span class="k">return</span> <span class="n">say_hi</span>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+64 bytes from 8.8.8.8: icmp_seq=1 ttl=111 time=14.8 ms
+64 bytes from 8.8.8.8: icmp_seq=2 ttl=111 time=16.4 ms
+64 bytes from 8.8.8.8: icmp_seq=3 ttl=111 time=13.3 ms
+64 bytes from 8.8.8.8: icmp_seq=4 ttl=111 time=11.9 ms
+64 bytes from 8.8.8.8: icmp_seq=5 ttl=111 time=13.3 ms
 
-<span class="c1">#使用函數 </span>
-<span class="n">hello</span> <span class="o">=</span> <span class="n">say_hello</span><span class="p">()</span>
-<span class="n">hello</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E6%8C%87%E5%AE%9A%E7%B5%A6%E8%AE%8A%E6%95%B8%E5%8F%83%E8%80%83(assignment-operation)">指定給變數參考(assignment operation)<a class="anchor-link" href="#%E6%8C%87%E5%AE%9A%E7%B5%A6%E8%AE%8A%E6%95%B8%E5%8F%83%E8%80%83(assignment-operation)">¶</a></h3><ul>
-<li><h4 id="%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%80%8Bfunction,%E4%B8%A6%E5%B0%87%E5%85%B6%E6%8C%87%E5%AE%9A%E7%B5%A6%E4%B8%80%E5%80%8B%E8%AE%8A%E6%95%B8%E5%8F%83%E8%80%83,%E5%88%A9%E7%94%A8%E8%A9%B2%E8%AE%8A%E6%95%B8%E5%91%BC%E5%8F%AB-function">建立一個function,並將其指定給一個變數參考,利用該變數呼叫 function<a class="anchor-link" href="#%E5%BB%BA%E7%AB%8B%E4%B8%80%E5%80%8Bfunction,%E4%B8%A6%E5%B0%87%E5%85%B6%E6%8C%87%E5%AE%9A%E7%B5%A6%E4%B8%80%E5%80%8B%E8%AE%8A%E6%95%B8%E5%8F%83%E8%80%83,%E5%88%A9%E7%94%A8%E8%A9%B2%E8%AE%8A%E6%95%B8%E5%91%BC%E5%8F%AB-function">¶</a></h4></li>
-</ul>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">add_one</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">num</span><span class="o">+</span><span class="mi">1</span>
-
-<span class="n">add1</span> <span class="o">=</span> <span class="n">add_one</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">add1</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Nested-Function">Nested Function<a class="anchor-link" href="#Nested-Function">¶</a></h3><details>
-<img alt="No description has been provided for this image" src="./img/variable_scope.png" style="height:400px"/>
-</details>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
-    <span class="n">b</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="mi">2</span>
-    <span class="k">def</span> <span class="nf">bar</span><span class="p">(</span><span class="n">c</span><span class="p">):</span>  <span class="c1"># bar() is a nested function</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">)</span>
-    <span class="n">bar</span><span class="p">(</span><span class="n">b</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span>
-
-<span class="n">foo</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<hr/>
-<h1 id="P19-4">P19-4<a class="anchor-link" href="#P19-4">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Enclosed-scope-&amp;-nonlocal">Enclosed scope &amp; <code>nonlocal</code><a class="anchor-link" href="#Enclosed-scope-&amp;-nonlocal">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">foo</span><span class="p">():</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-    <span class="k">def</span> <span class="nf">bar</span><span class="p">():</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>  
-        <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># call local of bar()</span>
-    <span class="n">bar</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># call local of foo()</span>
-
-<span class="n">foo</span><span class="p">()</span>
-</pre></div>
+--- 8.8.8.8 ping statistics ---
+5 packets transmitted, 5 received, 0% packet loss, time 4006ms
+rtt min/avg/max/mdev = 11.854/13.917/16.367/1.544 ms
+</pre>
 </div>
 </div>
 </div>
@@ -7720,290 +7562,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">foo</span><span class="p">():</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-    <span class="k">def</span> <span class="nf">bar</span><span class="p">():</span>
-        <span class="k">nonlocal</span> <span class="n">x</span>  <span class="c1"># call parent's scope x</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-    <span class="n">bar</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># call local of foo()</span>
-
-<span class="n">foo</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">g_a</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">def</span> <span class="nf">f1</span><span class="p">():</span>
-    <span class="n">g_a</span> <span class="o">=</span> <span class="mi">100</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">g_a</span><span class="p">)</span>
-    <span class="k">def</span> <span class="nf">f2</span><span class="p">():</span>
-        <span class="c1"># nonlocal g_a </span>
-        <span class="n">g_a</span> <span class="o">=</span> <span class="mi">20</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">g_a</span><span class="p">)</span>
-    <span class="n">f2</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">g_a</span><span class="p">)</span>
-
-<span class="n">f1</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">g_a</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="global-vs-nonlocal"><code>global</code> vs <code>nonlocal</code><a class="anchor-link" href="#global-vs-nonlocal">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">def</span> <span class="nf">bar</span><span class="p">():</span>
-    <span class="k">global</span> <span class="n">x</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>
-<span class="n">bar</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># 20</span>
-
-<span class="k">def</span> <span class="nf">baz</span><span class="p">():</span>
-    <span class="k">nonlocal</span> <span class="n">x</span>  <span class="c1"># Can't binding nonlocal variable to global variable</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>  
-<span class="n">baz</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="k">def</span> <span class="nf">foo</span><span class="p">():</span>
-    <span class="n">x</span><span class="o">=</span><span class="mi">5</span>
-    <span class="k">def</span> <span class="nf">bar</span><span class="p">():</span>
-        <span class="k">nonlocal</span> <span class="n">x</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-    <span class="k">def</span> <span class="nf">baz</span><span class="p">():</span>
-        <span class="k">global</span> <span class="n">x</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-    <span class="k">def</span> <span class="nf">qux</span><span class="p">():</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="mi">300</span>
-        <span class="k">def</span> <span class="nf">quux</span><span class="p">():</span>
-            <span class="k">nonlocal</span> <span class="n">x</span>
-            <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-        <span class="k">def</span> <span class="nf">quuz</span><span class="p">():</span>
-            <span class="k">global</span> <span class="n">x</span>
-            <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-        <span class="n">quux</span><span class="p">()</span>
-        <span class="n">quuz</span><span class="p">()</span>
-    <span class="n">bar</span><span class="p">()</span>
-    <span class="n">baz</span><span class="p">()</span>
-    <span class="n">qux</span><span class="p">()</span>
-
-<span class="n">foo</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<hr/>
-<h1 id="P19-5-Decorator">P19-5 Decorator<a class="anchor-link" href="#P19-5-Decorator">¶</a></h1>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ul>
-<li><h3 id="%E5%B0%87@%E5%8A%A0%E5%9C%A8%E5%87%BD%E6%95%B8%E4%B8%8A">將<code>@</code>加在函數上<a class="anchor-link" href="#%E5%B0%87@%E5%8A%A0%E5%9C%A8%E5%87%BD%E6%95%B8%E4%B8%8A">¶</a></h3></li>
-<li><h3 id="@%E7%9B%B8%E7%95%B6%E6%96%BC-f2=f1(f2)"><code>@</code>相當於 <code>f2=f1(f2)</code><a class="anchor-link" href="#@%E7%9B%B8%E7%95%B6%E6%96%BC-f2=f1(f2)">¶</a></h3></li>
-</ul>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f1</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
-    <span class="nb">print</span> <span class="p">(</span><span class="s2">"f1"</span><span class="p">)</span>
-    <span class="n">func_ret</span> <span class="o">=</span> <span class="n">func</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">func_ret</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">func_ret</span> <span class="o">+</span> <span class="s2">" &amp; f1_return"</span>
-
-<span class="k">def</span> <span class="nf">f2</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"f2"</span><span class="p">)</span>
-    <span class="k">return</span> <span class="s2">"f2_return"</span>
-
-<span class="n">f2</span> <span class="o">=</span> <span class="n">f1</span><span class="p">(</span><span class="n">f2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f1</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
-    <span class="nb">print</span> <span class="p">(</span><span class="s2">"f1"</span><span class="p">)</span>
-    <span class="n">func_ret</span> <span class="o">=</span> <span class="n">func</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">func_ret</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">func_ret</span> <span class="o">+</span> <span class="s2">" &amp; f1_return"</span>
-
-<span class="nd">@f1</span>
-<span class="k">def</span> <span class="nf">f2</span><span class="p">():</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"f2"</span><span class="p">)</span>
-    <span class="k">return</span> <span class="s2">"f2_return"</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">f2</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Decorator-%E6%87%89%E7%94%A8%E7%AF%84%E4%BE%8B">Decorator 應用範例<a class="anchor-link" href="#Decorator-%E6%87%89%E7%94%A8%E7%AF%84%E4%BE%8B">¶</a></h3><ul>
-<li><h4 id="%E5%AE%83%E5%85%81%E8%A8%B1%E4%BD%BF%E7%94%A8%E8%80%85%E5%9C%A8%E4%B8%8D%E6%94%B9%E8%AE%8A%E7%8F%BE%E6%9C%89%E7%89%A9%E4%BB%B6%E7%9A%84%E7%B5%90%E6%A7%8B%E4%B8%8B,-%E5%A2%9E%E5%8A%A0%E6%96%B0%E7%9A%84%E5%8A%9F%E8%83%BD">它允許使用者在不改變現有物件的結構下, <font color="red">增加新的功能</font><a class="anchor-link" href="#%E5%AE%83%E5%85%81%E8%A8%B1%E4%BD%BF%E7%94%A8%E8%80%85%E5%9C%A8%E4%B8%8D%E6%94%B9%E8%AE%8A%E7%8F%BE%E6%9C%89%E7%89%A9%E4%BB%B6%E7%9A%84%E7%B5%90%E6%A7%8B%E4%B8%8B,-%E5%A2%9E%E5%8A%A0%E6%96%B0%E7%9A%84%E5%8A%9F%E8%83%BD">¶</a></h4></li>
-</ul>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
-
-<span class="k">def</span> <span class="nf">dosomething</span><span class="p">(</span><span class="n">sleep_time</span><span class="p">):</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleep_time</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'do some thing'</span><span class="p">)</span>
-
-<span class="n">dosomething</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
-
-<span class="k">def</span> <span class="nf">timer</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">wrap</span><span class="p">(</span><span class="n">sleep_time</span><span class="p">):</span>
-        <span class="n">t_start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>              <span class="c1"># 紀錄func()開始執行前的時間</span>
-        <span class="n">func</span><span class="p">(</span><span class="n">sleep_time</span><span class="p">)</span>
-        <span class="n">t_end</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>                <span class="c1"># 紀錄func()結束執行後的時間</span>
-        <span class="n">t_count</span> <span class="o">=</span> <span class="n">t_end</span> <span class="o">-</span> <span class="n">t_start</span>          <span class="c1"># 計算func()執行時間</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">'[花費時間]'</span><span class="p">,</span> <span class="n">t_count</span><span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">wrap</span>
-
-
-<span class="k">def</span> <span class="nf">dosomething</span><span class="p">(</span><span class="n">sleep_time</span><span class="p">):</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleep_time</span><span class="p">)</span>                  <span class="c1"># 暫停執行腳本</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'do some thing'</span><span class="p">)</span>
-
-
-<span class="n">foo</span> <span class="o">=</span> <span class="n">timer</span><span class="p">(</span><span class="n">dosomething</span><span class="p">)</span>
-<span class="n">foo</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">time</span>
-
-<span class="k">def</span> <span class="nf">timer</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">wrap</span><span class="p">(</span><span class="n">sleep_time</span><span class="p">):</span>
-        <span class="n">t_start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>              <span class="c1"># 紀錄func()開始執行前的時間</span>
-        <span class="n">func</span><span class="p">(</span><span class="n">sleep_time</span><span class="p">)</span>
-        <span class="n">t_end</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>                <span class="c1"># 紀錄func()結束執行後的時間</span>
-        <span class="n">t_count</span> <span class="o">=</span> <span class="n">t_end</span> <span class="o">-</span> <span class="n">t_start</span>          <span class="c1"># 計算func()執行時間</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s1">'[花費時間]'</span><span class="p">,</span> <span class="n">t_count</span><span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">wrap</span>
-
-
-<span class="nd">@timer</span>
-<span class="k">def</span> <span class="nf">dosomething</span><span class="p">(</span><span class="n">sleep_time</span><span class="p">):</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleep_time</span><span class="p">)</span>                  <span class="c1"># 暫停執行腳本</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">'do some thing'</span><span class="p">)</span>
-
-
-<span class="n">dosomething</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span> 
 </pre></div>
 </div>
 </div>

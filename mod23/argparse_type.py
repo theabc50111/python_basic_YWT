@@ -1,0 +1,10 @@
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("--type_str", type=str)
+parser.add_argument("--type_int", type=int)
+parser.add_argument("--type_float", type=float)
+args = parser.parse_args()
+print(f"args.type_str: {args.type_str}, type(args.type_str): {type(args.type_str)}")
+print(f"args.type_int: {args.type_int}, type(args.type_int): {type(args.type_int)}")
+print(f"args.type_float: {args.type_float}, type(args.type_float): {type(args.type_float)}")
+print("argarse_type.py finished")
