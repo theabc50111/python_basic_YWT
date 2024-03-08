@@ -7749,7 +7749,7 @@ a.anchor-link {
     <span class="n">g_a</span> <span class="o">=</span> <span class="mi">100</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">g_a</span><span class="p">)</span>
     <span class="k">def</span> <span class="nf">f2</span><span class="p">():</span>
-        <span class="c1"># nonlocal g_a </span>
+        <span class="k">nonlocal</span> <span class="n">g_a</span> 
         <span class="n">g_a</span> <span class="o">=</span> <span class="mi">20</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">g_a</span><span class="p">)</span>
     <span class="n">f2</span><span class="p">()</span>
@@ -8004,6 +8004,80 @@ a.anchor-link {
 
 
 <span class="n">dosomething</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<hr/>
+<h1 id="%E2%99%A0-%E8%A3%9C%E5%85%85">♠ 補充<a class="anchor-link" href="#%E2%99%A0-%E8%A3%9C%E5%85%85">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E5%87%BD%E6%95%B8%E8%A8%BB%E8%A7%A3(Function-Annotations)">函數註解(Function Annotations)<a class="anchor-link" href="#%E5%87%BD%E6%95%B8%E8%A8%BB%E8%A7%A3(Function-Annotations)">¶</a></h3><ul>
+<li><h4 id="type-hint">type hint<a class="anchor-link" href="#type-hint">¶</a></h4></li>
+<li><h4 id="Function-Annotations%E5%8F%AF%E4%BB%A5%E8%AE%93%E4%BD%A0%E5%9C%A8%E5%AE%9A%E7%BE%A9%E5%87%BD%E6%95%B8%E7%9A%84%E6%99%82%E5%80%99%E5%B0%8D%E5%8F%83%E6%95%B8%E5%92%8C%E8%BF%94%E5%9B%9E%E5%80%BC%E6%B7%BB%E5%8A%A0%E5%9E%8B%E5%88%A5%E8%A8%BB%E8%A7%A3">Function Annotations可以讓你在定義函數的時候對參數和返回值添加型別註解<a class="anchor-link" href="#Function-Annotations%E5%8F%AF%E4%BB%A5%E8%AE%93%E4%BD%A0%E5%9C%A8%E5%AE%9A%E7%BE%A9%E5%87%BD%E6%95%B8%E7%9A%84%E6%99%82%E5%80%99%E5%B0%8D%E5%8F%83%E6%95%B8%E5%92%8C%E8%BF%94%E5%9B%9E%E5%80%BC%E6%B7%BB%E5%8A%A0%E5%9E%8B%E5%88%A5%E8%A8%BB%E8%A7%A3">¶</a></h4></li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">c</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">:</span> 
+    <span class="k">return</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li><h4 id="%E8%A8%BB%E8%A7%A3%E5%85%A7%E5%AE%B9%E5%8F%AF%E4%BB%A5%E6%98%AF">註解內容可以是<a class="anchor-link" href="#%E8%A8%BB%E8%A7%A3%E5%85%A7%E5%AE%B9%E5%8F%AF%E4%BB%A5%E6%98%AF">¶</a></h4><ul>
+<li><h5 id="%E5%9E%8B%E5%88%A5">型別<a class="anchor-link" href="#%E5%9E%8B%E5%88%A5">¶</a></h5></li>
+<li><h5 id="string">string<a class="anchor-link" href="#string">¶</a></h5></li>
+<li><h5 id="expression">expression<a class="anchor-link" href="#expression">¶</a></h5></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">bar</span><span class="p">(</span><span class="n">a</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">b</span><span class="p">:</span> <span class="s2">"it's b'"</span><span class="p">,</span> <span class="n">c</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="mi">5</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="mi">2</span><span class="o">*</span><span class="mi">2</span><span class="p">:</span>
+    <span class="k">return</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span>
 </pre></div>
 </div>
 </div>

@@ -8098,7 +8098,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>  <span class="c1"># len()用在list上是計算元素的數量</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># len() 可以接收多種類型的資料</span>
+<span class="nb">len</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>  <span class="c1"># len()用在list上是計算元素的數量</span>
 <span class="nb">len</span><span class="p">(</span><span class="s2">"ABC"</span><span class="p">)</span>            <span class="c1"># len()用在字串上是計算字串長度</span>
 </pre></div>
 </div>
@@ -8225,7 +8226,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="%E9%A1%9E%E5%88%A5%E5%B1%AC%E6%80%A7(Class-Attribute)-&amp;-%E6%88%90%E5%93%A1%E5%B1%AC%E6%80%A7(Member-Attribute,-%E5%AF%A6%E4%BE%8B%E5%B1%AC%E6%80%A7%EF%BC%8CInstance-Attribute%EF%BC%8C%E7%89%A9%E4%BB%B6%E5%B1%AC%E6%80%A7%EF%BC%8CObject-Attribute)">類別屬性(Class Attribute) &amp; 成員屬性(Member Attribute, 實例屬性，Instance Attribute，物件屬性，Object Attribute)<a class="anchor-link" href="#%E9%A1%9E%E5%88%A5%E5%B1%AC%E6%80%A7(Class-Attribute)-&amp;-%E6%88%90%E5%93%A1%E5%B1%AC%E6%80%A7(Member-Attribute,-%E5%AF%A6%E4%BE%8B%E5%B1%AC%E6%80%A7%EF%BC%8CInstance-Attribute%EF%BC%8C%E7%89%A9%E4%BB%B6%E5%B1%AC%E6%80%A7%EF%BC%8CObject-Attribute)">¶</a></h3>
+<h3 id="%E5%8F%AF%E4%BB%A5%E5%88%A9%E7%94%A8super()%E4%BE%86%E5%91%BC%E5%8F%ABsupclass%E7%9A%84%E6%96%B9%E6%B3%95">可以利用<code>super()</code>來呼叫supclass的方法<a class="anchor-link" href="#%E5%8F%AF%E4%BB%A5%E5%88%A9%E7%94%A8super()%E4%BE%86%E5%91%BC%E5%8F%ABsupclass%E7%9A%84%E6%96%B9%E6%B3%95">¶</a></h3>
 </div>
 </div>
 </div>
@@ -8235,6 +8236,144 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Pet</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="n">age</span>
+    <span class="k">def</span> <span class="nf">show</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"I'm </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="si">}</span><span class="s2"> years old"</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">Cat</span><span class="p">(</span><span class="n">Pet</span><span class="p">):</span>    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">color</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">age</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">color</span>
+    <span class="k">def</span> <span class="nf">show</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"I'm </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="si">}</span><span class="s2"> years old, and I'm </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">color</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        
+<span class="n">p</span> <span class="o">=</span> <span class="n">Pet</span><span class="p">(</span><span class="s2">"Tim"</span><span class="p">,</span><span class="mi">19</span><span class="p">)</span>
+<span class="n">p</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">Cat</span><span class="p">(</span><span class="s2">"Bill"</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="s2">"white"</span><span class="p">)</span> <span class="c1"># Cat use super() to call __init__() of Pet and define self.color</span>
+<span class="n">c</span><span class="o">.</span><span class="n">show</span><span class="p">()</span> <span class="c1"># Cat has its own method =&gt; show()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="mro()-&amp;-super()"><code>mro()</code> &amp; <code>super()</code><a class="anchor-link" href="#mro()-&amp;-super()">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Grandfather</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">""" 定義祖父類別 """</span>
+    <span class="k">def</span> <span class="nf">action</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Grandfather"</span><span class="p">)</span>
+        
+<span class="k">class</span> <span class="nc">Father</span><span class="p">(</span><span class="n">Grandfather</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">""" 定義父親類別 """</span>
+    <span class="k">def</span> <span class="nf">action</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>      
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Father"</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Uncle</span><span class="p">(</span><span class="n">Grandfather</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">""" 定義叔父類別 """</span>
+    <span class="k">def</span> <span class="nf">action</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>      
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Uncle"</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Isaac</span><span class="p">(</span><span class="n">Father</span><span class="p">,</span> <span class="n">Uncle</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">""" 定義Isaac類別 """</span>
+    <span class="k">def</span> <span class="nf">action_super_none</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">action</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">action_super_father</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">Father</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">action</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">action_super_uncle</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">Uncle</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">action</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">action_super_grandfather</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">Grandfather</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="n">action</span><span class="p">()</span>
+
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Methods Resoulution Order of Isaac:</span><span class="si">{</span><span class="n">Isaac</span><span class="o">.</span><span class="n">mro</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="n">isaac</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">()</span>
+<span class="n">isaac</span><span class="o">.</span><span class="n">action_super_none</span><span class="p">()</span>
+<span class="n">isaac</span><span class="o">.</span><span class="n">action_super_father</span><span class="p">()</span>
+<span class="n">isaac</span><span class="o">.</span><span class="n">action_super_uncle</span><span class="p">()</span>
+<span class="n">isaac</span><span class="o">.</span><span class="n">action_super_grandfather</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E9%9D%9C%E6%85%8B%E6%96%B9%E6%B3%95(static-method)">靜態方法(static method)<a class="anchor-link" href="#%E9%9D%9C%E6%85%8B%E6%96%B9%E6%B3%95(static-method)">¶</a></h3><ul>
+<li><h4 id="@staticmethod"><code>@staticmethod</code><a class="anchor-link" href="#@staticmethod">¶</a></h4></li>
+<li><h4 id="Static-method%E4%B8%8D%E9%9C%80%E8%A6%81%E4%B9%9F%E4%B8%8D%E8%83%BD%E5%B0%87-instance-%E4%BB%A5%E5%8F%83%E6%95%B8-self-%E4%BB%A5%E5%8F%8A-class-%E4%BB%A5%E5%8F%83%E6%95%B8-cls-%E7%9A%84%E6%96%B9%E5%BC%8F%E5%82%B3%E5%85%A5">Static method不需要也不能將 instance 以參數 <code>self</code> 以及 class 以參數 <code>cls</code> 的方式傳入<a class="anchor-link" href="#Static-method%E4%B8%8D%E9%9C%80%E8%A6%81%E4%B9%9F%E4%B8%8D%E8%83%BD%E5%B0%87-instance-%E4%BB%A5%E5%8F%83%E6%95%B8-self-%E4%BB%A5%E5%8F%8A-class-%E4%BB%A5%E5%8F%83%E6%95%B8-cls-%E7%9A%84%E6%96%B9%E5%BC%8F%E5%82%B3%E5%85%A5">¶</a></h4></li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Math</span><span class="p">:</span>
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">add5</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">x</span><span class="o">+</span><span class="mi">5</span>
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">add10</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">x</span><span class="o">+</span><span class="mi">10</span>
+    
+<span class="nb">print</span><span class="p">(</span><span class="n">Math</span><span class="o">.</span><span class="n">add10</span><span class="p">(</span><span class="mi">20</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Math</span><span class="o">.</span><span class="n">add5</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E9%A1%9E%E5%88%A5%E5%B1%AC%E6%80%A7(Class-Attribute)-&amp;-%E6%88%90%E5%93%A1%E5%B1%AC%E6%80%A7(Member-Attribute,-%E5%AF%A6%E4%BE%8B%E5%B1%AC%E6%80%A7%EF%BC%8CInstance-Attribute%EF%BC%8C%E7%89%A9%E4%BB%B6%E5%B1%AC%E6%80%A7%EF%BC%8CObject-Attribute)">類別屬性(Class Attribute) &amp; 成員屬性(Member Attribute, 實例屬性，Instance Attribute，物件屬性，Object Attribute)<a class="anchor-link" href="#%E9%A1%9E%E5%88%A5%E5%B1%AC%E6%80%A7(Class-Attribute)-&amp;-%E6%88%90%E5%93%A1%E5%B1%AC%E6%80%A7(Member-Attribute,-%E5%AF%A6%E4%BE%8B%E5%B1%AC%E6%80%A7%EF%BC%8CInstance-Attribute%EF%BC%8C%E7%89%A9%E4%BB%B6%E5%B1%AC%E6%80%A7%EF%BC%8CObject-Attribute)">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Account</span><span class="p">():</span>
@@ -8249,8 +8388,86 @@ a.anchor-link {
 
 <span class="n">isaac_account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s1">'Isaac Li'</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>             <span class="c1"># self指向issac_account本身</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"開戶銀行：</span><span class="si">{</span><span class="n">isaac_account</span><span class="o">.</span><span class="n">bankname</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"銀行餘額：</span><span class="si">{</span><span class="n">isaac_account</span><span class="o">.</span><span class="n">balance</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"銀行餘額：</span><span class="si">{</span><span class="n">isaac_account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>開戶銀行：Taipei Bank
+銀行餘額：100
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="%E9%A1%9E%E5%88%A5%E6%96%B9%E6%B3%95(class-method)">類別方法(class method)<a class="anchor-link" href="#%E9%A1%9E%E5%88%A5%E6%96%B9%E6%B3%95(class-method)">¶</a></h3><ul>
+<li><h4 id="@classmethod"><code>@classmethod</code><a class="anchor-link" href="#@classmethod">¶</a></h4></li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Account</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">''' 定義用戶帳號類別 '''</span>
+    <span class="n">bankname</span> <span class="o">=</span> <span class="s1">'Taipei Bank'</span>                <span class="c1"># 定義類別屬性(Class attribute)</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uname</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>       
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">uname</span>                   <span class="c1"># 定義成員屬性(Member attribute)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">=</span> <span class="n">money</span>                
+
+    <span class="k">def</span> <span class="nf">get_balance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>                  <span class="c1"># 定義成員方法(Member methods)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">balance</span>                 <span class="c1"># 取用成員及類別的 attribute 需要加上 self</span>
+    
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">show_bankname</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="bp">cls</span><span class="o">.</span><span class="n">bankname</span><span class="p">)</span>
+    
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">create_virtual_account</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="s2">"virtual_user"</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="n">virtual_account</span> <span class="o">=</span> <span class="n">Account</span><span class="o">.</span><span class="n">create_virtual_account</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"開戶銀行：</span><span class="si">{</span><span class="n">virtual_account</span><span class="o">.</span><span class="n">show_bankname</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"用戶名稱：</span><span class="si">{</span><span class="n">virtual_account</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"銀行餘額：</span><span class="si">{</span><span class="n">virtual_account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>Taipei Bank
+開戶銀行：None
+用戶名稱：virtual_user
+銀行餘額：0
+</pre>
 </div>
 </div>
 </div>
