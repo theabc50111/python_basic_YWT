@@ -7575,7 +7575,6 @@ a.anchor-link {
 <ul>
 <li><h3 id="%E5%85%A7%E5%BB%BA%E5%87%BD%E6%95%B8iter()%E5%BB%BA%E7%AB%8BIterator">內建函數<code>iter()</code>建立Iterator<a class="anchor-link" href="#%E5%85%A7%E5%BB%BA%E5%87%BD%E6%95%B8iter()%E5%BB%BA%E7%AB%8BIterator">¶</a></h3></li>
 <li><h3 id="%E5%B1%AC%E6%96%BCiterator%E7%9A%84%E7%89%A9%E4%BB%B6%E6%9C%83%E5%8C%85%E5%90%AB__iter__()-%E8%88%87-__next__()">屬於iterator的物件會包含<code>__iter__()</code> 與 <code>__next__()</code><a class="anchor-link" href="#%E5%B1%AC%E6%96%BCiterator%E7%9A%84%E7%89%A9%E4%BB%B6%E6%9C%83%E5%8C%85%E5%90%AB__iter__()-%E8%88%87-__next__()">¶</a></h3></li>
-<li><h3 id="Iterator-%E8%A3%A1%E7%9A%84%E5%85%83%E7%B4%A0%E7%94%A8%E5%AE%8C%E4%B9%8B%E5%BE%8C%E6%9C%83%E7%99%BC%E5%87%BAStopIteration">Iterator 裡的元素用完之後會發出<code>StopIteration</code><a class="anchor-link" href="#Iterator-%E8%A3%A1%E7%9A%84%E5%85%83%E7%B4%A0%E7%94%A8%E5%AE%8C%E4%B9%8B%E5%BE%8C%E6%9C%83%E7%99%BC%E5%87%BAStopIteration">¶</a></h3></li>
 </ul>
 </div>
 </div>
@@ -7596,12 +7595,6 @@ a.anchor-link {
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Is numbers_iterator a instance of Iterable:</span><span class="si">{</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">numbers_iterator</span><span class="p">,</span><span class="w"> </span><span class="n">Iterable</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Is numbers_iterator a inatance of Iterator:</span><span class="si">{</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">numbers_iterator</span><span class="p">,</span><span class="w"> </span><span class="n">Iterator</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">dir</span><span class="p">(</span><span class="n">numbers_iterator</span><span class="p">))</span>  <span class="c1"># __iter__ &amp; __next__</span>
-
-<span class="k">try</span><span class="p">:</span>
-    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">numbers_iterator</span><span class="p">))</span>  <span class="c1"># Print elements one by one</span>
-<span class="k">except</span> <span class="ne">StopIteration</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"numbers_iterator raise StopItreration"</span><span class="p">)</span>  <span class="c1"># Handle end of iteration</span>
 </pre></div>
 </div>
 </div>
@@ -7635,6 +7628,40 @@ a.anchor-link {
 <span class="nb">print</span><span class="p">(</span><span class="s2">"---------------------In for loop---------------------"</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">numbers_iterator</span> <span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<ul>
+<li><h3 id="Iterator-%E8%A3%A1%E7%9A%84%E5%85%83%E7%B4%A0%E7%94%A8%E5%AE%8C%E4%B9%8B%E5%BE%8C%E6%9C%83%E7%99%BC%E5%87%BAStopIteration">Iterator 裡的元素用完之後會發出<code>StopIteration</code><a class="anchor-link" href="#Iterator-%E8%A3%A1%E7%9A%84%E5%85%83%E7%B4%A0%E7%94%A8%E5%AE%8C%E4%B9%8B%E5%BE%8C%E6%9C%83%E7%99%BC%E5%87%BAStopIteration">¶</a></h3></li>
+</ul>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">numbers_iterator</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>  <span class="c1"># Create an iterator</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">numbers_iterator</span><span class="p">))</span>  <span class="c1"># Print elements one by one</span>
+<span class="k">except</span> <span class="ne">StopIteration</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"numbers_iterator raise StopItreration"</span><span class="p">)</span>  <span class="c1"># Handle end of iteration</span>
 </pre></div>
 </div>
 </div>
@@ -7824,12 +7851,12 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">MyGenerator</span><span class="p">:</span>
@@ -7844,6 +7871,7 @@ a.anchor-link {
             <span class="k">yield</span> <span class="bp">self</span><span class="o">.</span><span class="n">index</span>
 
 
+
 <span class="n">my_generator</span> <span class="o">=</span> <span class="n">MyGenerator</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">my_generator</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
@@ -7851,6 +7879,25 @@ a.anchor-link {
 <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">my_generator</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>1
+2
+3
+-------------------------my_generator would start over again-------------------------
+1
+2
+3
+</pre>
 </div>
 </div>
 </div>

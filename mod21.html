@@ -7544,9 +7544,9 @@ a.anchor-link {
 <span class="w">    </span><span class="sd">''' 定義用戶帳號類別 '''</span>
     <span class="k">def</span> <span class="nf">get_balance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>            <span class="c1"># 定義成員方法，成員方法的第一個參數要是self(成員方法，Member method, 實例方法，Instance method，物件方法，Object method)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">=</span> <span class="mi">0</span>              <span class="c1"># 定義成員屬性，存取成員的attribute時，需要在前面加上 self(成員屬性，Member attribute, 實例屬性，Instance attribute，物件屬性，Object attribute)</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s2">"Not set yet, the defalt values of balance:</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="si">}</span><span class="s2">"</span>  <span class="c1"># 存取成員的attribute時，需要在前面加上 self</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">"Not set yet, the default values of balance:</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="si">}</span><span class="s2">"</span>  <span class="c1"># 存取成員的attribute時，需要在前面加上 self</span>
 
-<span class="n">user_a_account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">()</span>              <span class="c1"># 定義成員user_a_bank，其類別為Account</span>
+<span class="n">user_a_account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">()</span>              <span class="c1"># 定義成員user_a_account，其類別為Account</span>
 <span class="c1"># print("銀行餘額是 ", user_a_account.balance)  # balance是user_a_account的屬性，執行user_a_account.get_balance()前，user_a_account.balance不存在</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"銀行餘額是(透過存取Member methods): </span><span class="si">{</span><span class="n">user_a_account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">()</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"銀行餘額是 "</span><span class="p">,</span> <span class="n">user_a_account</span><span class="o">.</span><span class="n">balance</span><span class="p">)</span>  <span class="c1"># balance是user_a_account的屬性</span>
@@ -7746,11 +7746,11 @@ a.anchor-link {
         <span class="bp">self</span><span class="o">.</span><span class="n">__balance</span> <span class="o">=</span> <span class="n">money</span>                                          <span class="c1"># 將餘額設定為私有化</span>
 
     <span class="k">def</span> <span class="nf">save_money</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>                                        <span class="c1"># 設計存款方法</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">+=</span> <span class="n">money</span>                                           <span class="c1"># 執行存款</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__balance</span> <span class="o">+=</span> <span class="n">money</span>                                           <span class="c1"># 執行存款</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">存進</span><span class="si">{</span><span class="n">money</span><span class="si">}</span><span class="s2">，目前餘額為：</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__balance</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>       <span class="c1"># 列印存款完成</span>
 
     <span class="k">def</span> <span class="nf">withdraw_money</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>                                    <span class="c1"># 設計提款方法</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">balance</span> <span class="o">-=</span> <span class="n">money</span>                                           <span class="c1"># 執行提款</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__balance</span> <span class="o">-=</span> <span class="n">money</span>                                           <span class="c1"># 執行提款</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">提領出</span><span class="si">{</span><span class="n">money</span><span class="si">}</span><span class="s2">，目前餘額為：</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__balance</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>     <span class="c1"># 列印提款完成</span>
 
     <span class="k">def</span> <span class="nf">get_balance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>                  <span class="c1"># 獲得存款餘額</span>
@@ -7818,12 +7818,12 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Account</span><span class="p">():</span>
@@ -7839,12 +7839,12 @@ a.anchor-link {
     <span class="nd">@balance</span><span class="o">.</span><span class="n">setter</span>
     <span class="k">def</span> <span class="nf">save_money</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>                                               <span class="c1"># 透過setter將其轉化為可以對balance的值進行修改的屬性</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_hard_to_guess</span> <span class="o">+=</span> <span class="n">money</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">存進</span><span class="si">{</span><span class="n">money</span><span class="si">}</span><span class="s2">，目前餘額為：</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_hard_to_guess</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">存進</span><span class="si">{</span><span class="n">money</span><span class="si">}</span><span class="s2">，目前餘額為：</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
     <span class="nd">@balance</span><span class="o">.</span><span class="n">setter</span>
     <span class="k">def</span> <span class="nf">withdraw_money</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">money</span><span class="p">):</span>                                           <span class="c1"># 透過setter將其轉化為可以對balance的值進行修改的屬性</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_hard_to_guess</span> <span class="o">-=</span> <span class="n">money</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">提領出</span><span class="si">{</span><span class="n">money</span><span class="si">}</span><span class="s2">，目前餘額為：</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_hard_to_guess</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">提領出</span><span class="si">{</span><span class="n">money</span><span class="si">}</span><span class="s2">，目前餘額為：</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
     <span class="k">def</span> <span class="nf">get_balance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"目前</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">帳戶裡的餘額為</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">balance</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
@@ -7857,6 +7857,41 @@ a.anchor-link {
 <span class="n">isaac_account</span><span class="o">.</span><span class="n">withdraw_money</span> <span class="o">=</span> <span class="mi">200</span>
 <span class="n">isaac_account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">()</span>                      
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>目前Isaac Li帳戶裡的餘額為100
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">AttributeError</span>                            Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In[3], line 27</span>
+<span class="ansi-green-intense-fg ansi-bold">     25</span> isaac_account = Account('Isaac Li', 100)
+<span class="ansi-green-intense-fg ansi-bold">     26</span> isaac_account.get_balance()                      
+<span class="ansi-green-fg">---&gt; 27</span> isaac_account.save_money = 500
+<span class="ansi-green-intense-fg ansi-bold">     28</span> isaac_account.get_balance()
+<span class="ansi-green-intense-fg ansi-bold">     29</span> isaac_account.withdraw_money = 200
+
+Cell <span class="ansi-green-fg">In[3], line 13</span>, in <span class="ansi-cyan-fg">Account.save_money</span><span class="ansi-blue-fg">(self, money)</span>
+<span class="ansi-green-intense-fg ansi-bold">     11</span> @balance.setter
+<span class="ansi-green-intense-fg ansi-bold">     12</span> def save_money(self, money):                                               # 透過setter將其轉化為可以對balance的值進行修改的屬性
+<span class="ansi-green-fg">---&gt; 13</span>     self.balance += money
+<span class="ansi-green-intense-fg ansi-bold">     14</span>     print(f"{self.name}存進{money}，目前餘額為：{self.balance}")
+
+<span class="ansi-red-fg">AttributeError</span>: can't set attribute</pre>
 </div>
 </div>
 </div>
@@ -7938,7 +7973,7 @@ a.anchor-link {
 <span class="n">isaac</span> <span class="o">=</span> <span class="n">Son</span><span class="p">()</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Is dylan an instance of Father: </span><span class="si">{</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">dylan</span><span class="p">,</span><span class="w"> </span><span class="n">Father</span><span class="p">)</span><span class="si">}</span><span class="s2">, Is isaac an instance of Father: </span><span class="si">{</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">isaac</span><span class="p">,</span><span class="w"> </span><span class="n">Father</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>      <span class="c1"># 子類別的物件可以被視為父類別物件</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Is dylan an instance of Son: </span><span class="si">{</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">dylan</span><span class="p">,</span><span class="w"> </span><span class="n">Son</span><span class="p">)</span><span class="si">}</span><span class="s2">, Is isaac an instance of Father: </span><span class="si">{</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">isaac</span><span class="p">,</span><span class="w"> </span><span class="n">Son</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>               <span class="c1"># 但是父類別的物件不能被當作子類別的物件</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Is dylan an instance of Son: </span><span class="si">{</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">dylan</span><span class="p">,</span><span class="w"> </span><span class="n">Son</span><span class="p">)</span><span class="si">}</span><span class="s2">, Is isaac an instance of Son: </span><span class="si">{</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">isaac</span><span class="p">,</span><span class="w"> </span><span class="n">Son</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>               <span class="c1"># 但是父類別的物件不能被當作子類別的物件</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"type of dylan:</span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">dylan</span><span class="p">)</span><span class="si">}</span><span class="s2">, type of isaac:</span><span class="si">{</span><span class="nb">type</span><span class="p">(</span><span class="n">isaac</span><span class="p">)</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -7979,63 +8014,16 @@ a.anchor-link {
     <span class="k">def</span> <span class="nf">action3</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>      
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Uncle"</span><span class="p">)</span>
 
-<span class="k">class</span> <span class="nc">Isaac</span><span class="p">(</span><span class="n">Father</span><span class="p">,</span> <span class="n">Uncle</span><span class="p">):</span>
+<span class="k">class</span> <span class="nc">Son</span><span class="p">(</span><span class="n">Father</span><span class="p">,</span> <span class="n">Uncle</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">""" 定義Isaac類別 """</span>
     <span class="k">def</span> <span class="nf">action4</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Isaac"</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Son"</span><span class="p">)</span>
 
-<span class="n">isaac</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">()</span>
+<span class="n">isaac</span> <span class="o">=</span> <span class="n">Son</span><span class="p">()</span>
 <span class="n">isaac</span><span class="o">.</span><span class="n">action4</span><span class="p">()</span> 
 <span class="n">isaac</span><span class="o">.</span><span class="n">action3</span><span class="p">()</span>              
 <span class="n">isaac</span><span class="o">.</span><span class="n">action2</span><span class="p">()</span>              
 <span class="n">isaac</span><span class="o">.</span><span class="n">action1</span><span class="p">()</span>      
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Method-Resolution-Order">Method Resolution Order<a class="anchor-link" href="#Method-Resolution-Order">¶</a></h3>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Grandfather</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">""" 定義祖父類別 """</span>
-    <span class="k">def</span> <span class="nf">action</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Grandfather"</span><span class="p">)</span>
-        
-<span class="k">class</span> <span class="nc">Father</span><span class="p">(</span><span class="n">Grandfather</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">""" 定義父親類別 """</span>
-    <span class="k">def</span> <span class="nf">action</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>      
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Father"</span><span class="p">)</span>
-
-<span class="k">class</span> <span class="nc">Uncle</span><span class="p">(</span><span class="n">Grandfather</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">""" 定義叔父類別 """</span>
-    <span class="k">def</span> <span class="nf">action</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>      
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Uncle"</span><span class="p">)</span>
-
-<span class="k">class</span> <span class="nc">Isaac</span><span class="p">(</span><span class="n">Father</span><span class="p">,</span> <span class="n">Uncle</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">""" 定義Isaac類別 """</span>
-    <span class="k">def</span> <span class="nf">action</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Isaac"</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">Isaac</span><span class="o">.</span><span class="n">mro</span><span class="p">())</span>
-<span class="n">isaac</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">()</span>
-<span class="n">isaac</span><span class="o">.</span><span class="n">action</span><span class="p">()</span>              <span class="c1"># 順序 Isaac -&gt; Father -&gt; Uncle -&gt; Grandfather</span>
 </pre></div>
 </div>
 </div>
@@ -8216,6 +8204,53 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
 <h1 id="%E2%99%A0-%E8%A3%9C%E5%85%85">♠ 補充<a class="anchor-link" href="#%E2%99%A0-%E8%A3%9C%E5%85%85">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="Method-Resolution-Order">Method Resolution Order<a class="anchor-link" href="#Method-Resolution-Order">¶</a></h3>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Grandfather</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">""" 定義祖父類別 """</span>
+    <span class="k">def</span> <span class="nf">action</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Grandfather"</span><span class="p">)</span>
+        
+<span class="k">class</span> <span class="nc">Father</span><span class="p">(</span><span class="n">Grandfather</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">""" 定義父親類別 """</span>
+    <span class="k">def</span> <span class="nf">action</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>      
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Father"</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Uncle</span><span class="p">(</span><span class="n">Grandfather</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">""" 定義叔父類別 """</span>
+    <span class="k">def</span> <span class="nf">action</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>      
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Uncle"</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Son</span><span class="p">(</span><span class="n">Father</span><span class="p">,</span> <span class="n">Uncle</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">""" 定義Isaac類別 """</span>
+    <span class="k">def</span> <span class="nf">action</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Son"</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">Son</span><span class="o">.</span><span class="n">mro</span><span class="p">())</span>
+<span class="n">isaac</span> <span class="o">=</span> <span class="n">Son</span><span class="p">()</span>
+<span class="n">isaac</span><span class="o">.</span><span class="n">action</span><span class="p">()</span>              <span class="c1"># 順序 Isaac -&gt; Father -&gt; Uncle -&gt; Grandfather</span>
+</pre></div>
+</div>
 </div>
 </div>
 </div>
