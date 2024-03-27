@@ -7738,7 +7738,7 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> mod18/print_dunder_name.py  # __name__
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> mod18/print_dunder_var.py  # __name__ &amp; __file__
 </pre></div>
 </div>
 </div>
@@ -7752,8 +7752,8 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> mod18/import_print_dunder_name.py  # print_dunder_name
-<span class="c1"># 只會匯入print_dunder_name.py一次，所以在重新執行之後print_dunder_name.py裡的print(__name__)就不會再次執行了</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">run</span> mod18/import_print_dunder_var.py  # print_dunder_var
+<span class="c1"># 只會匯入print_dunder_var.py一次，所以在重新執行之後print_dunder_var.py裡的print(__name__)print(__file__)與就不會再次執行了</span>
 </pre></div>
 </div>
 </div>
